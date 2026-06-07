@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
 import { ArrowRight, Briefcase, CheckCircle, Target } from '@phosphor-icons/react';
 import SubjectStatCards from '../components/pyq/SubjectStatCards';
 import SearchFilterBar from '../components/pyq/SearchFilterBar';
