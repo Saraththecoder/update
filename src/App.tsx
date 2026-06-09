@@ -7,12 +7,28 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import PYQAnalysisPage from "./pages/PYQAnalysisPage";
 import UPSCMetroMapPage from "./pages/UPSCMetroMapPage";
+import MainsPYQAnalysisPage from "./pages/MainsPYQAnalysisPage";
+import MainsModelAnswersPage from "./pages/MainsModelAnswersPage";
 import { Sparkle, X, Handshake } from "@phosphor-icons/react";
 import { AnimatePresence, motion } from "motion/react";
+import WelcomeScreen from "./components/WelcomeScreen";
 
 export default function App() {
   const [activePage, setActivePage] = useState<string>("home");
   const [showTopToast, setShowTopToast] = useState<boolean>(true);
+  const [showWelcome, setShowWelcome] = useState<boolean>(true);
+
+  // Lock scrolling when welcome screen is visible
+  useEffect(() => {
+    if (showWelcome) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [showWelcome]);
 
   // Scroll to top on page change
   useEffect(() => {
@@ -28,6 +44,10 @@ export default function App() {
         return <Resources setActivePage={setActivePage} />;
       case "pyq-analysis":
         return <PYQAnalysisPage />;
+      case "mains-pyq":
+        return <MainsPYQAnalysisPage setActivePage={setActivePage} />;
+      case "mains-model-answers":
+        return <MainsModelAnswersPage setActivePage={setActivePage} />;
       case "metro-map":
         return <UPSCMetroMapPage setActivePage={setActivePage} />;
       case "about":
@@ -42,6 +62,13 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 bg-dot-grid relative selection:bg-brand-red-light selection:text-navy-950">
       
+      {/* 0. WELCOME & LAUNCH SCREEN */}
+      <AnimatePresence>
+        {showWelcome && (
+          <WelcomeScreen onLaunchComplete={() => setShowWelcome(false)} />
+        )}
+      </AnimatePresence>
+
       {/* 1. EMOTIONAL BANNER AT THE TOP (Dismissible) */}
       {showTopToast && (
         <div 

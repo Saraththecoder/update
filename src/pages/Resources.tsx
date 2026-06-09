@@ -1,5 +1,5 @@
 import React from "react";
-import { BookOpen, Compass, Brain, ArrowRight, Sparkle } from "@phosphor-icons/react";
+import { BookOpen, Compass, Brain, ArrowRight, Sparkle, TrendUp, ShieldCheck } from "@phosphor-icons/react";
 import { motion } from "motion/react";
 
 interface ResourcesProps {
@@ -29,9 +29,9 @@ export default function Resources({ setActivePage }: ResourcesProps) {
         </p>
       </div>
 
-      {/* Two Choice Cards */}
+      {/* Interactive Resource Cards */}
       <motion.div 
-        className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto"
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto"
         initial="hidden"
         animate="visible"
         variants={{
@@ -109,9 +109,85 @@ export default function Resources({ setActivePage }: ResourcesProps) {
 
           <button
             onClick={() => setActivePage("pyq-analysis")}
+            className="mt-8 bg-[#171717] hover:bg-black text-white text-xs font-bold uppercase tracking-wider py-3.5 px-6 rounded-xl transition duration-150 flex items-center justify-center gap-2 cursor-pointer w-full shadow-xs"
+          >
+            <span>Analyze Prelims Patterns</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </button>
+        </motion.div>
+
+        {/* Card 3: UPSC Mains PYQ Analysis */}
+        <motion.div 
+          variants={{
+            hidden: { opacity: 0, y: 25 },
+            visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 120, damping: 15 } }
+          }}
+          whileHover={{ y: -6, transition: { duration: 0.2 } }}
+          className="card-blueprint bg-white border border-slate-200 p-8 rounded-2xl shadow-xs flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition-all duration-300 group"
+        >
+          <div className="space-y-5">
+            <div className="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center text-brand-red border border-brand-red/10">
+              <TrendUp className="w-6 h-6" />
+            </div>
+            
+            <div className="space-y-2">
+              <span className="text-[10px] font-mono font-bold text-brand-red uppercase tracking-wider">Subjective Weightage Tracker</span>
+              <h3 className="text-xl font-display font-bold text-navy-950">
+                UPSC Mains PYQ Analysis
+              </h3>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                A structured weightage grid crossing 13 years (2013-2025) of subjective questions mapped directly to official syllabus themes. Find exactly where questions strike.
+              </p>
+            </div>
+
+            <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 text-[11px] text-slate-500 leading-relaxed">
+              <strong>Interactive Heatmap:</strong> Drill down by GS Papers 1, 2, 3, and 4 horizontally, filter syllabus items dynamically, and view microtheme priority distribution trends.
+            </div>
+          </div>
+
+          <button
+            onClick={() => setActivePage("mains-pyq")}
+            className="mt-8 bg-[#171717] hover:bg-black text-white text-xs font-bold uppercase tracking-wider py-3.5 px-6 rounded-xl transition duration-150 flex items-center justify-center gap-2 cursor-pointer w-full shadow-xs"
+          >
+            <span>Analyze Subjective Trends</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </button>
+        </motion.div>
+
+        {/* Card 4: UPSC Mains Model Answers */}
+        <motion.div 
+          variants={{
+            hidden: { opacity: 0, y: 25 },
+            visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 120, damping: 15 } }
+          }}
+          whileHover={{ y: -6, transition: { duration: 0.2 } }}
+          className="card-blueprint bg-white border border-slate-200 p-8 rounded-2xl shadow-xs flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition-all duration-300 group"
+        >
+          <div className="space-y-5">
+            <div className="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center text-brand-red border border-brand-red/10">
+              <ShieldCheck className="w-6 h-6" />
+            </div>
+            
+            <div className="space-y-2">
+              <span className="text-[10px] font-mono font-bold text-brand-red uppercase tracking-wider">High Scoring Blueprints</span>
+              <h3 className="text-xl font-display font-bold text-navy-950">
+                UPSC Mains Model Answers
+              </h3>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                Step-by-step model answers covering UPSC GS Mains questions. Analyze the structural flow, introduction formats, arguments, and conclusions.
+              </p>
+            </div>
+
+            <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 text-[11px] text-slate-500 leading-relaxed">
+              <strong>Answer Structure:</strong> Inspect complete answers in an interactive sidebar panel mapped specifically to syllabus tags, microthemes, and core priorities.
+            </div>
+          </div>
+
+          <button
+            onClick={() => setActivePage("mains-model-answers")}
             className="mt-8 bg-brand-red hover:bg-brand-red-hover text-white text-xs font-bold uppercase tracking-wider py-3.5 px-6 rounded-xl transition duration-150 flex items-center justify-center gap-2 cursor-pointer w-full shadow-md"
           >
-            <span>Analyze Question Patterns</span>
+            <span>Explore Model Answers</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
         </motion.div>

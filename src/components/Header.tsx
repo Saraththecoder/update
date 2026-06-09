@@ -57,7 +57,7 @@ export default function Header({ activePage, setActivePage }: HeaderProps) {
                       id={`nav-btn-${item.id}`}
                       onClick={() => setActivePage("resources")}
                       className={`flex items-center space-x-1.5 py-1 transition-all duration-200 cursor-pointer ${
-                        activePage === "resources" || activePage === "pyq-analysis" || activePage === "metro-map"
+                        activePage === "resources" || activePage === "pyq-analysis" || activePage === "mains-pyq" || activePage === "mains-model-answers" || activePage === "metro-map"
                           ? "text-brand-red border-b-2 border-brand-red font-bold"
                           : "text-slate-500 hover:text-brand-red font-medium"
                       }`}
@@ -84,7 +84,27 @@ export default function Header({ activePage, setActivePage }: HeaderProps) {
                             className="w-full text-left px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-brand-red font-semibold uppercase tracking-wider transition-colors duration-150 flex items-center gap-2 cursor-pointer text-[11px]"
                           >
                             <span className="w-1.5 h-1.5 bg-brand-red rounded-full" />
-                            <span>PYQ Analysis</span>
+                            <span>Prelims PYQ Analysis</span>
+                          </button>
+                          <button
+                            onClick={() => {
+                              setActivePage("mains-pyq");
+                              setShowDropdown(false);
+                            }}
+                            className="w-full text-left px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-brand-red font-semibold uppercase tracking-wider transition-colors duration-150 flex items-center gap-2 cursor-pointer text-[11px]"
+                          >
+                            <span className="w-1.5 h-1.5 bg-brand-red rounded-full" />
+                            <span>Mains PYQ Analysis</span>
+                          </button>
+                          <button
+                            onClick={() => {
+                              setActivePage("mains-model-answers");
+                              setShowDropdown(false);
+                            }}
+                            className="w-full text-left px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-brand-red font-semibold uppercase tracking-wider transition-colors duration-150 flex items-center gap-2 cursor-pointer text-[11px]"
+                          >
+                            <span className="w-1.5 h-1.5 bg-brand-red rounded-full" />
+                            <span>Mains Model Answers</span>
                           </button>
                           <button
                             onClick={() => {
