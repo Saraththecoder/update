@@ -28,6 +28,7 @@ export interface TeamMember {
   bio: string;
   yearsOfStruggle: number; // Empathy point: showing they lived the struggle
   specialization: string;
+  image?: string;
 }
 
 export interface Testimonial {

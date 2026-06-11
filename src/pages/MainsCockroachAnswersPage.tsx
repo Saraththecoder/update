@@ -1,7 +1,9 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { ArrowLeft, MagnifyingGlass, BookOpen, Clock, Tag, X, ListNumbers, ShieldCheck, Sparkle, Trophy } from "@phosphor-icons/react";
 import { motion, AnimatePresence } from "motion/react";
-import rawModelAnswers from "../data/modelanswer2025gs1.json";
+import raw2023 from "../data/Cockroachmainsanswers/2023GS.json";
+import raw2024 from "../data/Cockroachmainsanswers/2024GS.json";
+import raw2025 from "../data/Cockroachmainsanswers/2025gs.json";
 
 interface AnswerSection {
   section_id: number;
@@ -12,7 +14,7 @@ interface AnswerSection {
   items?: string[];
 }
 
-interface ModelAnswerItem {
+interface CockroachAnswerItem {
   resource_type: string;
   platform: string;
   question: {
@@ -26,53 +28,65 @@ interface ModelAnswerItem {
   answer: AnswerSection[];
 }
 
-const modelAnswersData = rawModelAnswers as ModelAnswerItem[];
+const cockroachAnswersData = [
+  ...(raw2025 as CockroachAnswerItem[]),
+  ...(raw2024 as CockroachAnswerItem[]),
+  ...(raw2023 as CockroachAnswerItem[])
+];
 
-interface MainsModelAnswersPageProps {
+interface MainsCockroachAnswersPageProps {
   setActivePage?: (page: string) => void;
 }
 
-export default function MainsModelAnswersPage({ setActivePage }: MainsModelAnswersPageProps) {
+export default function MainsCockroachAnswersPage({ setActivePage }: MainsCockroachAnswersPageProps) {
   const [selectedPaper, setSelectedPaper] = useState<string>("All");
   const [selectedTag, setSelectedTag] = useState<string>("All");
+  const [selectedYear, setSelectedYear] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState<string>("");
-  const [selectedQuestion, setSelectedQuestion] = useState<ModelAnswerItem | null>(null);
+  const [selectedQuestion, setSelectedQuestion] = useState<CockroachAnswerItem | null>(null);
 
   // Set document title
   useEffect(() => {
-    document.title = "UPSC Mains Model Answers (2025) | CockroachIAS";
+    document.title = "UPSC Mains Cockroach Answers | CockroachIAS";
   }, []);
 
   // Compute unique filters dynamically
   const uniquePapers = useMemo(() => {
-    const papers = modelAnswersData.map(item => item.question.paper);
+    const papers = cockroachAnswersData.map(item => item.question.paper);
     return ["All", ...Array.from(new Set(papers))];
   }, []);
 
   const uniqueTags = useMemo(() => {
-    const tags = modelAnswersData.flatMap(item => item.question.syllabus_tags);
+    const tags = cockroachAnswersData.flatMap(item => item.question.syllabus_tags);
     return ["All", ...Array.from(new Set(tags))];
+  }, []);
+
+  const uniqueYears = useMemo(() => {
+    const years = cockroachAnswersData.map(item => String(item.question.year));
+    const sortedYears = Array.from(new Set(years)).sort((a, b) => Number(b) - Number(a));
+    return ["All", ...sortedYears];
   }, []);
 
   // Filtered items based on search and selects
   const filteredQuestions = useMemo(() => {
-    return modelAnswersData.filter((item) => {
+    return cockroachAnswersData.filter((item) => {
       const matchPaper = selectedPaper === "All" || item.question.paper === selectedPaper;
       const matchTag = selectedTag === "All" || item.question.syllabus_tags.includes(selectedTag);
+      const matchYear = selectedYear === "All" || String(item.question.year) === selectedYear;
       
       const textToSearch = `${item.question.text} ${item.question.syllabus_tags.join(" ")}`.toLowerCase();
       const matchSearch = !searchQuery.trim() || textToSearch.includes(searchQuery.toLowerCase());
       
-      return matchPaper && matchTag && matchSearch;
+      return matchPaper && matchTag && matchYear && matchSearch;
     });
-  }, [selectedPaper, selectedTag, searchQuery]);
+  }, [selectedPaper, selectedTag, selectedYear, searchQuery]);
 
   // Statistics summaries
   const stats = useMemo(() => {
-    const totalCount = modelAnswersData.length;
+    const totalCount = cockroachAnswersData.length;
     const papersCount = uniquePapers.length - 1; // Subtract "All"
     const tagsCount = uniqueTags.length - 1; // Subtract "All"
-    const avgMarks = modelAnswersData.reduce((acc, curr) => acc + curr.question.marks, 0) / (totalCount || 1);
+    const avgMarks = cockroachAnswersData.reduce((acc, curr) => acc + curr.question.marks, 0) / (totalCount || 1);
 
     return {
       totalCount,
@@ -89,7 +103,7 @@ export default function MainsModelAnswersPage({ setActivePage }: MainsModelAnswe
       exit={{ opacity: 0, y: -15 }}
       transition={{ duration: 0.4 }}
       className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8 relative"
-      id="mains-model-answers-root"
+      id="mains-cockroach-answers-root"
     >
       {/* Header section with Back Button */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-6">
@@ -108,7 +122,7 @@ export default function MainsModelAnswersPage({ setActivePage }: MainsModelAnswe
               <ShieldCheck className="w-5 h-5" />
             </span>
             <h1 className="text-2xl sm:text-3xl font-display font-bold text-navy-950">
-              UPSC Mains Model Answers (2025)
+              UPSC Mains Cockroach Answers
             </h1>
           </div>
           <p className="text-xs sm:text-sm text-slate-500 leading-relaxed max-w-3xl">
@@ -124,7 +138,7 @@ export default function MainsModelAnswersPage({ setActivePage }: MainsModelAnswe
             <Trophy className="w-6 h-6" />
           </div>
           <div>
-            <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block">Model Blueprints</span>
+            <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block">Cockroach Answers</span>
             <span className="text-2xl font-display font-bold text-navy-950 font-mono mt-0.5 block">
               {stats.totalCount}
             </span>
@@ -221,16 +235,30 @@ export default function MainsModelAnswersPage({ setActivePage }: MainsModelAnswe
                 ))}
               </select>
             </div>
+
+            {/* Year Select */}
+            <div className="flex flex-col min-w-[100px] grow md:grow-0">
+              <label className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Exam Year</label>
+              <select
+                value={selectedYear}
+                onChange={(e) => setSelectedYear(e.target.value)}
+                className="bg-white border border-slate-200 rounded-lg px-2.5 py-1.5 text-xs font-semibold text-slate-700 focus:outline-hidden hover:border-slate-300"
+              >
+                {uniqueYears.map(yr => (
+                  <option key={yr} value={yr}>{yr === "All" ? "All Years" : yr}</option>
+                ))}
+              </select>
+            </div>
           </div>
 
         </div>
       </div>
 
       {/* Main content area - Cards list grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6" id="mains-model-answers-list">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6" id="mains-cockroach-answers-list">
         {filteredQuestions.length === 0 ? (
           <div className="col-span-full bg-white border border-slate-200/80 rounded-xl p-12 text-center text-sm text-slate-400 font-medium">
-            No model answers match your filters. Reset search query or selection filters to browse all items.
+            No Cockroach Answers match your filters. Reset search query or selection filters to browse all items.
           </div>
         ) : (
           filteredQuestions.map((item, idx) => (
@@ -277,7 +305,7 @@ export default function MainsModelAnswersPage({ setActivePage }: MainsModelAnswe
                   onClick={() => setSelectedQuestion(item)}
                   className="bg-navy-900 hover:bg-black text-white text-[11px] font-bold uppercase tracking-wider py-2 px-3.5 rounded-lg transition-colors cursor-pointer shrink-0"
                 >
-                  View Answer
+                  Cockroach Answer
                 </button>
               </div>
             </motion.div>
@@ -305,7 +333,7 @@ export default function MainsModelAnswersPage({ setActivePage }: MainsModelAnswe
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 30, stiffness: 220 }}
               className="fixed inset-y-0 right-0 z-101 w-full md:w-[650px] bg-white shadow-2xl flex flex-col h-full border-l border-slate-200"
-              id="model-answer-drawer"
+              id="cockroach-answer-drawer"
             >
               {/* Drawer Header */}
               <div className="p-6 border-b border-slate-200 flex items-start justify-between gap-4 bg-slate-50/70">
@@ -351,7 +379,7 @@ export default function MainsModelAnswersPage({ setActivePage }: MainsModelAnswe
                   ))}
                 </div>
 
-                {/* Structured model answer content sections */}
+                {/* Structured cockroach answer content sections */}
                 <div className="space-y-6">
                   {selectedQuestion.answer.map((sec) => {
                     switch (sec.type) {
@@ -449,7 +477,7 @@ export default function MainsModelAnswersPage({ setActivePage }: MainsModelAnswe
 
               {/* Drawer footer information block */}
               <div className="p-4 border-t border-slate-100 bg-slate-50 text-[10px] text-center text-slate-400 font-medium font-mono">
-                COCKROACH IAS • SOURCE: MODELANSWER2025GS1
+                COCKROACH IAS • SOURCE: COCKROACHMAINSANSWERS
               </div>
             </motion.div>
           </>

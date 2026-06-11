@@ -1,0 +1,1754 @@
+[
+  {
+    "amendment_id": "amendment_001",
+    "amendment_number": 1,
+    "year": 1951,
+    "short_title": "Constitution First Amendment Act, 1951",
+    "upsc_importance": "HIGH",
+    "theme": "Land reforms, speech restrictions, reservation",
+    "key_changes": [
+      "Added reasonable restrictions on freedom of speech and expression.",
+      "Inserted Article 15(4) for special provisions for socially and educationally backward classes, SCs and STs.",
+      "Inserted Articles 31A and 31B and the Ninth Schedule to protect land reform laws."
+    ],
+    "articles_schedules_affected": [
+      "article_15",
+      "article_19",
+      "article_31a",
+      "article_31b",
+      "schedule_9"
+    ],
+    "upsc_trap": "First Amendment is linked with Champakam Dorairajan, Article 15(4), Article 31B and Ninth Schedule."
+  },
+  {
+    "amendment_id": "amendment_002",
+    "amendment_number": 2,
+    "year": 1952,
+    "short_title": "Constitution Second Amendment Act, 1952",
+    "upsc_importance": "LOW",
+    "theme": "Lok Sabha representation",
+    "key_changes": [
+      "Changed the scale of representation in the House of the People."
+    ],
+    "articles_schedules_affected": [
+      "article_81"
+    ],
+    "upsc_trap": "It deals with representation in Lok Sabha, not Rajya Sabha."
+  },
+  {
+    "amendment_id": "amendment_003",
+    "amendment_number": 3,
+    "year": 1954,
+    "short_title": "Constitution Third Amendment Act, 1954",
+    "upsc_importance": "MEDIUM",
+    "theme": "Trade and commerce of essential commodities",
+    "key_changes": [
+      "Expanded Parliament's power over trade and commerce in certain essential commodities."
+    ],
+    "articles_schedules_affected": [
+      "schedule_7"
+    ],
+    "upsc_trap": "Linked to Concurrent List entry on essential commodities."
+  },
+  {
+    "amendment_id": "amendment_004",
+    "amendment_number": 4,
+    "year": 1955,
+    "short_title": "Constitution Fourth Amendment Act, 1955",
+    "upsc_importance": "MEDIUM",
+    "theme": "Property and land reforms",
+    "key_changes": [
+      "Restricted judicial review in compensation-related property matters.",
+      "Expanded protection for land reform laws."
+    ],
+    "articles_schedules_affected": [
+      "article_31",
+      "article_31a",
+      "article_305",
+      "schedule_9"
+    ],
+    "upsc_trap": "Property amendments are repeatedly linked with land reforms and Ninth Schedule."
+  },
+  {
+    "amendment_id": "amendment_005",
+    "amendment_number": 5,
+    "year": 1955,
+    "short_title": "Constitution Fifth Amendment Act, 1955",
+    "upsc_importance": "MEDIUM",
+    "theme": "State boundary alteration procedure",
+    "key_changes": [
+      "Modified Article 3 procedure regarding time allowed to States to express views on boundary or name changes."
+    ],
+    "articles_schedules_affected": [
+      "article_3"
+    ],
+    "upsc_trap": "State consent is not mandatory under Article 3; only views are sought."
+  },
+  {
+    "amendment_id": "amendment_006",
+    "amendment_number": 6,
+    "year": 1956,
+    "short_title": "Constitution Sixth Amendment Act, 1956",
+    "upsc_importance": "MEDIUM",
+    "theme": "Inter-State sales tax",
+    "key_changes": [
+      "Gave Parliament power over taxes on inter-State sale or purchase of goods."
+    ],
+    "articles_schedules_affected": [
+      "article_269",
+      "article_286",
+      "schedule_7"
+    ],
+    "upsc_trap": "Important for Centre-State taxation before GST."
+  },
+  {
+    "amendment_id": "amendment_007",
+    "amendment_number": 7,
+    "year": 1956,
+    "short_title": "Constitution Seventh Amendment Act, 1956",
+    "upsc_importance": "HIGH",
+    "theme": "States Reorganisation",
+    "key_changes": [
+      "Implemented reorganisation of States on linguistic basis.",
+      "Abolished classification of States into Part A, Part B, Part C and Part D.",
+      "Provided for Union territories and common High Courts."
+    ],
+    "articles_schedules_affected": [
+      "article_1",
+      "article_153",
+      "article_214",
+      "article_230",
+      "article_231",
+      "schedule_1",
+      "schedule_4"
+    ],
+    "upsc_trap": "Seventh Amendment is the major constitutional change after States Reorganisation Act, 1956."
+  },
+  {
+    "amendment_id": "amendment_008",
+    "amendment_number": 8,
+    "year": 1960,
+    "short_title": "Constitution Eighth Amendment Act, 1960",
+    "upsc_importance": "MEDIUM",
+    "theme": "Reservation extension",
+    "key_changes": [
+      "Extended reservation of seats for SCs, STs and special representation of Anglo-Indians."
+    ],
+    "articles_schedules_affected": [
+      "article_334"
+    ],
+    "upsc_trap": "Article 334 is about duration of political reservation, not service reservation."
+  },
+  {
+    "amendment_id": "amendment_009",
+    "amendment_number": 9,
+    "year": 1960,
+    "short_title": "Constitution Ninth Amendment Act, 1960",
+    "upsc_importance": "HIGH",
+    "theme": "Berubari and India-Pakistan agreement",
+    "key_changes": [
+      "Enabled transfer of certain Indian territory to Pakistan after Berubari reference."
+    ],
+    "articles_schedules_affected": [
+      "schedule_1"
+    ],
+    "upsc_trap": "Cession of Indian territory to a foreign country needs constitutional amendment."
+  },
+  {
+    "amendment_id": "amendment_010",
+    "amendment_number": 10,
+    "year": 1961,
+    "short_title": "Constitution Tenth Amendment Act, 1961",
+    "upsc_importance": "MEDIUM",
+    "theme": "Dadra and Nagar Haveli",
+    "key_changes": [
+      "Incorporated Dadra and Nagar Haveli as a Union territory."
+    ],
+    "articles_schedules_affected": [
+      "article_240",
+      "schedule_1"
+    ],
+    "upsc_trap": "Linked to territorial integration after Portuguese colonial rule ended locally."
+  },
+  {
+    "amendment_id": "amendment_011",
+    "amendment_number": 11,
+    "year": 1961,
+    "short_title": "Constitution Eleventh Amendment Act, 1961",
+    "upsc_importance": "MEDIUM",
+    "theme": "President and Vice-President election",
+    "key_changes": [
+      "Changed provisions relating to election of Vice-President.",
+      "Protected presidential and vice-presidential elections from challenge due to vacancies in electoral college."
+    ],
+    "articles_schedules_affected": [
+      "article_66",
+      "article_71"
+    ],
+    "upsc_trap": "Vacancy in electoral college does not invalidate President or Vice-President election."
+  },
+  {
+    "amendment_id": "amendment_012",
+    "amendment_number": 12,
+    "year": 1962,
+    "short_title": "Constitution Twelfth Amendment Act, 1962",
+    "upsc_importance": "MEDIUM",
+    "theme": "Goa, Daman and Diu",
+    "key_changes": [
+      "Incorporated Goa, Daman and Diu as a Union territory."
+    ],
+    "articles_schedules_affected": [
+      "article_240",
+      "schedule_1"
+    ],
+    "upsc_trap": "Goa became a State later by the 56th Amendment."
+  },
+  {
+    "amendment_id": "amendment_013",
+    "amendment_number": 13,
+    "year": 1962,
+    "short_title": "Constitution Thirteenth Amendment Act, 1962",
+    "upsc_importance": "HIGH",
+    "theme": "Nagaland special provision",
+    "key_changes": [
+      "Inserted Article 371A for special provisions relating to Nagaland."
+    ],
+    "articles_schedules_affected": [
+      "article_371a"
+    ],
+    "upsc_trap": "Article 371A protects Naga customary law, social practices and land/resources."
+  },
+  {
+    "amendment_id": "amendment_014",
+    "amendment_number": 14,
+    "year": 1962,
+    "short_title": "Constitution Fourteenth Amendment Act, 1962",
+    "upsc_importance": "MEDIUM",
+    "theme": "Puducherry and Union territories",
+    "key_changes": [
+      "Incorporated Puducherry as a Union territory.",
+      "Enabled legislatures and councils of ministers for certain Union territories."
+    ],
+    "articles_schedules_affected": [
+      "article_239a",
+      "schedule_1"
+    ],
+    "upsc_trap": "Article 239A is different from Article 239AA for Delhi."
+  },
+  {
+    "amendment_id": "amendment_015",
+    "amendment_number": 15,
+    "year": 1963,
+    "short_title": "Constitution Fifteenth Amendment Act, 1963",
+    "upsc_importance": "MEDIUM",
+    "theme": "High Courts and judicial age",
+    "key_changes": [
+      "Raised High Court judges' retirement age from 60 to 62.",
+      "Expanded High Court writ jurisdiction in certain respects."
+    ],
+    "articles_schedules_affected": [
+      "article_217",
+      "article_226"
+    ],
+    "upsc_trap": "Supreme Court judges retire at 65; High Court judges retire at 62."
+  },
+  {
+    "amendment_id": "amendment_016",
+    "amendment_number": 16,
+    "year": 1963,
+    "short_title": "Constitution Sixteenth Amendment Act, 1963",
+    "upsc_importance": "HIGH",
+    "theme": "Sovereignty and integrity",
+    "key_changes": [
+      "Added sovereignty and integrity of India as a ground for restrictions on freedoms.",
+      "Modified oath forms to include upholding sovereignty and integrity of India."
+    ],
+    "articles_schedules_affected": [
+      "article_19",
+      "article_84",
+      "article_173",
+      "schedule_3"
+    ],
+    "upsc_trap": "Phrase 'sovereignty and integrity of India' was inserted by the 16th Amendment."
+  },
+  {
+    "amendment_id": "amendment_017",
+    "amendment_number": 17,
+    "year": 1964,
+    "short_title": "Constitution Seventeenth Amendment Act, 1964",
+    "upsc_importance": "MEDIUM",
+    "theme": "Land reforms and Ninth Schedule",
+    "key_changes": [
+      "Expanded definition of estate under Article 31A.",
+      "Added more land reform laws to the Ninth Schedule."
+    ],
+    "articles_schedules_affected": [
+      "article_31a",
+      "schedule_9"
+    ],
+    "upsc_trap": "Land reform protection repeatedly used Article 31A, Article 31B and Ninth Schedule."
+  },
+  {
+    "amendment_id": "amendment_018",
+    "amendment_number": 18,
+    "year": 1966,
+    "short_title": "Constitution Eighteenth Amendment Act, 1966",
+    "upsc_importance": "LOW",
+    "theme": "Article 3 clarification",
+    "key_changes": [
+      "Clarified that the expression State in Article 3 includes Union territories for certain purposes."
+    ],
+    "articles_schedules_affected": [
+      "article_3"
+    ],
+    "upsc_trap": "Useful for technical questions on formation of States and Union territories."
+  },
+  {
+    "amendment_id": "amendment_019",
+    "amendment_number": 19,
+    "year": 1966,
+    "short_title": "Constitution Nineteenth Amendment Act, 1966",
+    "upsc_importance": "LOW",
+    "theme": "Election disputes",
+    "key_changes": [
+      "Abolished election tribunals and enabled High Courts to hear election petitions."
+    ],
+    "articles_schedules_affected": [
+      "article_324",
+      "article_329"
+    ],
+    "upsc_trap": "Election disputes are handled by High Courts under election law, not by the Election Commission."
+  },
+  {
+    "amendment_id": "amendment_020",
+    "amendment_number": 20,
+    "year": 1966,
+    "short_title": "Constitution Twentieth Amendment Act, 1966",
+    "upsc_importance": "LOW",
+    "theme": "District judges validation",
+    "key_changes": [
+      "Inserted Article 233A validating certain appointments and judgments of district judges."
+    ],
+    "articles_schedules_affected": [
+      "article_233a"
+    ],
+    "upsc_trap": "Article 233A is a validation provision."
+  },
+  {
+    "amendment_id": "amendment_021",
+    "amendment_number": 21,
+    "year": 1967,
+    "short_title": "Constitution Twenty-first Amendment Act, 1967",
+    "upsc_importance": "HIGH",
+    "theme": "Eighth Schedule language",
+    "key_changes": [
+      "Added Sindhi to the Eighth Schedule."
+    ],
+    "articles_schedules_affected": [
+      "schedule_8"
+    ],
+    "upsc_trap": "Sindhi was added by the 21st Amendment."
+  },
+  {
+    "amendment_id": "amendment_022",
+    "amendment_number": 22,
+    "year": 1969,
+    "short_title": "Constitution Twenty-second Amendment Act, 1969",
+    "upsc_importance": "MEDIUM",
+    "theme": "Assam autonomous State",
+    "key_changes": [
+      "Inserted Article 244A for formation of an autonomous State within Assam."
+    ],
+    "articles_schedules_affected": [
+      "article_244a"
+    ],
+    "upsc_trap": "Article 244A is not the same as Sixth Schedule Autonomous District Councils."
+  },
+  {
+    "amendment_id": "amendment_023",
+    "amendment_number": 23,
+    "year": 1969,
+    "short_title": "Constitution Twenty-third Amendment Act, 1969",
+    "upsc_importance": "LOW",
+    "theme": "Reservation and Nagaland",
+    "key_changes": [
+      "Extended reservation-related provisions and made changes connected with Nagaland."
+    ],
+    "articles_schedules_affected": [
+      "article_330",
+      "article_332",
+      "article_333",
+      "article_334"
+    ],
+    "upsc_trap": "Article 334 is the recurring article for extension of political reservation."
+  },
+  {
+    "amendment_id": "amendment_024",
+    "amendment_number": 24,
+    "year": 1971,
+    "short_title": "Constitution Twenty-fourth Amendment Act, 1971",
+    "upsc_importance": "HIGH",
+    "theme": "Parliament's amending power",
+    "key_changes": [
+      "Affirmed Parliament's power to amend any part of the Constitution.",
+      "Made presidential assent compulsory for constitutional amendment Bills."
+    ],
+    "articles_schedules_affected": [
+      "article_13",
+      "article_368"
+    ],
+    "upsc_trap": "Passed to overcome Golaknath; later read with Kesavananda basic structure doctrine."
+  },
+  {
+    "amendment_id": "amendment_025",
+    "amendment_number": 25,
+    "year": 1971,
+    "short_title": "Constitution Twenty-fifth Amendment Act, 1971",
+    "upsc_importance": "HIGH",
+    "theme": "Property and DPSP priority",
+    "key_changes": [
+      "Replaced compensation with amount in property acquisition context.",
+      "Inserted Article 31C to protect laws giving effect to Articles 39(b) and 39(c)."
+    ],
+    "articles_schedules_affected": [
+      "article_31",
+      "article_31c"
+    ],
+    "upsc_trap": "Original Article 31C protection was limited to Articles 39(b) and 39(c)."
+  },
+  {
+    "amendment_id": "amendment_026",
+    "amendment_number": 26,
+    "year": 1971,
+    "short_title": "Constitution Twenty-sixth Amendment Act, 1971",
+    "upsc_importance": "HIGH",
+    "theme": "Abolition of privy purses",
+    "key_changes": [
+      "Abolished privy purses and recognition of rulers of former princely States."
+    ],
+    "articles_schedules_affected": [
+      "article_291",
+      "article_362",
+      "article_363a"
+    ],
+    "upsc_trap": "Privy purses were abolished by the 26th Amendment."
+  },
+  {
+    "amendment_id": "amendment_027",
+    "amendment_number": 27,
+    "year": 1971,
+    "short_title": "Constitution Twenty-seventh Amendment Act, 1971",
+    "upsc_importance": "MEDIUM",
+    "theme": "North-East reorganisation",
+    "key_changes": [
+      "Made constitutional changes linked with reorganisation of North-Eastern areas."
+    ],
+    "articles_schedules_affected": [
+      "article_239b",
+      "article_240",
+      "schedule_1"
+    ],
+    "upsc_trap": "Do not confuse with 13th Amendment for Nagaland or 22nd Amendment for Article 244A."
+  },
+  {
+    "amendment_id": "amendment_028",
+    "amendment_number": 28,
+    "year": 1972,
+    "short_title": "Constitution Twenty-eighth Amendment Act, 1972",
+    "upsc_importance": "LOW",
+    "theme": "ICS service privileges",
+    "key_changes": [
+      "Abolished special privileges of members of former Indian Civil Service."
+    ],
+    "articles_schedules_affected": [
+      "article_312a",
+      "article_314"
+    ],
+    "upsc_trap": "Article 314 was omitted."
+  },
+  {
+    "amendment_id": "amendment_029",
+    "amendment_number": 29,
+    "year": 1972,
+    "short_title": "Constitution Twenty-ninth Amendment Act, 1972",
+    "upsc_importance": "MEDIUM",
+    "theme": "Kerala land reforms",
+    "key_changes": [
+      "Added Kerala land reform laws to the Ninth Schedule."
+    ],
+    "articles_schedules_affected": [
+      "schedule_9"
+    ],
+    "upsc_trap": "This amendment was directly involved in Kesavananda Bharati."
+  },
+  {
+    "amendment_id": "amendment_030",
+    "amendment_number": 30,
+    "year": 1972,
+    "short_title": "Constitution Thirtieth Amendment Act, 1972",
+    "upsc_importance": "LOW",
+    "theme": "Supreme Court civil appeals",
+    "key_changes": [
+      "Changed the basis for civil appeals to the Supreme Court from valuation to substantial question of law."
+    ],
+    "articles_schedules_affected": [
+      "article_133"
+    ],
+    "upsc_trap": "Civil appeal to Supreme Court is not merely value-based."
+  },
+  {
+    "amendment_id": "amendment_031",
+    "amendment_number": 31,
+    "year": 1973,
+    "short_title": "Constitution Thirty-first Amendment Act, 1973",
+    "upsc_importance": "MEDIUM",
+    "theme": "Lok Sabha seats",
+    "key_changes": [
+      "Increased the maximum elected strength of Lok Sabha."
+    ],
+    "articles_schedules_affected": [
+      "article_81"
+    ],
+    "upsc_trap": "Lok Sabha maximum strength questions are linked to Article 81."
+  },
+  {
+    "amendment_id": "amendment_032",
+    "amendment_number": 32,
+    "year": 1973,
+    "short_title": "Constitution Thirty-second Amendment Act, 1973",
+    "upsc_importance": "HIGH",
+    "theme": "Andhra Pradesh special provisions",
+    "key_changes": [
+      "Inserted Articles 371D and 371E for special provisions relating to Andhra Pradesh."
+    ],
+    "articles_schedules_affected": [
+      "article_371d",
+      "article_371e"
+    ],
+    "upsc_trap": "Article 371D is now relevant to Andhra Pradesh and Telangana."
+  },
+  {
+    "amendment_id": "amendment_033",
+    "amendment_number": 33,
+    "year": 1974,
+    "short_title": "Constitution Thirty-third Amendment Act, 1974",
+    "upsc_importance": "MEDIUM",
+    "theme": "Resignation of legislators",
+    "key_changes": [
+      "Required Speaker or Chairman to verify that resignation of a legislator is voluntary and genuine."
+    ],
+    "articles_schedules_affected": [
+      "article_101",
+      "article_190"
+    ],
+    "upsc_trap": "A resignation is not automatically accepted if it is not voluntary or genuine."
+  },
+  {
+    "amendment_id": "amendment_034",
+    "amendment_number": 34,
+    "year": 1974,
+    "short_title": "Constitution Thirty-fourth Amendment Act, 1974",
+    "upsc_importance": "LOW",
+    "theme": "Ninth Schedule",
+    "key_changes": [
+      "Added more land reform laws to the Ninth Schedule."
+    ],
+    "articles_schedules_affected": [
+      "schedule_9"
+    ],
+    "upsc_trap": "Ninth Schedule entries after 24 April 1973 are subject to basic structure review."
+  },
+  {
+    "amendment_id": "amendment_035",
+    "amendment_number": 35,
+    "year": 1974,
+    "short_title": "Constitution Thirty-fifth Amendment Act, 1974",
+    "upsc_importance": "MEDIUM",
+    "theme": "Sikkim associate status",
+    "key_changes": [
+      "Gave Sikkim the status of an associate State of India."
+    ],
+    "articles_schedules_affected": [
+      "article_2a",
+      "schedule_10"
+    ],
+    "upsc_trap": "Sikkim first became an associate State, then a full State by the 36th Amendment."
+  },
+  {
+    "amendment_id": "amendment_036",
+    "amendment_number": 36,
+    "year": 1975,
+    "short_title": "Constitution Thirty-sixth Amendment Act, 1975",
+    "upsc_importance": "HIGH",
+    "theme": "Sikkim Statehood",
+    "key_changes": [
+      "Made Sikkim a full State of India.",
+      "Inserted Article 371F for Sikkim."
+    ],
+    "articles_schedules_affected": [
+      "article_371f",
+      "schedule_1",
+      "schedule_4"
+    ],
+    "upsc_trap": "Article 371F is special provision for Sikkim."
+  },
+  {
+    "amendment_id": "amendment_037",
+    "amendment_number": 37,
+    "year": 1975,
+    "short_title": "Constitution Thirty-seventh Amendment Act, 1975",
+    "upsc_importance": "LOW",
+    "theme": "Arunachal Pradesh Legislature",
+    "key_changes": [
+      "Provided for Legislative Assembly and Council of Ministers for Arunachal Pradesh as a Union territory."
+    ],
+    "articles_schedules_affected": [
+      "article_239a"
+    ],
+    "upsc_trap": "Arunachal Pradesh special State provision later appears in Article 371H."
+  },
+  {
+    "amendment_id": "amendment_038",
+    "amendment_number": 38,
+    "year": 1975,
+    "short_title": "Constitution Thirty-eighth Amendment Act, 1975",
+    "upsc_importance": "HIGH",
+    "theme": "Emergency and ordinance finality",
+    "key_changes": [
+      "Made satisfaction of President, Governor and Administrators in certain emergency and ordinance matters final."
+    ],
+    "articles_schedules_affected": [
+      "article_123",
+      "article_213",
+      "article_352",
+      "article_356",
+      "article_360"
+    ],
+    "upsc_trap": "Emergency-era amendments often restricted judicial review."
+  },
+  {
+    "amendment_id": "amendment_039",
+    "amendment_number": 39,
+    "year": 1975,
+    "short_title": "Constitution Thirty-ninth Amendment Act, 1975",
+    "upsc_importance": "HIGH",
+    "theme": "Election disputes and Ninth Schedule",
+    "key_changes": [
+      "Tried to place election disputes of certain high offices beyond judicial review.",
+      "Inserted Article 329A.",
+      "Added certain laws to the Ninth Schedule."
+    ],
+    "articles_schedules_affected": [
+      "article_329a",
+      "schedule_9"
+    ],
+    "upsc_trap": "Article 329A was struck down in Indira Gandhi v Raj Narain."
+  },
+  {
+    "amendment_id": "amendment_040",
+    "amendment_number": 40,
+    "year": 1976,
+    "short_title": "Constitution Fortieth Amendment Act, 1976",
+    "upsc_importance": "MEDIUM",
+    "theme": "Maritime resources and Ninth Schedule",
+    "key_changes": [
+      "Vested resources of territorial waters, continental shelf and exclusive economic zone in the Union.",
+      "Added more laws to Ninth Schedule."
+    ],
+    "articles_schedules_affected": [
+      "article_297",
+      "schedule_9"
+    ],
+    "upsc_trap": "Article 297 connects marine resources with Union ownership."
+  },
+  {
+    "amendment_id": "amendment_041",
+    "amendment_number": 41,
+    "year": 1976,
+    "short_title": "Constitution Forty-first Amendment Act, 1976",
+    "upsc_importance": "LOW",
+    "theme": "State Public Service Commission age",
+    "key_changes": [
+      "Raised retirement age of State Public Service Commission members from 60 to 62."
+    ],
+    "articles_schedules_affected": [
+      "article_316"
+    ],
+    "upsc_trap": "UPSC and SPSC service conditions are often confused."
+  },
+  {
+    "amendment_id": "amendment_042",
+    "amendment_number": 42,
+    "year": 1976,
+    "short_title": "Constitution Forty-second Amendment Act, 1976",
+    "upsc_importance": "HIGH",
+    "theme": "Mini-Constitution",
+    "key_changes": [
+      "Added Socialist, Secular and Integrity to the Preamble.",
+      "Added Fundamental Duties.",
+      "Expanded DPSPs and attempted to reduce judicial review.",
+      "Extended Lok Sabha and State Assembly term from five to six years.",
+      "Transferred subjects such as education, forests, weights and measures, protection of wild animals and birds from State List to Concurrent List."
+    ],
+    "articles_schedules_affected": [
+      "preamble",
+      "article_31c",
+      "article_39a",
+      "article_43a",
+      "article_48a",
+      "article_51a",
+      "article_74",
+      "article_368",
+      "schedule_7"
+    ],
+    "upsc_trap": "Known as Mini-Constitution; several provisions were reversed by 43rd and 44th Amendments."
+  },
+  {
+    "amendment_id": "amendment_043",
+    "amendment_number": 43,
+    "year": 1977,
+    "short_title": "Constitution Forty-third Amendment Act, 1977",
+    "upsc_importance": "HIGH",
+    "theme": "Restoration after Emergency",
+    "key_changes": [
+      "Restored jurisdiction of Supreme Court and High Courts curtailed by the 42nd Amendment.",
+      "Omitted some Emergency-era restrictive provisions."
+    ],
+    "articles_schedules_affected": [
+      "article_31d",
+      "article_32a",
+      "article_131a",
+      "article_144a",
+      "article_226a",
+      "article_228a"
+    ],
+    "upsc_trap": "43rd Amendment restored judicial review but 44th is the bigger Emergency-correction amendment."
+  },
+  {
+    "amendment_id": "amendment_044",
+    "amendment_number": 44,
+    "year": 1978,
+    "short_title": "Constitution Forty-fourth Amendment Act, 1978",
+    "upsc_importance": "HIGH",
+    "theme": "Emergency correction and property right",
+    "key_changes": [
+      "Replaced internal disturbance with armed rebellion for National Emergency.",
+      "Made right to property a constitutional legal right under Article 300A.",
+      "Restored Lok Sabha and State Assembly term to five years.",
+      "Protected Articles 20 and 21 from suspension during Emergency."
+    ],
+    "articles_schedules_affected": [
+      "article_19",
+      "article_21",
+      "article_22",
+      "article_74",
+      "article_83",
+      "article_172",
+      "article_300a",
+      "article_352",
+      "article_359"
+    ],
+    "upsc_trap": "Right to property is not a Fundamental Right after the 44th Amendment."
+  },
+  {
+    "amendment_id": "amendment_045",
+    "amendment_number": 45,
+    "year": 1980,
+    "short_title": "Constitution Forty-fifth Amendment Act, 1980",
+    "upsc_importance": "MEDIUM",
+    "theme": "Reservation extension",
+    "key_changes": [
+      "Extended reservation for SCs, STs and Anglo-Indian representation."
+    ],
+    "articles_schedules_affected": [
+      "article_334"
+    ],
+    "upsc_trap": "Another Article 334 extension amendment."
+  },
+  {
+    "amendment_id": "amendment_046",
+    "amendment_number": 46,
+    "year": 1982,
+    "short_title": "Constitution Forty-sixth Amendment Act, 1982",
+    "upsc_importance": "MEDIUM",
+    "theme": "Sales tax expansion",
+    "key_changes": [
+      "Expanded meaning of tax on sale or purchase of goods to include works contracts, hire purchase, catering and similar transactions."
+    ],
+    "articles_schedules_affected": [
+      "article_269",
+      "article_286",
+      "article_366"
+    ],
+    "upsc_trap": "Important for indirect tax evolution before GST."
+  },
+  {
+    "amendment_id": "amendment_047",
+    "amendment_number": 47,
+    "year": 1984,
+    "short_title": "Constitution Forty-seventh Amendment Act, 1984",
+    "upsc_importance": "LOW",
+    "theme": "Ninth Schedule",
+    "key_changes": [
+      "Added more land reform laws to the Ninth Schedule."
+    ],
+    "articles_schedules_affected": [
+      "schedule_9"
+    ],
+    "upsc_trap": "Ninth Schedule protection is subject to I.R. Coelho doctrine."
+  },
+  {
+    "amendment_id": "amendment_048",
+    "amendment_number": 48,
+    "year": 1984,
+    "short_title": "Constitution Forty-eighth Amendment Act, 1984",
+    "upsc_importance": "LOW",
+    "theme": "Punjab President's Rule",
+    "key_changes": [
+      "Enabled extension of President's Rule in Punjab beyond normal limits."
+    ],
+    "articles_schedules_affected": [
+      "article_356"
+    ],
+    "upsc_trap": "Punjab-related President's Rule amendments are low-frequency but factual."
+  },
+  {
+    "amendment_id": "amendment_049",
+    "amendment_number": 49,
+    "year": 1984,
+    "short_title": "Constitution Forty-ninth Amendment Act, 1984",
+    "upsc_importance": "MEDIUM",
+    "theme": "Tripura tribal areas",
+    "key_changes": [
+      "Brought Tripura tribal areas under the Sixth Schedule framework."
+    ],
+    "articles_schedules_affected": [
+      "article_244",
+      "schedule_5",
+      "schedule_6"
+    ],
+    "upsc_trap": "Sixth Schedule applies to Assam, Meghalaya, Tripura and Mizoram."
+  },
+  {
+    "amendment_id": "amendment_050",
+    "amendment_number": 50,
+    "year": 1984,
+    "short_title": "Constitution Fiftieth Amendment Act, 1984",
+    "upsc_importance": "MEDIUM",
+    "theme": "Fundamental Rights of forces",
+    "key_changes": [
+      "Expanded Parliament's power to restrict Fundamental Rights of armed forces, police, intelligence and similar services."
+    ],
+    "articles_schedules_affected": [
+      "article_33"
+    ],
+    "upsc_trap": "Article 33 power belongs to Parliament, not ordinary executive authority."
+  },
+  {
+    "amendment_id": "amendment_051",
+    "amendment_number": 51,
+    "year": 1984,
+    "short_title": "Constitution Fifty-first Amendment Act, 1984",
+    "upsc_importance": "MEDIUM",
+    "theme": "ST reservation in North-East",
+    "key_changes": [
+      "Provided reservation for Scheduled Tribes in Lok Sabha and Legislative Assemblies of specified North-Eastern States."
+    ],
+    "articles_schedules_affected": [
+      "article_330",
+      "article_332"
+    ],
+    "upsc_trap": "North-East representation provisions often appear with Articles 330 and 332."
+  },
+  {
+    "amendment_id": "amendment_052",
+    "amendment_number": 52,
+    "year": 1985,
+    "short_title": "Constitution Fifty-second Amendment Act, 1985",
+    "upsc_importance": "HIGH",
+    "theme": "Anti-defection law",
+    "key_changes": [
+      "Inserted the Tenth Schedule for disqualification on ground of defection."
+    ],
+    "articles_schedules_affected": [
+      "article_102",
+      "article_191",
+      "schedule_10"
+    ],
+    "upsc_trap": "Anti-defection law was inserted by the 52nd Amendment; merger exception changed later by the 91st Amendment."
+  },
+  {
+    "amendment_id": "amendment_053",
+    "amendment_number": 53,
+    "year": 1986,
+    "short_title": "Constitution Fifty-third Amendment Act, 1986",
+    "upsc_importance": "HIGH",
+    "theme": "Mizoram special provision",
+    "key_changes": [
+      "Inserted Article 371G for special provisions relating to Mizoram."
+    ],
+    "articles_schedules_affected": [
+      "article_371g"
+    ],
+    "upsc_trap": "Article 371G protects Mizo customary law and land ownership."
+  },
+  {
+    "amendment_id": "amendment_054",
+    "amendment_number": 54,
+    "year": 1986,
+    "short_title": "Constitution Fifty-fourth Amendment Act, 1986",
+    "upsc_importance": "LOW",
+    "theme": "Judges' salaries",
+    "key_changes": [
+      "Enhanced salaries of Supreme Court and High Court judges."
+    ],
+    "articles_schedules_affected": [
+      "schedule_2"
+    ],
+    "upsc_trap": "Salary provisions are linked to Second Schedule."
+  },
+  {
+    "amendment_id": "amendment_055",
+    "amendment_number": 55,
+    "year": 1986,
+    "short_title": "Constitution Fifty-fifth Amendment Act, 1986",
+    "upsc_importance": "HIGH",
+    "theme": "Arunachal Pradesh special provision",
+    "key_changes": [
+      "Inserted Article 371H for Arunachal Pradesh."
+    ],
+    "articles_schedules_affected": [
+      "article_371h"
+    ],
+    "upsc_trap": "Governor has special responsibility for law and order in Arunachal Pradesh."
+  },
+  {
+    "amendment_id": "amendment_056",
+    "amendment_number": 56,
+    "year": 1987,
+    "short_title": "Constitution Fifty-sixth Amendment Act, 1987",
+    "upsc_importance": "MEDIUM",
+    "theme": "Goa Statehood",
+    "key_changes": [
+      "Made Goa a State.",
+      "Inserted Article 371I."
+    ],
+    "articles_schedules_affected": [
+      "article_371i",
+      "schedule_1",
+      "schedule_4"
+    ],
+    "upsc_trap": "Article 371I is for Goa."
+  },
+  {
+    "amendment_id": "amendment_057",
+    "amendment_number": 57,
+    "year": 1987,
+    "short_title": "Constitution Fifty-seventh Amendment Act, 1987",
+    "upsc_importance": "LOW",
+    "theme": "ST reservation in North-East",
+    "key_changes": [
+      "Provided special arrangements for ST reservation in Legislative Assemblies of certain North-Eastern States."
+    ],
+    "articles_schedules_affected": [
+      "article_332"
+    ],
+    "upsc_trap": "Article 332 concerns reservation in State Legislative Assemblies."
+  },
+  {
+    "amendment_id": "amendment_058",
+    "amendment_number": 58,
+    "year": 1987,
+    "short_title": "Constitution Fifty-eighth Amendment Act, 1987",
+    "upsc_importance": "MEDIUM",
+    "theme": "Authoritative Hindi text",
+    "key_changes": [
+      "Inserted Article 394A for authoritative Hindi text of the Constitution."
+    ],
+    "articles_schedules_affected": [
+      "article_394a"
+    ],
+    "upsc_trap": "Article 394A is about authoritative Hindi text, not official language generally."
+  },
+  {
+    "amendment_id": "amendment_059",
+    "amendment_number": 59,
+    "year": 1988,
+    "short_title": "Constitution Fifty-ninth Amendment Act, 1988",
+    "upsc_importance": "LOW",
+    "theme": "Punjab emergency provision",
+    "key_changes": [
+      "Made special Emergency-related provision for Punjab."
+    ],
+    "articles_schedules_affected": [
+      "article_352",
+      "article_359a"
+    ],
+    "upsc_trap": "Article 359A was later omitted."
+  },
+  {
+    "amendment_id": "amendment_060",
+    "amendment_number": 60,
+    "year": 1988,
+    "short_title": "Constitution Sixtieth Amendment Act, 1988",
+    "upsc_importance": "LOW",
+    "theme": "Profession tax",
+    "key_changes": [
+      "Raised the ceiling on profession tax."
+    ],
+    "articles_schedules_affected": [
+      "article_276"
+    ],
+    "upsc_trap": "Profession tax is under Article 276."
+  },
+  {
+    "amendment_id": "amendment_061",
+    "amendment_number": 61,
+    "year": 1988,
+    "short_title": "Constitution Sixty-first Amendment Act, 1988",
+    "upsc_importance": "HIGH",
+    "theme": "Voting age",
+    "key_changes": [
+      "Reduced voting age from 21 to 18 years for Lok Sabha and State Assembly elections."
+    ],
+    "articles_schedules_affected": [
+      "article_326"
+    ],
+    "upsc_trap": "Voting age became 18 by the 61st Amendment."
+  },
+  {
+    "amendment_id": "amendment_062",
+    "amendment_number": 62,
+    "year": 1989,
+    "short_title": "Constitution Sixty-second Amendment Act, 1989",
+    "upsc_importance": "MEDIUM",
+    "theme": "Reservation extension",
+    "key_changes": [
+      "Extended reservation for SCs, STs and Anglo-Indian representation."
+    ],
+    "articles_schedules_affected": [
+      "article_334"
+    ],
+    "upsc_trap": "Article 334 has multiple periodic extension amendments."
+  },
+  {
+    "amendment_id": "amendment_063",
+    "amendment_number": 63,
+    "year": 1989,
+    "short_title": "Constitution Sixty-third Amendment Act, 1989",
+    "upsc_importance": "LOW",
+    "theme": "Punjab emergency rollback",
+    "key_changes": [
+      "Omitted Article 359A and reversed certain Punjab emergency-related provisions."
+    ],
+    "articles_schedules_affected": [
+      "article_359a"
+    ],
+    "upsc_trap": "59th inserted Punjab-specific emergency provision; 63rd omitted it."
+  },
+  {
+    "amendment_id": "amendment_064",
+    "amendment_number": 64,
+    "year": 1990,
+    "short_title": "Constitution Sixty-fourth Amendment Act, 1990",
+    "upsc_importance": "LOW",
+    "theme": "Punjab President's Rule",
+    "key_changes": [
+      "Enabled extension of President's Rule in Punjab."
+    ],
+    "articles_schedules_affected": [
+      "article_356"
+    ],
+    "upsc_trap": "Punjab Article 356 amendments are fact-heavy and low-yield."
+  },
+  {
+    "amendment_id": "amendment_065",
+    "amendment_number": 65,
+    "year": 1990,
+    "short_title": "Constitution Sixty-fifth Amendment Act, 1990",
+    "upsc_importance": "HIGH",
+    "theme": "National Commission for SCs and STs",
+    "key_changes": [
+      "Replaced Special Officer system with National Commission for Scheduled Castes and Scheduled Tribes."
+    ],
+    "articles_schedules_affected": [
+      "article_338"
+    ],
+    "upsc_trap": "Separate NCST came later through the 89th Amendment."
+  },
+  {
+    "amendment_id": "amendment_066",
+    "amendment_number": 66,
+    "year": 1990,
+    "short_title": "Constitution Sixty-sixth Amendment Act, 1990",
+    "upsc_importance": "LOW",
+    "theme": "Ninth Schedule",
+    "key_changes": [
+      "Added more land reform laws to Ninth Schedule."
+    ],
+    "articles_schedules_affected": [
+      "schedule_9"
+    ],
+    "upsc_trap": "Ninth Schedule does not create absolute immunity."
+  },
+  {
+    "amendment_id": "amendment_067",
+    "amendment_number": 67,
+    "year": 1990,
+    "short_title": "Constitution Sixty-seventh Amendment Act, 1990",
+    "upsc_importance": "LOW",
+    "theme": "Punjab President's Rule",
+    "key_changes": [
+      "Further enabled extension of President's Rule in Punjab."
+    ],
+    "articles_schedules_affected": [
+      "article_356"
+    ],
+    "upsc_trap": "Repeated Punjab-specific extension amendment."
+  },
+  {
+    "amendment_id": "amendment_068",
+    "amendment_number": 68,
+    "year": 1991,
+    "short_title": "Constitution Sixty-eighth Amendment Act, 1991",
+    "upsc_importance": "LOW",
+    "theme": "Punjab President's Rule",
+    "key_changes": [
+      "Again enabled extension of President's Rule in Punjab."
+    ],
+    "articles_schedules_affected": [
+      "article_356"
+    ],
+    "upsc_trap": "Do not confuse 64th, 67th and 68th amendments."
+  },
+  {
+    "amendment_id": "amendment_069",
+    "amendment_number": 69,
+    "year": 1991,
+    "short_title": "Constitution Sixty-ninth Amendment Act, 1991",
+    "upsc_importance": "HIGH",
+    "theme": "National Capital Territory of Delhi",
+    "key_changes": [
+      "Inserted Article 239AA and Article 239AB.",
+      "Provided special status, Legislative Assembly and Council of Ministers for Delhi."
+    ],
+    "articles_schedules_affected": [
+      "article_239aa",
+      "article_239ab"
+    ],
+    "upsc_trap": "Delhi is governed by Article 239AA, not Article 239A."
+  },
+  {
+    "amendment_id": "amendment_070",
+    "amendment_number": 70,
+    "year": 1992,
+    "short_title": "Constitution Seventieth Amendment Act, 1992",
+    "upsc_importance": "MEDIUM",
+    "theme": "Presidential electoral college",
+    "key_changes": [
+      "Included elected members of Legislative Assemblies of Delhi and Puducherry in the President's electoral college."
+    ],
+    "articles_schedules_affected": [
+      "article_54"
+    ],
+    "upsc_trap": "Only elected MLAs of States plus Delhi and Puducherry participate, not all UTs."
+  },
+  {
+    "amendment_id": "amendment_071",
+    "amendment_number": 71,
+    "year": 1992,
+    "short_title": "Constitution Seventy-first Amendment Act, 1992",
+    "upsc_importance": "HIGH",
+    "theme": "Eighth Schedule languages",
+    "key_changes": [
+      "Added Konkani, Manipuri and Nepali to the Eighth Schedule."
+    ],
+    "articles_schedules_affected": [
+      "schedule_8"
+    ],
+    "upsc_trap": "Konkani, Manipuri and Nepali were added by the 71st Amendment."
+  },
+  {
+    "amendment_id": "amendment_072",
+    "amendment_number": 72,
+    "year": 1992,
+    "short_title": "Constitution Seventy-second Amendment Act, 1992",
+    "upsc_importance": "LOW",
+    "theme": "Tripura ST reservation",
+    "key_changes": [
+      "Provided reservation of seats for Scheduled Tribes in Tripura Legislative Assembly."
+    ],
+    "articles_schedules_affected": [
+      "article_332"
+    ],
+    "upsc_trap": "Tripura appears in both Sixth Schedule and ST reservation context."
+  },
+  {
+    "amendment_id": "amendment_073",
+    "amendment_number": 73,
+    "year": 1992,
+    "short_title": "Constitution Seventy-third Amendment Act, 1992",
+    "upsc_importance": "HIGH",
+    "theme": "Panchayati Raj",
+    "key_changes": [
+      "Inserted Part IX for Panchayats.",
+      "Inserted Eleventh Schedule with 29 subjects.",
+      "Provided constitutional status to Panchayats, Gram Sabha, reservation, State Election Commission and State Finance Commission."
+    ],
+    "articles_schedules_affected": [
+      "article_243",
+      "article_243a",
+      "article_243o",
+      "schedule_11"
+    ],
+    "upsc_trap": "Panchayat powers are not automatically devolved; State law decides actual devolution."
+  },
+  {
+    "amendment_id": "amendment_074",
+    "amendment_number": 74,
+    "year": 1992,
+    "short_title": "Constitution Seventy-fourth Amendment Act, 1992",
+    "upsc_importance": "HIGH",
+    "theme": "Municipalities",
+    "key_changes": [
+      "Inserted Part IXA for Municipalities.",
+      "Inserted Twelfth Schedule with 18 subjects.",
+      "Provided constitutional status to urban local bodies."
+    ],
+    "articles_schedules_affected": [
+      "article_243p",
+      "article_243zg",
+      "schedule_12"
+    ],
+    "upsc_trap": "Municipalities are Part IXA; Panchayats are Part IX."
+  },
+  {
+    "amendment_id": "amendment_075",
+    "amendment_number": 75,
+    "year": 1994,
+    "short_title": "Constitution Seventy-fifth Amendment Act, 1994",
+    "upsc_importance": "LOW",
+    "theme": "Rent tribunals",
+    "key_changes": [
+      "Provided for tribunals relating to rent, tenancy and landlord-tenant matters."
+    ],
+    "articles_schedules_affected": [
+      "article_323b"
+    ],
+    "upsc_trap": "Article 323B covers tribunals for multiple specified matters."
+  },
+  {
+    "amendment_id": "amendment_076",
+    "amendment_number": 76,
+    "year": 1994,
+    "short_title": "Constitution Seventy-sixth Amendment Act, 1994",
+    "upsc_importance": "MEDIUM",
+    "theme": "Tamil Nadu reservation law",
+    "key_changes": [
+      "Placed Tamil Nadu reservation law in the Ninth Schedule."
+    ],
+    "articles_schedules_affected": [
+      "schedule_9"
+    ],
+    "upsc_trap": "Reservation laws in Ninth Schedule may still face basic structure review."
+  },
+  {
+    "amendment_id": "amendment_077",
+    "amendment_number": 77,
+    "year": 1995,
+    "short_title": "Constitution Seventy-seventh Amendment Act, 1995",
+    "upsc_importance": "HIGH",
+    "theme": "Reservation in promotion",
+    "key_changes": [
+      "Inserted Article 16(4A) enabling reservation in promotion for SCs and STs."
+    ],
+    "articles_schedules_affected": [
+      "article_16"
+    ],
+    "upsc_trap": "Article 16(4A) is for promotion reservation for SCs and STs."
+  },
+  {
+    "amendment_id": "amendment_078",
+    "amendment_number": 78,
+    "year": 1995,
+    "short_title": "Constitution Seventy-eighth Amendment Act, 1995",
+    "upsc_importance": "LOW",
+    "theme": "Ninth Schedule",
+    "key_changes": [
+      "Added more land reform laws to Ninth Schedule."
+    ],
+    "articles_schedules_affected": [
+      "schedule_9"
+    ],
+    "upsc_trap": "Ninth Schedule questions usually test I.R. Coelho, not list memorisation."
+  },
+  {
+    "amendment_id": "amendment_079",
+    "amendment_number": 79,
+    "year": 1999,
+    "short_title": "Constitution Seventy-ninth Amendment Act, 1999",
+    "upsc_importance": "MEDIUM",
+    "theme": "Reservation extension",
+    "key_changes": [
+      "Extended SC/ST reservation and Anglo-Indian representation."
+    ],
+    "articles_schedules_affected": [
+      "article_334"
+    ],
+    "upsc_trap": "Article 334 extension before later 95th and 104th Amendments."
+  },
+  {
+    "amendment_id": "amendment_080",
+    "amendment_number": 80,
+    "year": 2000,
+    "short_title": "Constitution Eightieth Amendment Act, 2000",
+    "upsc_importance": "HIGH",
+    "theme": "Tax devolution",
+    "key_changes": [
+      "Implemented an alternative scheme of tax sharing between Union and States based on Finance Commission recommendations."
+    ],
+    "articles_schedules_affected": [
+      "article_269",
+      "article_270",
+      "article_272"
+    ],
+    "upsc_trap": "Important for Finance Commission and divisible pool."
+  },
+  {
+    "amendment_id": "amendment_081",
+    "amendment_number": 81,
+    "year": 2000,
+    "short_title": "Constitution Eighty-first Amendment Act, 2000",
+    "upsc_importance": "HIGH",
+    "theme": "Backlog vacancies",
+    "key_changes": [
+      "Inserted Article 16(4B) allowing backlog reserved vacancies to be treated separately from the 50 percent ceiling for that year."
+    ],
+    "articles_schedules_affected": [
+      "article_16"
+    ],
+    "upsc_trap": "Article 16(4B) concerns backlog vacancies."
+  },
+  {
+    "amendment_id": "amendment_082",
+    "amendment_number": 82,
+    "year": 2000,
+    "short_title": "Constitution Eighty-second Amendment Act, 2000",
+    "upsc_importance": "MEDIUM",
+    "theme": "SC/ST promotion relaxation",
+    "key_changes": [
+      "Allowed relaxation in qualifying marks or standards of evaluation for SCs and STs in promotion."
+    ],
+    "articles_schedules_affected": [
+      "article_335"
+    ],
+    "upsc_trap": "Article 335 balances SC/ST claims with administrative efficiency."
+  },
+  {
+    "amendment_id": "amendment_083",
+    "amendment_number": 83,
+    "year": 2000,
+    "short_title": "Constitution Eighty-third Amendment Act, 2000",
+    "upsc_importance": "LOW",
+    "theme": "Arunachal Panchayat reservation",
+    "key_changes": [
+      "Exempted Arunachal Pradesh from reservation of seats for SCs in Panchayats."
+    ],
+    "articles_schedules_affected": [
+      "article_243d"
+    ],
+    "upsc_trap": "Because Arunachal Pradesh had no significant SC population."
+  },
+  {
+    "amendment_id": "amendment_084",
+    "amendment_number": 84,
+    "year": 2001,
+    "short_title": "Constitution Eighty-fourth Amendment Act, 2001",
+    "upsc_importance": "HIGH",
+    "theme": "Delimitation freeze",
+    "key_changes": [
+      "Extended freeze on allocation of Lok Sabha and Assembly seats until after 2026.",
+      "Allowed readjustment of territorial constituencies based on 1991 Census without changing number of seats."
+    ],
+    "articles_schedules_affected": [
+      "article_55",
+      "article_81",
+      "article_82",
+      "article_170",
+      "article_330",
+      "article_332"
+    ],
+    "upsc_trap": "Seat allocation freeze and constituency readjustment are different."
+  },
+  {
+    "amendment_id": "amendment_085",
+    "amendment_number": 85,
+    "year": 2001,
+    "short_title": "Constitution Eighty-fifth Amendment Act, 2001",
+    "upsc_importance": "HIGH",
+    "theme": "Consequential seniority",
+    "key_changes": [
+      "Provided consequential seniority in promotion reservation for SCs and STs."
+    ],
+    "articles_schedules_affected": [
+      "article_16"
+    ],
+    "upsc_trap": "Article 16(4A) plus consequential seniority is a frequent reservation trap."
+  },
+  {
+    "amendment_id": "amendment_086",
+    "amendment_number": 86,
+    "year": 2002,
+    "short_title": "Constitution Eighty-sixth Amendment Act, 2002",
+    "upsc_importance": "HIGH",
+    "theme": "Right to education",
+    "key_changes": [
+      "Inserted Article 21A making education a Fundamental Right for children aged 6 to 14 years.",
+      "Modified Article 45 for early childhood care below six years.",
+      "Inserted Fundamental Duty under Article 51A(k)."
+    ],
+    "articles_schedules_affected": [
+      "article_21a",
+      "article_45",
+      "article_51a"
+    ],
+    "upsc_trap": "Article 21A covers 6-14 years; Article 45 covers below six years."
+  },
+  {
+    "amendment_id": "amendment_087",
+    "amendment_number": 87,
+    "year": 2003,
+    "short_title": "Constitution Eighty-seventh Amendment Act, 2003",
+    "upsc_importance": "MEDIUM",
+    "theme": "Delimitation census basis",
+    "key_changes": [
+      "Provided for readjustment of constituencies based on 2001 Census instead of 1991 Census."
+    ],
+    "articles_schedules_affected": [
+      "article_81",
+      "article_82",
+      "article_170",
+      "article_330",
+      "article_332"
+    ],
+    "upsc_trap": "Readjustment of constituency boundaries can happen without changing total seats."
+  },
+  {
+    "amendment_id": "amendment_088",
+    "amendment_number": 88,
+    "year": 2003,
+    "short_title": "Constitution Eighty-eighth Amendment Act, 2003",
+    "upsc_importance": "MEDIUM",
+    "theme": "Service tax",
+    "key_changes": [
+      "Inserted Article 268A for service tax before GST."
+    ],
+    "articles_schedules_affected": [
+      "article_268a",
+      "schedule_7"
+    ],
+    "upsc_trap": "Article 268A was later omitted after GST."
+  },
+  {
+    "amendment_id": "amendment_089",
+    "amendment_number": 89,
+    "year": 2003,
+    "short_title": "Constitution Eighty-ninth Amendment Act, 2003",
+    "upsc_importance": "HIGH",
+    "theme": "Separate NCST",
+    "key_changes": [
+      "Separated National Commission for Scheduled Tribes from National Commission for Scheduled Castes."
+    ],
+    "articles_schedules_affected": [
+      "article_338",
+      "article_338a"
+    ],
+    "upsc_trap": "NCSC is Article 338; NCST is Article 338A."
+  },
+  {
+    "amendment_id": "amendment_090",
+    "amendment_number": 90,
+    "year": 2003,
+    "short_title": "Constitution Ninetieth Amendment Act, 2003",
+    "upsc_importance": "LOW",
+    "theme": "Assam tribal representation",
+    "key_changes": [
+      "Made special provision for representation in Assam Legislative Assembly from Bodoland Territorial Areas District."
+    ],
+    "articles_schedules_affected": [
+      "article_332"
+    ],
+    "upsc_trap": "Linked with Assam and Bodoland territorial arrangements."
+  },
+  {
+    "amendment_id": "amendment_091",
+    "amendment_number": 91,
+    "year": 2003,
+    "short_title": "Constitution Ninety-first Amendment Act, 2003",
+    "upsc_importance": "HIGH",
+    "theme": "Anti-defection and Council of Ministers size",
+    "key_changes": [
+      "Limited size of Council of Ministers to 15 percent of the House strength, with minimum 12 in States.",
+      "Removed split exception from anti-defection law.",
+      "Disqualified defectors from ministerial and remunerative political posts."
+    ],
+    "articles_schedules_affected": [
+      "article_75",
+      "article_164",
+      "article_361b",
+      "schedule_10"
+    ],
+    "upsc_trap": "Split exception was deleted; merger exception remains."
+  },
+  {
+    "amendment_id": "amendment_092",
+    "amendment_number": 92,
+    "year": 2003,
+    "short_title": "Constitution Ninety-second Amendment Act, 2003",
+    "upsc_importance": "HIGH",
+    "theme": "Eighth Schedule languages",
+    "key_changes": [
+      "Added Bodo, Dogri, Maithili and Santali to the Eighth Schedule."
+    ],
+    "articles_schedules_affected": [
+      "schedule_8"
+    ],
+    "upsc_trap": "Bodo, Dogri, Maithili and Santali were added by the 92nd Amendment."
+  },
+  {
+    "amendment_id": "amendment_093",
+    "amendment_number": 93,
+    "year": 2005,
+    "short_title": "Constitution Ninety-third Amendment Act, 2005",
+    "upsc_importance": "HIGH",
+    "theme": "Reservation in educational institutions",
+    "key_changes": [
+      "Inserted Article 15(5) enabling special provisions for backward classes, SCs and STs in educational institutions, including private unaided institutions except minority institutions."
+    ],
+    "articles_schedules_affected": [
+      "article_15"
+    ],
+    "upsc_trap": "Minority educational institutions under Article 30 are excluded from Article 15(5)."
+  },
+  {
+    "amendment_id": "amendment_094",
+    "amendment_number": 94,
+    "year": 2006,
+    "short_title": "Constitution Ninety-fourth Amendment Act, 2006",
+    "upsc_importance": "MEDIUM",
+    "theme": "Tribal welfare ministers",
+    "key_changes": [
+      "Modified provision for Ministers in charge of tribal welfare in certain States."
+    ],
+    "articles_schedules_affected": [
+      "article_164"
+    ],
+    "upsc_trap": "Article 164 has special tribal welfare minister provision."
+  },
+  {
+    "amendment_id": "amendment_095",
+    "amendment_number": 95,
+    "year": 2009,
+    "short_title": "Constitution Ninety-fifth Amendment Act, 2009",
+    "upsc_importance": "MEDIUM",
+    "theme": "Reservation extension",
+    "key_changes": [
+      "Extended SC/ST reservation and Anglo-Indian representation up to 2020."
+    ],
+    "articles_schedules_affected": [
+      "article_334"
+    ],
+    "upsc_trap": "Later, 104th Amendment extended SC/ST reservation but ended Anglo-Indian nomination."
+  },
+  {
+    "amendment_id": "amendment_096",
+    "amendment_number": 96,
+    "year": 2011,
+    "short_title": "Constitution Ninety-sixth Amendment Act, 2011",
+    "upsc_importance": "MEDIUM",
+    "theme": "Odia language name",
+    "key_changes": [
+      "Changed the name Oriya to Odia in the Eighth Schedule."
+    ],
+    "articles_schedules_affected": [
+      "schedule_8"
+    ],
+    "upsc_trap": "It renamed Oriya as Odia; it did not add a new language."
+  },
+  {
+    "amendment_id": "amendment_097",
+    "amendment_number": 97,
+    "year": 2011,
+    "short_title": "Constitution Ninety-seventh Amendment Act, 2011",
+    "upsc_importance": "HIGH",
+    "theme": "Co-operative societies",
+    "key_changes": [
+      "Added forming co-operative societies to Article 19(1)(c).",
+      "Inserted Article 43B as DPSP.",
+      "Inserted Part IXB on co-operative societies."
+    ],
+    "articles_schedules_affected": [
+      "article_19",
+      "article_43b",
+      "article_243zh",
+      "article_243zt"
+    ],
+    "upsc_trap": "Supreme Court struck down Part IXB as applied to State co-operatives for lack of State ratification, but it continues for multi-State co-operatives."
+  },
+  {
+    "amendment_id": "amendment_098",
+    "amendment_number": 98,
+    "year": 2012,
+    "short_title": "Constitution Ninety-eighth Amendment Act, 2012",
+    "upsc_importance": "HIGH",
+    "theme": "Hyderabad-Karnataka special provision",
+    "key_changes": [
+      "Inserted Article 371J for special provisions for Hyderabad-Karnataka region of Karnataka."
+    ],
+    "articles_schedules_affected": [
+      "article_371j"
+    ],
+    "upsc_trap": "Article 371J belongs to Karnataka."
+  },
+  {
+    "amendment_id": "amendment_099",
+    "amendment_number": 99,
+    "year": 2014,
+    "short_title": "Constitution Ninety-ninth Amendment Act, 2014",
+    "upsc_importance": "HIGH",
+    "theme": "NJAC",
+    "key_changes": [
+      "Created National Judicial Appointments Commission for judicial appointments.",
+      "Inserted Articles 124A, 124B and 124C."
+    ],
+    "articles_schedules_affected": [
+      "article_124a",
+      "article_124b",
+      "article_124c"
+    ],
+    "upsc_trap": "The 99th Amendment was struck down by the Supreme Court in the NJAC judgment."
+  },
+  {
+    "amendment_id": "amendment_100",
+    "amendment_number": 100,
+    "year": 2015,
+    "short_title": "Constitution One Hundredth Amendment Act, 2015",
+    "upsc_importance": "HIGH",
+    "theme": "India-Bangladesh Land Boundary Agreement",
+    "key_changes": [
+      "Gave effect to exchange of territories between India and Bangladesh."
+    ],
+    "articles_schedules_affected": [
+      "schedule_1"
+    ],
+    "upsc_trap": "Land boundary agreement required constitutional amendment because territory was exchanged."
+  },
+  {
+    "amendment_id": "amendment_101",
+    "amendment_number": 101,
+    "year": 2016,
+    "short_title": "Constitution One Hundred and First Amendment Act, 2016",
+    "upsc_importance": "HIGH",
+    "theme": "Goods and Services Tax",
+    "key_changes": [
+      "Introduced GST constitutional framework.",
+      "Inserted Articles 246A, 269A and 279A.",
+      "Created GST Council."
+    ],
+    "articles_schedules_affected": [
+      "article_246a",
+      "article_269a",
+      "article_279a",
+      "schedule_7"
+    ],
+    "upsc_trap": "GST Council recommendations are persuasive, not automatically binding as held in Mohit Minerals."
+  },
+  {
+    "amendment_id": "amendment_102",
+    "amendment_number": 102,
+    "year": 2018,
+    "short_title": "Constitution One Hundred and Second Amendment Act, 2018",
+    "upsc_importance": "HIGH",
+    "theme": "NCBC constitutional status",
+    "key_changes": [
+      "Gave constitutional status to National Commission for Backward Classes.",
+      "Inserted Article 338B and Article 342A."
+    ],
+    "articles_schedules_affected": [
+      "article_338b",
+      "article_342a",
+      "article_366"
+    ],
+    "upsc_trap": "NCBC is Article 338B; SEBC list issue was clarified later by the 105th Amendment."
+  },
+  {
+    "amendment_id": "amendment_103",
+    "amendment_number": 103,
+    "year": 2019,
+    "short_title": "Constitution One Hundred and Third Amendment Act, 2019",
+    "upsc_importance": "HIGH",
+    "theme": "EWS reservation",
+    "key_changes": [
+      "Inserted Articles 15(6) and 16(6) for reservation to economically weaker sections.",
+      "Enabled up to 10 percent EWS reservation."
+    ],
+    "articles_schedules_affected": [
+      "article_15",
+      "article_16"
+    ],
+    "upsc_trap": "EWS reservation excludes SCs, STs and OBCs already covered by reservation."
+  },
+  {
+    "amendment_id": "amendment_104",
+    "amendment_number": 104,
+    "year": 2019,
+    "short_title": "Constitution One Hundred and Fourth Amendment Act, 2019",
+    "upsc_importance": "HIGH",
+    "theme": "SC/ST reservation extension and Anglo-Indian nomination ended",
+    "key_changes": [
+      "Extended reservation for SCs and STs in Lok Sabha and State Assemblies.",
+      "Ended Anglo-Indian nominated representation in Lok Sabha and State Assemblies."
+    ],
+    "articles_schedules_affected": [
+      "article_334"
+    ],
+    "upsc_trap": "SC/ST political reservation continued; Anglo-Indian nomination ceased."
+  },
+  {
+    "amendment_id": "amendment_105",
+    "amendment_number": 105,
+    "year": 2021,
+    "short_title": "Constitution One Hundred and Fifth Amendment Act, 2021",
+    "upsc_importance": "HIGH",
+    "theme": "State power to identify SEBCs",
+    "key_changes": [
+      "Clarified that States and Union territories can identify socially and educationally backward classes for their own purposes."
+    ],
+    "articles_schedules_affected": [
+      "article_338b",
+      "article_342a",
+      "article_366"
+    ],
+    "upsc_trap": "Passed after Maratha reservation-related interpretation of the 102nd Amendment."
+  },
+  {
+    "amendment_id": "amendment_106",
+    "amendment_number": 106,
+    "year": 2023,
+    "short_title": "Constitution One Hundred and Sixth Amendment Act, 2023",
+    "upsc_importance": "HIGH",
+    "theme": "Women's reservation",
+    "key_changes": [
+      "Inserted provisions for reservation of one-third seats for women in Lok Sabha, State Legislative Assemblies and Delhi Legislative Assembly.",
+      "Inserted Articles 330A, 332A and 334A.",
+      "Reservation will take effect after delimitation following the first census after commencement."
+    ],
+    "articles_schedules_affected": [
+      "article_239aa",
+      "article_330a",
+      "article_332a",
+      "article_334a"
+    ],
+    "upsc_trap": "Women's reservation is not immediately operational; it is linked to census and delimitation."
+  }
+]

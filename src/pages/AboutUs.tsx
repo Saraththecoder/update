@@ -1,10 +1,18 @@
 import React from "react";
 import { 
   Users, Target, Compass, Sparkle, 
-  Heart, Warning, Trophy, Coffee, BookOpen 
+  Heart, Trophy, Coffee, BookOpen 
 } from "@phosphor-icons/react";
 import { TEAM_MEMBERS } from "../data";
 import { motion } from "motion/react";
+
+import prashanthPhoto from "../../assets/prashanth.jpg";
+import anushaPhoto from "../../assets/anusha.jpg";
+
+const memberPhotos: Record<string, string> = {
+  "Prashanth Navle": prashanthPhoto,
+  "Anusha PC": anushaPhoto
+};
 
 export default function AboutUs() {
   return (
@@ -188,44 +196,62 @@ export default function AboutUs() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8" id="allies-grid">
-          {TEAM_MEMBERS.map((member, idx) => (
-            <div 
-              key={idx} 
-              id={`team-member-card-${idx}`}
-              className="bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-xs flex flex-col justify-between hover:border-navy-300 transition duration-300"
-            >
-              <div className="space-y-4">
-                
-                {/* Micro metrics tracking */}
-                <div className="flex items-center justify-between text-xs font-mono">
-                  <span className="text-slate-400 uppercase tracking-widest font-bold">SPECIALIZATION</span>
-                  <span className="text-navy-700 bg-navy-50 px-2 py-0.5 rounded-sm font-bold">{member.specialization}</span>
-                </div>
-
-                <div className="space-y-1">
-                  <h3 className="text-lg font-bold font-display text-navy-950">{member.name}</h3>
-                  <p className="text-xs text-slate-400 font-mono font-medium">{member.role}</p>
-                </div>
-
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  {member.bio}
-                </p>
-
-              </div>
-
-              {/* Unique Empathy Metric Block */}
-              <div className="border-t border-slate-100 pt-4 mt-6 flex items-center justify-between bg-slate-50 border border-slate-100 -mx-6 sm:-mx-8 -mb-6 sm:-mb-8 p-4 sm:p-5 rounded-b-2xl">
+          {TEAM_MEMBERS.map((member, idx) => {
+            const photo = member.name in memberPhotos ? memberPhotos[member.name] : null;
+            return (
+              <div 
+                key={idx} 
+                id={`team-member-card-${idx}`}
+                className="bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-xs flex flex-col justify-between hover:border-navy-300 transition duration-300 overflow-hidden"
+              >
                 <div>
-                  <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest block leading-none">STRUGGLE TIME</span>
-                  <span className="text-sm font-bold text-navy-950 font-display block mt-1">{member.yearsOfStruggle} Years of Intensive Prep</span>
-                </div>
-                <div className="bg-navy-900 text-white rounded-full p-1 text-[10px] font-semibold px-2">
-                  LIVED IT
-                </div>
-              </div>
+                  {/* Card Header Profile Layout */}
+                  <div className="relative h-28 bg-slate-50 rounded-t-xl -mx-6 sm:-mx-8 -mt-6 sm:-mt-8 mb-10 border-b border-slate-100 overflow-visible flex items-end justify-center">
+                    <div className="absolute inset-0 bg-gradient-to-tr from-slate-100 to-slate-200/50" />
+                    
+                    <div className="relative translate-y-6 w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow-md bg-white shrink-0">
+                      {photo ? (
+                        <img src={photo} alt={member.name} className="w-full h-full object-cover" />
+                      ) : (
+                        <div className="w-full h-full bg-gradient-to-br from-slate-800 to-navy-950 text-white flex items-center justify-center font-display font-bold text-lg tracking-wider">
+                          {member.name.split(" ").map(n => n[0]).join("")}
+                        </div>
+                      )}
+                    </div>
+                  </div>
 
-            </div>
-          ))}
+                  <div className="space-y-4">
+                    {/* Micro metrics tracking */}
+                    <div className="flex items-center justify-between text-xs font-mono">
+                      <span className="text-slate-400 uppercase tracking-widest font-bold">SPECIALIZATION</span>
+                      <span className="text-navy-700 bg-navy-50 px-2 py-0.5 rounded-sm font-bold">{member.specialization}</span>
+                    </div>
+
+                    <div className="space-y-1">
+                      <h3 className="text-lg font-bold font-display text-navy-950">{member.name}</h3>
+                      <p className="text-xs text-slate-400 font-mono font-medium">{member.role}</p>
+                    </div>
+
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      {member.bio}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Unique Empathy Metric Block */}
+                <div className="border-t border-slate-100 pt-4 mt-6 flex items-center justify-between bg-slate-50 border border-slate-100 -mx-6 sm:-mx-8 -mb-6 sm:-mb-8 p-4 sm:p-5 rounded-b-2xl">
+                  <div>
+                    <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest block leading-none">STRUGGLE TIME</span>
+                    <span className="text-sm font-bold text-navy-950 font-display block mt-1">{member.yearsOfStruggle} Years of Intensive Prep</span>
+                  </div>
+                  <div className="bg-navy-900 text-white rounded-full p-1 text-[10px] font-semibold px-2">
+                    LIVED IT
+                  </div>
+                </div>
+
+              </div>
+            );
+          })}
         </div>
       </section>
 

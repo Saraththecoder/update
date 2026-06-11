@@ -1,0 +1,772 @@
+[
+  {
+    "case_id": "a_k_gopalan_v_state_of_madras_1950",
+    "case_name": "A.K. Gopalan v. State of Madras",
+    "year": 1950,
+    "citation": "AIR 1950 SC 27",
+    "articles_interpreted": [
+      "article_19",
+      "article_21",
+      "article_22"
+    ],
+    "what_decided": "The Court gave a narrow reading to personal liberty and treated Fundamental Rights as separate compartments. It upheld preventive detention under the law then in force.",
+    "upsc_one_liner": "Early Article 21 interpretation was narrow before Maneka Gandhi expanded liberty.",
+    "upsc_asked_directly": false,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": "Maneka Gandhi v. Union of India"
+  },
+  {
+    "case_id": "romesh_thappar_v_state_of_madras_1950",
+    "case_name": "Romesh Thappar v. State of Madras",
+    "year": 1950,
+    "citation": "AIR 1950 SC 124",
+    "articles_interpreted": [
+      "article_19"
+    ],
+    "what_decided": "The Court strongly protected freedom of speech and press. It held that restrictions must fit within the constitutional grounds allowed under Article 19.",
+    "upsc_one_liner": "Freedom of press flows from Article 19(1)(a).",
+    "upsc_asked_directly": false,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "champakam_dorairajan_v_state_of_madras_1951",
+    "case_name": "State of Madras v. Champakam Dorairajan",
+    "year": 1951,
+    "citation": "AIR 1951 SC 226",
+    "articles_interpreted": [
+      "article_15",
+      "article_29",
+      "article_46"
+    ],
+    "what_decided": "The Court held that Fundamental Rights prevail over Directive Principles if they conflict. This judgment led to the First Constitutional Amendment and Article 15(4).",
+    "upsc_one_liner": "Fundamental Rights prevailed over DPSPs, leading to the First Amendment.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "shankari_prasad_v_union_of_india_1951",
+    "case_name": "Shankari Prasad v. Union of India",
+    "year": 1951,
+    "citation": "AIR 1951 SC 458",
+    "articles_interpreted": [
+      "article_13",
+      "article_368"
+    ],
+    "what_decided": "The Court held that constitutional amendments are not ordinary law under Article 13. Parliament could amend Fundamental Rights through Article 368.",
+    "upsc_one_liner": "Parliament\u2019s power to amend Fundamental Rights was upheld.",
+    "upsc_asked_directly": false,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": "Golaknath v. State of Punjab"
+  },
+  {
+    "case_id": "berubari_union_reference_1960",
+    "case_name": "In re Berubari Union",
+    "year": 1960,
+    "citation": "AIR 1960 SC 845",
+    "articles_interpreted": [
+      "article_1",
+      "article_3",
+      "article_368"
+    ],
+    "what_decided": "The Court held that cession of Indian territory to a foreign country requires a constitutional amendment. Article 3 alone cannot be used for such transfer.",
+    "upsc_one_liner": "Ceding Indian territory needs Article 368 amendment.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "sajjan_singh_v_state_of_rajasthan_1965",
+    "case_name": "Sajjan Singh v. State of Rajasthan",
+    "year": 1965,
+    "citation": "AIR 1965 SC 845",
+    "articles_interpreted": [
+      "article_13",
+      "article_31",
+      "article_368"
+    ],
+    "what_decided": "The Court again upheld Parliament\u2019s power to amend Fundamental Rights. Some judges, however, raised doubts about unlimited amendment power.",
+    "upsc_one_liner": "Amending power was upheld, but basic structure doubts began emerging.",
+    "upsc_asked_directly": false,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": "Golaknath v. State of Punjab"
+  },
+  {
+    "case_id": "golaknath_v_state_of_punjab_1967",
+    "case_name": "I.C. Golaknath v. State of Punjab",
+    "year": 1967,
+    "citation": "AIR 1967 SC 1643",
+    "articles_interpreted": [
+      "article_13",
+      "article_31",
+      "article_368"
+    ],
+    "what_decided": "The Court held that Parliament could not amend Fundamental Rights. It treated constitutional amendments as law for Article 13 purposes.",
+    "upsc_one_liner": "Parliament was barred from amending Fundamental Rights.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "Shankari Prasad v. Union of India",
+    "overruled_by": "Kesavananda Bharati v. State of Kerala"
+  },
+  {
+    "case_id": "r_c_cooper_v_union_of_india_1970",
+    "case_name": "R.C. Cooper v. Union of India",
+    "year": 1970,
+    "citation": "AIR 1970 SC 564",
+    "articles_interpreted": [
+      "article_14",
+      "article_19",
+      "article_31"
+    ],
+    "what_decided": "The Court struck down the bank nationalisation law for violating property and business rights. It moved away from the view that rights are separate compartments.",
+    "upsc_one_liner": "Bank nationalisation case weakened the separate-rights approach.",
+    "upsc_asked_directly": false,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "madhav_rao_scindia_v_union_of_india_1971",
+    "case_name": "Madhav Rao Scindia v. Union of India",
+    "year": 1971,
+    "citation": "AIR 1971 SC 530",
+    "articles_interpreted": [
+      "article_291",
+      "article_362",
+      "article_363"
+    ],
+    "what_decided": "The Court protected the privy purse rights of former rulers against executive action. Parliament later abolished privy purses through constitutional amendment.",
+    "upsc_one_liner": "Privy purse dispute led to the 26th Amendment.",
+    "upsc_asked_directly": false,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "kesavananda_bharati_v_state_of_kerala_1973",
+    "case_name": "Kesavananda Bharati v. State of Kerala",
+    "year": 1973,
+    "citation": "(1973) 4 SCC 225",
+    "articles_interpreted": [
+      "article_13",
+      "article_31",
+      "article_368"
+    ],
+    "what_decided": "The Court held that Parliament can amend any part of the Constitution, including Fundamental Rights. But it cannot destroy the basic structure of the Constitution.",
+    "upsc_one_liner": "Parliament can amend the Constitution but cannot destroy its basic structure.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "Golaknath v. State of Punjab",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "indira_nehru_gandhi_v_raj_narain_1975",
+    "case_name": "Indira Nehru Gandhi v. Raj Narain",
+    "year": 1975,
+    "citation": "AIR 1975 SC 2299",
+    "articles_interpreted": [
+      "article_14",
+      "article_329a",
+      "article_368"
+    ],
+    "what_decided": "The Court struck down the part of the 39th Amendment that placed the Prime Minister\u2019s election beyond judicial review. It treated free and fair elections as part of the basic structure.",
+    "upsc_one_liner": "Free and fair elections are part of basic structure.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "adm_jabalpur_v_shivkant_shukla_1976",
+    "case_name": "ADM Jabalpur v. Shivkant Shukla",
+    "year": 1976,
+    "citation": "AIR 1976 SC 1207",
+    "articles_interpreted": [
+      "article_21",
+      "article_359"
+    ],
+    "what_decided": "The Court held that during Emergency, a detained person could not move court for personal liberty if enforcement of Article 21 was suspended. This judgment was later rejected as deeply flawed.",
+    "upsc_one_liner": "Emergency-era judgment denied habeas corpus during Article 21 suspension.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": "Justice K.S. Puttaswamy v. Union of India"
+  },
+  {
+    "case_id": "maneka_gandhi_v_union_of_india_1978",
+    "case_name": "Maneka Gandhi v. Union of India",
+    "year": 1978,
+    "citation": "AIR 1978 SC 597",
+    "articles_interpreted": [
+      "article_14",
+      "article_19",
+      "article_21"
+    ],
+    "what_decided": "The Court expanded Article 21 and said procedure affecting liberty must be fair, just and reasonable. It linked Articles 14, 19 and 21 into a common rights framework.",
+    "upsc_one_liner": "Article 21 procedure must be fair, just and reasonable.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "A.K. Gopalan v. State of Madras",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "minerva_mills_v_union_of_india_1980",
+    "case_name": "Minerva Mills v. Union of India",
+    "year": 1980,
+    "citation": "AIR 1980 SC 1789",
+    "articles_interpreted": [
+      "article_31c",
+      "article_368"
+    ],
+    "what_decided": "The Court struck down parts of the 42nd Amendment that gave unlimited amending power to Parliament. It held that balance between Fundamental Rights and Directive Principles is part of the basic structure.",
+    "upsc_one_liner": "Balance between FRs and DPSPs is basic structure.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "waman_rao_v_union_of_india_1981",
+    "case_name": "Waman Rao v. Union of India",
+    "year": 1981,
+    "citation": "AIR 1981 SC 271",
+    "articles_interpreted": [
+      "article_31b",
+      "article_368"
+    ],
+    "what_decided": "The Court held that Ninth Schedule laws placed before 24 April 1973 were protected. Laws placed after Kesavananda could be tested on basic structure grounds.",
+    "upsc_one_liner": "Post-Kesavananda Ninth Schedule laws can face basic structure review.",
+    "upsc_asked_directly": false,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "s_p_gupta_v_union_of_india_1981",
+    "case_name": "S.P. Gupta v. Union of India",
+    "year": 1981,
+    "citation": "AIR 1982 SC 149",
+    "articles_interpreted": [
+      "article_124",
+      "article_217"
+    ],
+    "what_decided": "The Court gave primacy to the executive in judicial appointments. This became known as the First Judges Case and was later overruled.",
+    "upsc_one_liner": "First Judges Case gave executive primacy in judicial appointments.",
+    "upsc_asked_directly": false,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": "Supreme Court Advocates-on-Record Association v. Union of India"
+  },
+  {
+    "case_id": "bachan_singh_v_state_of_punjab_1980",
+    "case_name": "Bachan Singh v. State of Punjab",
+    "year": 1980,
+    "citation": "AIR 1980 SC 898",
+    "articles_interpreted": [
+      "article_14",
+      "article_19",
+      "article_21"
+    ],
+    "what_decided": "The Court upheld the death penalty as constitutional. It said death penalty should be imposed only in the rarest of rare cases.",
+    "upsc_one_liner": "Death penalty survives only under the rarest of rare doctrine.",
+    "upsc_asked_directly": false,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "olga_tellis_v_bombay_municipal_corporation_1985",
+    "case_name": "Olga Tellis v. Bombay Municipal Corporation",
+    "year": 1985,
+    "citation": "AIR 1986 SC 180",
+    "articles_interpreted": [
+      "article_19",
+      "article_21"
+    ],
+    "what_decided": "The Court held that the right to livelihood is part of the right to life. Pavement dwellers could not be evicted without fair procedure.",
+    "upsc_one_liner": "Right to livelihood is part of Article 21.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "m_c_mehta_v_union_of_india_1986",
+    "case_name": "M.C. Mehta v. Union of India",
+    "year": 1986,
+    "citation": "AIR 1987 SC 1086",
+    "articles_interpreted": [
+      "article_21",
+      "article_48a",
+      "article_51a"
+    ],
+    "what_decided": "The Court developed principles of environmental liability after the oleum gas leak. It expanded Article 21 to include environmental protection concerns.",
+    "upsc_one_liner": "Article 21 includes environmental safety and clean surroundings.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "kartar_singh_v_state_of_punjab_1994",
+    "case_name": "Kartar Singh v. State of Punjab",
+    "year": 1994,
+    "citation": "(1994) 3 SCC 569",
+    "articles_interpreted": [
+      "article_14",
+      "article_21",
+      "article_22"
+    ],
+    "what_decided": "The Court upheld anti-terror law provisions but insisted on safeguards against misuse. It balanced national security with personal liberty.",
+    "upsc_one_liner": "Security laws must still respect liberty safeguards.",
+    "upsc_asked_directly": false,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "s_r_bommai_v_union_of_india_1994",
+    "case_name": "S.R. Bommai v. Union of India",
+    "year": 1994,
+    "citation": "(1994) 3 SCC 1",
+    "articles_interpreted": [
+      "article_356",
+      "article_365"
+    ],
+    "what_decided": "The Court limited arbitrary use of President\u2019s Rule. It held that majority must normally be tested on the floor of the House and federalism is part of the basic structure.",
+    "upsc_one_liner": "President\u2019s Rule is judicially reviewable; majority should be floor-tested.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "supreme_court_advocates_on_record_association_v_union_of_india_1993",
+    "case_name": "Supreme Court Advocates-on-Record Association v. Union of India",
+    "year": 1993,
+    "citation": "(1993) 4 SCC 441",
+    "articles_interpreted": [
+      "article_124",
+      "article_217"
+    ],
+    "what_decided": "The Court gave primacy to the judiciary in appointments of judges. This became known as the Second Judges Case and created the collegium system.",
+    "upsc_one_liner": "Second Judges Case created judicial primacy in appointments.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "S.P. Gupta v. Union of India",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "vishaka_v_state_of_rajasthan_1997",
+    "case_name": "Vishaka v. State of Rajasthan",
+    "year": 1997,
+    "citation": "AIR 1997 SC 3011",
+    "articles_interpreted": [
+      "article_14",
+      "article_15",
+      "article_19",
+      "article_21"
+    ],
+    "what_decided": "The Court framed guidelines against sexual harassment at workplace when no law existed. It used Fundamental Rights and international conventions to protect dignity and equality.",
+    "upsc_one_liner": "Vishaka guidelines protected women against workplace sexual harassment.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "in_re_presidential_reference_1998",
+    "case_name": "In re Presidential Reference",
+    "year": 1998,
+    "citation": "(1998) 7 SCC 739",
+    "articles_interpreted": [
+      "article_124",
+      "article_143",
+      "article_217"
+    ],
+    "what_decided": "The Court clarified the collegium process for appointment and transfer of judges. It expanded the role of senior judges in judicial appointments.",
+    "upsc_one_liner": "Third Judges Case clarified collegium consultation.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "indira_sawhney_v_union_of_india_1992",
+    "case_name": "Indra Sawhney v. Union of India",
+    "year": 1992,
+    "citation": "AIR 1993 SC 477",
+    "articles_interpreted": [
+      "article_14",
+      "article_15",
+      "article_16",
+      "article_340"
+    ],
+    "what_decided": "The Court upheld OBC reservation but introduced the creamy layer principle. It generally capped reservations at 50 percent and rejected reservation in promotions at that time.",
+    "upsc_one_liner": "OBC reservation upheld; creamy layer and 50 percent ceiling introduced.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "l_chandra_kumar_v_union_of_india_1997",
+    "case_name": "L. Chandra Kumar v. Union of India",
+    "year": 1997,
+    "citation": "(1997) 3 SCC 261",
+    "articles_interpreted": [
+      "article_226",
+      "article_227",
+      "article_323a",
+      "article_323b"
+    ],
+    "what_decided": "The Court held that judicial review by High Courts and the Supreme Court is part of the basic structure. Tribunal decisions are subject to High Court review.",
+    "upsc_one_liner": "Judicial review cannot be excluded by tribunals.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "i_r_coelho_v_state_of_tamil_nadu_2007",
+    "case_name": "I.R. Coelho v. State of Tamil Nadu",
+    "year": 2007,
+    "citation": "(2007) 2 SCC 1",
+    "articles_interpreted": [
+      "article_31b",
+      "article_368"
+    ],
+    "what_decided": "The Court held that Ninth Schedule laws inserted after Kesavananda are open to basic structure review. Parliament cannot immunise laws that damage basic constitutional principles.",
+    "upsc_one_liner": "Ninth Schedule is not beyond basic structure review.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "m_nagaraj_v_union_of_india_2006",
+    "case_name": "M. Nagaraj v. Union of India",
+    "year": 2006,
+    "citation": "(2006) 8 SCC 212",
+    "articles_interpreted": [
+      "article_16",
+      "article_335"
+    ],
+    "what_decided": "The Court upheld constitutional amendments allowing reservation in promotion for SCs and STs. It required data on backwardness, inadequate representation and administrative efficiency.",
+    "upsc_one_liner": "Reservation in promotion needs constitutional conditions and supporting data.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": "Jarnail Singh v. Lachhmi Narain Gupta"
+  },
+  {
+    "case_id": "aruna_shanbaug_v_union_of_india_2011",
+    "case_name": "Aruna Shanbaug v. Union of India",
+    "year": 2011,
+    "citation": "(2011) 4 SCC 454",
+    "articles_interpreted": [
+      "article_21"
+    ],
+    "what_decided": "The Court allowed passive euthanasia in limited circumstances under court supervision. It treated dignity in death as connected to Article 21.",
+    "upsc_one_liner": "Passive euthanasia was conditionally recognised under Article 21.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": "Common Cause v. Union of India"
+  },
+  {
+    "case_id": "lily_thomas_v_union_of_india_2013",
+    "case_name": "Lily Thomas v. Union of India",
+    "year": 2013,
+    "citation": "(2013) 7 SCC 653",
+    "articles_interpreted": [
+      "article_102",
+      "article_191"
+    ],
+    "what_decided": "The Court struck down protection that allowed convicted legislators to continue in office during appeal. Convicted MPs and MLAs face immediate disqualification where the law applies.",
+    "upsc_one_liner": "Convicted legislators lose protection from immediate disqualification.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "nalso_v_union_of_india_2014",
+    "case_name": "National Legal Services Authority v. Union of India",
+    "year": 2014,
+    "citation": "(2014) 5 SCC 438",
+    "articles_interpreted": [
+      "article_14",
+      "article_15",
+      "article_16",
+      "article_19",
+      "article_21"
+    ],
+    "what_decided": "The Court recognised transgender persons as a third gender. It held that gender identity is protected by equality, dignity and personal liberty.",
+    "upsc_one_liner": "Transgender identity is protected under equality and dignity rights.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "shreya_singhal_v_union_of_india_2015",
+    "case_name": "Shreya Singhal v. Union of India",
+    "year": 2015,
+    "citation": "(2015) 5 SCC 1",
+    "articles_interpreted": [
+      "article_19"
+    ],
+    "what_decided": "The Court struck down Section 66A of the IT Act for violating free speech. It held that vague restrictions chill lawful expression.",
+    "upsc_one_liner": "Section 66A was struck down for violating free speech.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "supreme_court_advocates_on_record_association_v_union_of_india_2015",
+    "case_name": "Supreme Court Advocates-on-Record Association v. Union of India",
+    "year": 2015,
+    "citation": "(2016) 5 SCC 1",
+    "articles_interpreted": [
+      "article_124a",
+      "article_124b",
+      "article_124c",
+      "article_368"
+    ],
+    "what_decided": "The Court struck down the 99th Amendment and NJAC Act. It held that judicial primacy in appointments is part of judicial independence and basic structure.",
+    "upsc_one_liner": "NJAC was struck down for violating judicial independence.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "justice_k_s_puttaswamy_v_union_of_india_2017",
+    "case_name": "Justice K.S. Puttaswamy v. Union of India",
+    "year": 2017,
+    "citation": "(2017) 10 SCC 1",
+    "articles_interpreted": [
+      "article_14",
+      "article_19",
+      "article_21"
+    ],
+    "what_decided": "A nine-judge bench unanimously recognised privacy as a Fundamental Right. It placed privacy within dignity, autonomy, liberty and the broader rights framework.",
+    "upsc_one_liner": "Right to privacy is a Fundamental Right under Part III.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "ADM Jabalpur v. Shivkant Shukla",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "common_cause_v_union_of_india_2018",
+    "case_name": "Common Cause v. Union of India",
+    "year": 2018,
+    "citation": "(2018) 5 SCC 1",
+    "articles_interpreted": [
+      "article_21"
+    ],
+    "what_decided": "The Court recognised passive euthanasia and living wills under Article 21. It connected the right to life with dignity at the end of life.",
+    "upsc_one_liner": "Living wills and passive euthanasia are part of dignified life.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "Aruna Shanbaug v. Union of India",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "navtej_singh_johar_v_union_of_india_2018",
+    "case_name": "Navtej Singh Johar v. Union of India",
+    "year": 2018,
+    "citation": "(2018) 10 SCC 1",
+    "articles_interpreted": [
+      "article_14",
+      "article_15",
+      "article_19",
+      "article_21"
+    ],
+    "what_decided": "The Court decriminalised consensual same-sex relations between adults. It held that dignity, equality, privacy and liberty protect sexual orientation.",
+    "upsc_one_liner": "Consensual same-sex relations were decriminalised.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "Suresh Kumar Koushal v. Naz Foundation",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "joseph_shine_v_union_of_india_2018",
+    "case_name": "Joseph Shine v. Union of India",
+    "year": 2018,
+    "citation": "(2019) 3 SCC 39",
+    "articles_interpreted": [
+      "article_14",
+      "article_15",
+      "article_21"
+    ],
+    "what_decided": "The Court decriminalised adultery. It held that the old law treated women unequally and violated autonomy and dignity.",
+    "upsc_one_liner": "Adultery was decriminalised as unequal and autonomy-violating.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "indian_young_lawyers_association_v_state_of_kerala_2018",
+    "case_name": "Indian Young Lawyers Association v. State of Kerala",
+    "year": 2018,
+    "citation": "(2019) 11 SCC 1",
+    "articles_interpreted": [
+      "article_14",
+      "article_15",
+      "article_17",
+      "article_25",
+      "article_26"
+    ],
+    "what_decided": "The Court allowed entry of women of menstruating age into Sabarimala temple. It balanced religious freedom against equality and dignity.",
+    "upsc_one_liner": "Sabarimala linked religious practice with equality and constitutional morality.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "jarnail_singh_v_lachhmi_narain_gupta_2018",
+    "case_name": "Jarnail Singh v. Lachhmi Narain Gupta",
+    "year": 2018,
+    "citation": "(2018) 10 SCC 396",
+    "articles_interpreted": [
+      "article_16",
+      "article_335"
+    ],
+    "what_decided": "The Court modified the Nagaraj requirements for reservation in promotion. It held that States need not collect data to prove backwardness of SCs and STs.",
+    "upsc_one_liner": "SC/ST backwardness data is not needed for promotion reservation.",
+    "upsc_asked_directly": false,
+    "is_recent": false,
+    "overruled": "M. Nagaraj v. Union of India",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "k_s_puttaswamy_aadhaar_v_union_of_india_2018",
+    "case_name": "K.S. Puttaswamy v. Union of India",
+    "year": 2018,
+    "citation": "(2019) 1 SCC 1",
+    "articles_interpreted": [
+      "article_14",
+      "article_19",
+      "article_21",
+      "article_110"
+    ],
+    "what_decided": "The Court upheld Aadhaar\u2019s constitutional validity with limits. It struck down or read down parts that enabled excessive private use and data sharing.",
+    "upsc_one_liner": "Aadhaar was upheld with privacy safeguards.",
+    "upsc_asked_directly": true,
+    "is_recent": false,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "anuradha_bhasin_v_union_of_india_2020",
+    "case_name": "Anuradha Bhasin v. Union of India",
+    "year": 2020,
+    "citation": "(2020) 3 SCC 637",
+    "articles_interpreted": [
+      "article_19",
+      "article_21"
+    ],
+    "what_decided": "The Court held that indefinite internet suspension is impermissible. Restrictions on internet access must be lawful, necessary, proportionate and reviewable.",
+    "upsc_one_liner": "Internet restrictions must satisfy legality, necessity and proportionality.",
+    "upsc_asked_directly": true,
+    "is_recent": true,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "ks_puttaswamy_aadhaar_review_2021",
+    "case_name": "K.S. Puttaswamy v. Union of India Review",
+    "year": 2021,
+    "citation": "(2021) 1 SCC 689",
+    "articles_interpreted": [
+      "article_21",
+      "article_110"
+    ],
+    "what_decided": "The Court dismissed review petitions against the Aadhaar judgment. The majority did not reopen the Money Bill and privacy conclusions.",
+    "upsc_one_liner": "Aadhaar review was dismissed by majority.",
+    "upsc_asked_directly": false,
+    "is_recent": true,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "mohit_minerals_v_union_of_india_2022",
+    "case_name": "Union of India v. Mohit Minerals Pvt. Ltd.",
+    "year": 2022,
+    "citation": "2022 SCC OnLine SC 657",
+    "articles_interpreted": [
+      "article_246a",
+      "article_269a",
+      "article_279a"
+    ],
+    "what_decided": "The Court held that GST Council recommendations have persuasive value and are not automatically binding. It emphasised cooperative federalism in the GST framework.",
+    "upsc_one_liner": "GST Council recommendations are persuasive, not binding.",
+    "upsc_asked_directly": true,
+    "is_recent": true,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "anoop_baranwal_v_union_of_india_2023",
+    "case_name": "Anoop Baranwal v. Union of India",
+    "year": 2023,
+    "citation": "2023 SCC OnLine SC 216",
+    "articles_interpreted": [
+      "article_324"
+    ],
+    "what_decided": "The Court directed an interim selection committee for appointment of Election Commissioners until Parliament made a law. It aimed to protect the independence of the Election Commission.",
+    "upsc_one_liner": "EC appointments need independence from executive dominance.",
+    "upsc_asked_directly": true,
+    "is_recent": true,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "in_re_article_370_of_the_constitution_2023",
+    "case_name": "In re Article 370 of the Constitution",
+    "year": 2023,
+    "citation": "2023 SCC OnLine SC 1647",
+    "articles_interpreted": [
+      "article_3",
+      "article_356",
+      "article_367",
+      "article_370"
+    ],
+    "what_decided": "The Court upheld the constitutional validity of the abrogation of Article 370. It held that Article 370 was a temporary provision and validated the creation of Ladakh as a Union territory.",
+    "upsc_one_liner": "Article 370 abrogation was upheld as constitutionally valid.",
+    "upsc_asked_directly": true,
+    "is_recent": true,
+    "overruled": "",
+    "overruled_by": ""
+  },
+  {
+    "case_id": "association_for_democratic_reforms_v_union_of_india_2024",
+    "case_name": "Association for Democratic Reforms v. Union of India",
+    "year": 2024,
+    "citation": "2024 SCC OnLine SC 161",
+    "articles_interpreted": [
+      "article_14",
+      "article_19",
+      "article_21",
+      "article_324"
+    ],
+    "what_decided": "The Court struck down the Electoral Bonds scheme. It held that anonymous political funding violated voters\u2019 right to information.",
+    "upsc_one_liner": "Electoral Bonds were struck down for violating voters\u2019 right to information.",
+    "upsc_asked_directly": true,
+    "is_recent": true,
+    "overruled": "",
+    "overruled_by": ""
+  }
+]

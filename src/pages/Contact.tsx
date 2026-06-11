@@ -26,6 +26,7 @@ export default function Contact() {
 
   const handleSosTrigger = () => {
     setSosActivated(true);
+    window.open("https://telemanas.mohfw.gov.in/home", "_blank");
   };
 
   return (

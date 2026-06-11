@@ -62,7 +62,7 @@ export const COURSES: Course[] = [
     features: [
       "Live daily 45-minute decoding of complex global events",
       "Our unique 'Cockroach Linkage' matrix template",
-      "Model answer blueprints for the last 5 years' papers",
+      "Cockroach answer blueprints for the last 5 years' papers",
       "Unlimited answer review during your active trial period"
     ],
     originalPrice: 8500,
@@ -91,23 +91,25 @@ export const COURSES: Course[] = [
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
-    name: "xxxxxxx",
+    name: "Prashanth Navle",
     role: "Founding Mentor & Core Companion (Educator)",
     bio: "Spent six grueling years in intensive civil services preparation, appearing in 3 mains and 2 interviews. He founded 'Cockroachias' to establish a supportive, hand-holding mentorship platform for aspirants.",
     yearsOfStruggle: 6,
-    specialization: "Indian Polity, IR & Ethics (GS IV)"
+    specialization: "Indian Polity, IR & Ethics (GS IV)",
+    image: "prashanth.jpg"
   },
   {
-    name: "xxxxxxx",
+    name: "Anusha PC",
     role: "Academic Coach & Strategy Specialist",
-    bio: "A researcher who left a high-paying corporate role to work on cognitive learning and structural UPSC preparation methods. She design our simplified conceptual notes that map complex current affairs into single-sheet memorization schemas.",
+    bio: "A researcher who left a high-paying corporate role to work on cognitive learning and structural UPSC preparation methods. She designs our simplified conceptual notes that map complex current affairs into single-sheet memorization schemas.",
     yearsOfStruggle: 4,
-    specialization: "Indian Economy & Environmental Ecology"
+    specialization: "Indian Economy & Environmental Ecology",
+    image: "anusha.jpg"
   },
   {
-    name: "xxxxxxx",
+    name: "Varun Amidal",
     role: "Survival Ally & Mental Support Lead",
-    bio: "After giving his last attempt, xxxxxxx realized that the biggest killer of UPSC dreams isn't the syllabus, but the profound isolation and anxiety. He acts as the 24/7 designated listener and answer-evaluator who will hold your hand through severe self-doubt.",
+    bio: "After giving his last attempt, Varun Amidal realized that the biggest killer of UPSC dreams isn't the syllabus, but the profound isolation and anxiety. He acts as the 24/7 designated listener and answer-evaluator who will hold your hand through severe self-doubt.",
     yearsOfStruggle: 5,
     specialization: "Daily Answer Review & Aspirant Well-being"
   }

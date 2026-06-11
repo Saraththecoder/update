@@ -1,0 +1,1719 @@
+[
+  {
+    "question_id": "upsc_polity_1979_001",
+    "year": 1979,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Constituent Assembly",
+    "question_type": "factual",
+    "question": "The members of the Constituent Assembly were:",
+    "options": {
+      "A": "Elected by the Provincial Legislative Assemblies",
+      "B": "Directly elected by the people",
+      "C": "Nominated by the Government",
+      "D": "Only representatives of princely States"
+    },
+    "correct_answer": "A",
+    "linked_articles": [],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Members from British Indian provinces were indirectly elected by the Provincial Legislative Assemblies. Members from princely States were nominated by rulers.",
+    "elimination_hint": "Eliminate 'directly elected' because universal adult franchise was not used for Constituent Assembly elections.",
+    "trap_area": "Confusing indirect election with direct election",
+    "difficulty": "easy",
+    "exam_type": "Prelims",
+    "articles_referenced": [],
+    "question_text": "The members of the Constituent Assembly were:",
+    "answer_dimensions": [],
+    "option_explanation": "Members from British Indian provinces were indirectly elected by the Provincial Legislative Assemblies. Members from princely States were nominated by rulers.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_1979_002",
+    "year": 1979,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Money Bill",
+    "question_type": "factual",
+    "question": "What is the power of Rajya Sabha regarding a Money Bill?",
+    "options": {
+      "A": "It can amend it",
+      "B": "It can reject it",
+      "C": "It can withhold the Bill for 14 days and make recommendations",
+      "D": "It has no role regarding Money Bills"
+    },
+    "correct_answer": "C",
+    "linked_articles": [
+      "article_109",
+      "article_110"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Rajya Sabha cannot amend or reject a Money Bill. It may make recommendations and must return it within 14 days.",
+    "elimination_hint": "Whenever UPSC asks Money Bill, remember Lok Sabha supremacy but Rajya Sabha has a limited recommendatory role.",
+    "trap_area": "Saying Rajya Sabha has no role at all",
+    "difficulty": "easy",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_109",
+      "article_110"
+    ],
+    "question_text": "What is the power of Rajya Sabha regarding a Money Bill?",
+    "answer_dimensions": [],
+    "option_explanation": "Rajya Sabha cannot amend or reject a Money Bill. It may make recommendations and must return it within 14 days.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_1979_003",
+    "year": 1979,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Emergency and Amendments",
+    "question_type": "conceptual",
+    "question": "The 44th Constitutional Amendment is associated with which of the following?",
+    "options": {
+      "A": "Restoration of right to property as a Fundamental Right",
+      "B": "Ensuring press freedom as an express Fundamental Right",
+      "C": "Limiting the power to proclaim internal emergency",
+      "D": "Creating the Ninth Schedule"
+    },
+    "correct_answer": "C",
+    "linked_articles": [
+      "article_352",
+      "article_359",
+      "article_300a"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [
+      "amendment_044"
+    ],
+    "linked_cases": [],
+    "explanation": "The 44th Amendment replaced 'internal disturbance' with 'armed rebellion', protected Articles 20 and 21 during Emergency, and made right to property a constitutional legal right under Article 300A.",
+    "elimination_hint": "Right to property was removed from Part III, not restored.",
+    "trap_area": "Right to property after 44th Amendment",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_352",
+      "article_359",
+      "article_300a"
+    ],
+    "question_text": "The 44th Constitutional Amendment is associated with which of the following?",
+    "answer_dimensions": [],
+    "option_explanation": "The 44th Amendment replaced 'internal disturbance' with 'armed rebellion', protected Articles 20 and 21 during Emergency, and made right to property a constitutional legal right under Article 300A.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_1979_004",
+    "year": 1979,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Parliamentary System",
+    "question_type": "conceptual",
+    "question": "In a parliamentary system, the executive is responsible to:",
+    "options": {
+      "A": "The people directly",
+      "B": "The legislature",
+      "C": "The judiciary",
+      "D": "The Election Commission"
+    },
+    "correct_answer": "B",
+    "linked_articles": [
+      "article_75",
+      "article_164"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Collective responsibility of the Council of Ministers to the lower House is the core feature of parliamentary government.",
+    "elimination_hint": "Direct responsibility to people indicates presidential-style logic, not parliamentary logic.",
+    "trap_area": "Direct vs indirect accountability",
+    "difficulty": "easy",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_75",
+      "article_164"
+    ],
+    "question_text": "In a parliamentary system, the executive is responsible to:",
+    "answer_dimensions": [],
+    "option_explanation": "Collective responsibility of the Council of Ministers to the lower House is the core feature of parliamentary government.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_1979_005",
+    "year": 1979,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Vice-President",
+    "question_type": "factual",
+    "question": "The Vice-President of India is elected by:",
+    "options": {
+      "A": "The people directly",
+      "B": "Members of both Houses of Parliament",
+      "C": "Members of Rajya Sabha only",
+      "D": "Members of Parliament and State Legislative Assemblies"
+    },
+    "correct_answer": "B",
+    "linked_articles": [
+      "article_66"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "The Vice-President is elected by members of an electoral college consisting of members of both Houses of Parliament.",
+    "elimination_hint": "Do not confuse Vice-President election with President election, which includes elected MLAs of States and certain UTs.",
+    "trap_area": "President vs Vice-President electoral college",
+    "difficulty": "easy",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_66"
+    ],
+    "question_text": "The Vice-President of India is elected by:",
+    "answer_dimensions": [],
+    "option_explanation": "The Vice-President is elected by members of an electoral college consisting of members of both Houses of Parliament.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_1979_006",
+    "year": 1979,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Eighth Schedule",
+    "question_type": "factual",
+    "question": "Which language was added to the Eighth Schedule by the 21st Constitutional Amendment?",
+    "options": {
+      "A": "Urdu",
+      "B": "Sanskrit",
+      "C": "Sindhi",
+      "D": "Assamese"
+    },
+    "correct_answer": "C",
+    "linked_articles": [
+      "article_344",
+      "article_351"
+    ],
+    "linked_schedules": [
+      "schedule_8"
+    ],
+    "linked_amendments": [
+      "amendment_021"
+    ],
+    "linked_cases": [],
+    "explanation": "Sindhi was added to the Eighth Schedule by the 21st Amendment Act, 1967.",
+    "elimination_hint": "Memorise language additions by amendment: 21st-Sindhi, 71st-Konkani/Manipuri/Nepali, 92nd-Bodo/Dogri/Maithili/Santali.",
+    "trap_area": "Language amendment chronology",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_344",
+      "article_351"
+    ],
+    "question_text": "Which language was added to the Eighth Schedule by the 21st Constitutional Amendment?",
+    "answer_dimensions": [],
+    "option_explanation": "Sindhi was added to the Eighth Schedule by the 21st Amendment Act, 1967.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_1979_007",
+    "year": 1979,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Fundamental Duties",
+    "question_type": "factual",
+    "question": "Which of the following is not included in the list of Fundamental Duties?",
+    "options": {
+      "A": "To safeguard public property and abjure violence",
+      "B": "To uphold and protect the sovereignty, unity and integrity of India",
+      "C": "Secularism",
+      "D": "To abide by the Constitution and respect its ideals"
+    },
+    "correct_answer": "C",
+    "linked_articles": [
+      "article_51a"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [
+      "amendment_042"
+    ],
+    "linked_cases": [],
+    "explanation": "Secularism is part of the Preamble and basic structure, but it is not listed as a Fundamental Duty under Article 51A.",
+    "elimination_hint": "UPSC traps aspirants by mixing Preamble words with Fundamental Duties.",
+    "trap_area": "Preamble vs Fundamental Duties",
+    "difficulty": "easy",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_51a"
+    ],
+    "question_text": "Which of the following is not included in the list of Fundamental Duties?",
+    "answer_dimensions": [],
+    "option_explanation": "Secularism is part of the Preamble and basic structure, but it is not listed as a Fundamental Duty under Article 51A.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_1979_008",
+    "year": 1979,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Parliament Membership",
+    "question_type": "factual",
+    "question": "A candidate to become a member of Lok Sabha should not be less than:",
+    "options": {
+      "A": "21 years",
+      "B": "25 years",
+      "C": "30 years",
+      "D": "35 years"
+    },
+    "correct_answer": "B",
+    "linked_articles": [
+      "article_84"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "The minimum age for Lok Sabha membership is 25 years. For Rajya Sabha, it is 30 years.",
+    "elimination_hint": "Lok Sabha = 25; Rajya Sabha = 30; President/Governor = 35.",
+    "trap_area": "Age eligibility mismatch",
+    "difficulty": "easy",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_84"
+    ],
+    "question_text": "A candidate to become a member of Lok Sabha should not be less than:",
+    "answer_dimensions": [],
+    "option_explanation": "The minimum age for Lok Sabha membership is 25 years. For Rajya Sabha, it is 30 years.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_1979_009",
+    "year": 1979,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Fundamental Rights",
+    "question_type": "conceptual",
+    "question": "Which of the following is not a Fundamental Right in India?",
+    "options": {
+      "A": "Right to property",
+      "B": "Right to freedom of religion",
+      "C": "Right to freedom of speech and expression",
+      "D": "Right to equality"
+    },
+    "correct_answer": "A",
+    "linked_articles": [
+      "article_19",
+      "article_25",
+      "article_300a"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [
+      "amendment_044"
+    ],
+    "linked_cases": [],
+    "explanation": "Right to property ceased to be a Fundamental Right after the 44th Amendment and is now a constitutional legal right under Article 300A.",
+    "elimination_hint": "Whenever property is in options, check whether the question is pre-1978 or present constitutional position.",
+    "trap_area": "Right to property status",
+    "difficulty": "easy",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_19",
+      "article_25",
+      "article_300a"
+    ],
+    "question_text": "Which of the following is not a Fundamental Right in India?",
+    "answer_dimensions": [],
+    "option_explanation": "Right to property ceased to be a Fundamental Right after the 44th Amendment and is now a constitutional legal right under Article 300A.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_1982_010",
+    "year": 1982,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "President",
+    "question_type": "factual",
+    "question": "If the President of India wants to resign, the resignation letter is addressed to:",
+    "options": {
+      "A": "Parliament",
+      "B": "Prime Minister",
+      "C": "Chief Justice of India",
+      "D": "Vice-President"
+    },
+    "correct_answer": "D",
+    "linked_articles": [
+      "article_56"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "The President resigns by writing under his hand addressed to the Vice-President.",
+    "elimination_hint": "Resignation chain: President to Vice-President; Vice-President to President.",
+    "trap_area": "Constitutional office resignation authority",
+    "difficulty": "easy",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_56"
+    ],
+    "question_text": "If the President of India wants to resign, the resignation letter is addressed to:",
+    "answer_dimensions": [],
+    "option_explanation": "The President resigns by writing under his hand addressed to the Vice-President.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_1982_011",
+    "year": 1982,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Money Bill and President",
+    "question_type": "conceptual",
+    "question": "When a Money Bill is passed by Parliament, the President has the power to:",
+    "options": {
+      "A": "Amend it",
+      "B": "Reject it",
+      "C": "Keep it pending indefinitely",
+      "D": "Give assent or withhold assent"
+    },
+    "correct_answer": "D",
+    "linked_articles": [
+      "article_111",
+      "article_110"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "The President cannot return a Money Bill for reconsideration because it is introduced only with prior presidential recommendation. The President may assent or withhold assent.",
+    "elimination_hint": "For ordinary Bills: return possible. For Money Bills: no return for reconsideration.",
+    "trap_area": "President's veto over Money Bill",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_111",
+      "article_110"
+    ],
+    "question_text": "When a Money Bill is passed by Parliament, the President has the power to:",
+    "answer_dimensions": [],
+    "option_explanation": "The President cannot return a Money Bill for reconsideration because it is introduced only with prior presidential recommendation. The President may assent or withhold assent.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_1982_012",
+    "year": 1982,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Writs",
+    "question_type": "factual",
+    "question": "The greatest hallmark of personal liberty is:",
+    "options": {
+      "A": "Mandamus",
+      "B": "Certiorari",
+      "C": "Quo Warranto",
+      "D": "Habeas Corpus"
+    },
+    "correct_answer": "D",
+    "linked_articles": [
+      "article_32",
+      "article_226"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [
+      "adm_jabalpur_v_shivkant_shukla_1976",
+      "justice_k_s_puttaswamy_v_union_of_india_2017"
+    ],
+    "explanation": "Habeas Corpus protects personal liberty by requiring production of a detained person before court.",
+    "elimination_hint": "If detention or personal liberty is mentioned, Habeas Corpus is the first writ to check.",
+    "trap_area": "Confusing writ functions",
+    "difficulty": "easy",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_32",
+      "article_226"
+    ],
+    "question_text": "The greatest hallmark of personal liberty is:",
+    "answer_dimensions": [],
+    "option_explanation": "Habeas Corpus protects personal liberty by requiring production of a detained person before court.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_1983_013",
+    "year": 1983,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "State Reorganisation",
+    "question_type": "factual",
+    "question": "The reorganisation of Indian States on linguistic basis took place in:",
+    "options": {
+      "A": "1947",
+      "B": "1950",
+      "C": "1956",
+      "D": "1962"
+    },
+    "correct_answer": "C",
+    "linked_articles": [
+      "article_3",
+      "article_4"
+    ],
+    "linked_schedules": [
+      "schedule_1",
+      "schedule_4"
+    ],
+    "linked_amendments": [
+      "amendment_007"
+    ],
+    "linked_cases": [],
+    "explanation": "The States Reorganisation Act, 1956 and the 7th Constitutional Amendment reorganised States broadly on linguistic lines.",
+    "elimination_hint": "1956 = linguistic reorganisation + 7th Amendment.",
+    "trap_area": "Confusing 1950 Constitution commencement with 1956 reorganisation",
+    "difficulty": "easy",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_3",
+      "article_4"
+    ],
+    "question_text": "The reorganisation of Indian States on linguistic basis took place in:",
+    "answer_dimensions": [],
+    "option_explanation": "The States Reorganisation Act, 1956 and the 7th Constitutional Amendment reorganised States broadly on linguistic lines.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_1992_014",
+    "year": 1992,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Sources of Constitution",
+    "question_type": "factual",
+    "question": "The scheme of Indian Federation was largely borrowed from the Constitution of:",
+    "options": {
+      "A": "USA",
+      "B": "Canada",
+      "C": "Ireland",
+      "D": "UK"
+    },
+    "correct_answer": "B",
+    "linked_articles": [],
+    "linked_schedules": [
+      "schedule_7"
+    ],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "The Indian federal scheme with a strong Centre shows Canadian influence.",
+    "elimination_hint": "Canada = strong Centre and residuary powers with Centre; USA = judicial review and Fundamental Rights.",
+    "trap_area": "Sources of Constitution",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [],
+    "question_text": "The scheme of Indian Federation was largely borrowed from the Constitution of:",
+    "answer_dimensions": [],
+    "option_explanation": "The Indian federal scheme with a strong Centre shows Canadian influence.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2003_015",
+    "year": 2003,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Sources of Constitution",
+    "question_type": "match_based",
+    "question": "Match constitutional features with their sources: Directive Principles, Fundamental Rights, Concurrent List, Union with strong Centre.",
+    "options": {
+      "A": "DPSP-USA, FR-UK, Concurrent List-Canada, Strong Centre-Australia",
+      "B": "DPSP-Ireland, FR-USA, Concurrent List-Australia, Strong Centre-Canada",
+      "C": "DPSP-Canada, FR-USA, Concurrent List-Ireland, Strong Centre-UK",
+      "D": "DPSP-UK, FR-Ireland, Concurrent List-Australia, Strong Centre-USA"
+    },
+    "correct_answer": "B",
+    "linked_articles": [],
+    "linked_schedules": [
+      "schedule_7"
+    ],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "DPSPs were inspired by Ireland, Fundamental Rights by USA, Concurrent List by Australia, and strong Centre by Canada.",
+    "elimination_hint": "Remember the pair: Ireland-DPSP, USA-FR, Australia-Concurrent List, Canada-strong Centre.",
+    "trap_area": "Borrowed features",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [],
+    "question_text": "Match constitutional features with their sources: Directive Principles, Fundamental Rights, Concurrent List, Union with strong Centre.",
+    "answer_dimensions": [],
+    "option_explanation": "DPSPs were inspired by Ireland, Fundamental Rights by USA, Concurrent List by Australia, and strong Centre by Canada.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2003_016",
+    "year": 2003,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Lok Sabha Composition",
+    "question_type": "factual",
+    "question": "Which Constitutional Amendments are related to raising the number of members of Lok Sabha to be elected from the States?",
+    "options": {
+      "A": "6th and 22nd",
+      "B": "13th and 38th",
+      "C": "7th and 31st",
+      "D": "11th and 42nd"
+    },
+    "correct_answer": "C",
+    "linked_articles": [
+      "article_81"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [
+      "amendment_007",
+      "amendment_031"
+    ],
+    "linked_cases": [],
+    "explanation": "The 7th and 31st Amendments are linked with changes in representation and Lok Sabha composition.",
+    "elimination_hint": "7th = State reorganisation; 31st = Lok Sabha seats.",
+    "trap_area": "Amendment number chronology",
+    "difficulty": "hard",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_81"
+    ],
+    "question_text": "Which Constitutional Amendments are related to raising the number of members of Lok Sabha to be elected from the States?",
+    "answer_dimensions": [],
+    "option_explanation": "The 7th and 31st Amendments are linked with changes in representation and Lok Sabha composition.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2012_017",
+    "year": 2012,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Constitutional Amendment",
+    "question_type": "statement_based",
+    "question": "Consider the following statements: 1. An amendment to the Constitution can be initiated by introduction of a Bill in the Lok Sabha only. 2. If an amendment seeks to change the federal character of the Constitution, it requires ratification by legislatures of all States. Which of the statements is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "Both 1 and 2",
+      "D": "Neither 1 nor 2"
+    },
+    "correct_answer": "D",
+    "linked_articles": [
+      "article_368"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [
+      "kesavananda_bharati_v_state_of_kerala_1973"
+    ],
+    "explanation": "A constitutional amendment Bill may be introduced in either House of Parliament. Federal amendments require ratification by not less than one-half of State legislatures, not all States.",
+    "elimination_hint": "Extreme word 'only' in statement 1 and 'all States' in statement 2 are traps.",
+    "trap_area": "Article 368 procedure",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_368"
+    ],
+    "question_text": "Consider the following statements: 1. An amendment to the Constitution can be initiated by introduction of a Bill in the Lok Sabha only. 2. If an amendment seeks to change the federal character of the Constitution, it requires ratification by legislatures of all States. Which of the statements is/are correct?",
+    "answer_dimensions": [],
+    "option_explanation": "A constitutional amendment Bill may be introduced in either House of Parliament. Federal amendments require ratification by not less than one-half of State legislatures, not all States.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2012_018",
+    "year": 2012,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "DPSP",
+    "question_type": "factual",
+    "question": "According to the Constitution of India, which of the following are fundamental in the governance of the country?",
+    "options": {
+      "A": "Fundamental Rights",
+      "B": "Fundamental Duties",
+      "C": "Directive Principles of State Policy",
+      "D": "Fundamental Rights and Fundamental Duties"
+    },
+    "correct_answer": "C",
+    "linked_articles": [
+      "article_37"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [
+      "minerva_mills_v_union_of_india_1980"
+    ],
+    "explanation": "Article 37 says Directive Principles are fundamental in the governance of the country, though not enforceable by courts.",
+    "elimination_hint": "The phrase 'fundamental in governance' directly points to DPSP.",
+    "trap_area": "FR vs DPSP wording",
+    "difficulty": "easy",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_37"
+    ],
+    "question_text": "According to the Constitution of India, which of the following are fundamental in the governance of the country?",
+    "answer_dimensions": [],
+    "option_explanation": "Article 37 says Directive Principles are fundamental in the governance of the country, though not enforceable by courts.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2012_019",
+    "year": 2012,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Council of Ministers",
+    "question_type": "statement_based",
+    "question": "Consider the following statements: 1. The Council of Ministers at the Centre shall be collectively responsible to Parliament. 2. Union Ministers hold office during the pleasure of the President. 3. The Prime Minister communicates to the President all decisions of the Council of Ministers relating to administration and legislation. Which of the statements is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3"
+    },
+    "correct_answer": "B",
+    "linked_articles": [
+      "article_75",
+      "article_78"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "The Council of Ministers is collectively responsible to the Lok Sabha, not Parliament as a whole. Statements 2 and 3 are correct.",
+    "elimination_hint": "UPSC often changes 'Lok Sabha' into 'Parliament' to create a trap.",
+    "trap_area": "Collective responsibility",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_75",
+      "article_78"
+    ],
+    "question_text": "Consider the following statements: 1. The Council of Ministers at the Centre shall be collectively responsible to Parliament. 2. Union Ministers hold office during the pleasure of the President. 3. The Prime Minister communicates to the President all decisions of the Council of Ministers relating to administration and legislation. Which of the statements is/are correct?",
+    "answer_dimensions": [],
+    "option_explanation": "The Council of Ministers is collectively responsible to the Lok Sabha, not Parliament as a whole. Statements 2 and 3 are correct.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2012_020",
+    "year": 2012,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Parliamentary Government",
+    "question_type": "statement_based",
+    "question": "In India, which of the following principles are implied institutionally in parliamentary government? 1. Members of the Cabinet are members of Parliament. 2. Ministers hold office till they enjoy confidence in Parliament. 3. The Cabinet is headed by the Head of State.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "3 only",
+      "C": "2 and 3 only",
+      "D": "1, 2 and 3"
+    },
+    "correct_answer": "A",
+    "linked_articles": [
+      "article_74",
+      "article_75"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "The Cabinet is headed by the Prime Minister, not the Head of State. Statements 1 and 2 reflect parliamentary government.",
+    "elimination_hint": "Head of State = President; Head of Government = Prime Minister.",
+    "trap_area": "Nominal executive vs real executive",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_74",
+      "article_75"
+    ],
+    "question_text": "In India, which of the following principles are implied institutionally in parliamentary government? 1. Members of the Cabinet are members of Parliament. 2. Ministers hold office till they enjoy confidence in Parliament. 3. The Cabinet is headed by the Head of State.",
+    "answer_dimensions": [],
+    "option_explanation": "The Cabinet is headed by the Prime Minister, not the Head of State. Statements 1 and 2 reflect parliamentary government.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2012_021",
+    "year": 2012,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Governor",
+    "question_type": "conceptual",
+    "question": "Which one of the following statements is correct regarding the Governor of a State?",
+    "options": {
+      "A": "The same person cannot be appointed as Governor for two or more States at the same time",
+      "B": "High Court judges are appointed by the Governor of the State",
+      "C": "No procedure has been laid down in the Constitution for removal of a Governor",
+      "D": "The Governor cannot be transferred during the term of office"
+    },
+    "correct_answer": "C",
+    "linked_articles": [
+      "article_153",
+      "article_156",
+      "article_217"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [
+      "amendment_007"
+    ],
+    "linked_cases": [],
+    "explanation": "A Governor holds office during the pleasure of the President. The Constitution does not prescribe a detailed removal procedure. The same person can be Governor of two or more States.",
+    "elimination_hint": "Do not apply judge-removal logic to Governors.",
+    "trap_area": "Governor tenure and removal",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_153",
+      "article_156",
+      "article_217"
+    ],
+    "question_text": "Which one of the following statements is correct regarding the Governor of a State?",
+    "answer_dimensions": [],
+    "option_explanation": "A Governor holds office during the pleasure of the President. The Constitution does not prescribe a detailed removal procedure. The same person can be Governor of two or more States.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2013_022",
+    "year": 2013,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "International Treaties",
+    "question_type": "factual",
+    "question": "Parliament can make any law for the whole or any part of India for implementing international treaties:",
+    "options": {
+      "A": "With the consent of all States",
+      "B": "With the consent of the majority of States",
+      "C": "With the consent of the States concerned",
+      "D": "Without the consent of any State"
+    },
+    "correct_answer": "D",
+    "linked_articles": [
+      "article_253"
+    ],
+    "linked_schedules": [
+      "schedule_7"
+    ],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Article 253 empowers Parliament to make laws for implementing international agreements, treaties or conventions, even on State List matters.",
+    "elimination_hint": "International treaty implementation is a Centre-heavy exception to normal federal distribution.",
+    "trap_area": "Article 253 and federalism",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_253"
+    ],
+    "question_text": "Parliament can make any law for the whole or any part of India for implementing international treaties:",
+    "answer_dimensions": [],
+    "option_explanation": "Article 253 empowers Parliament to make laws for implementing international agreements, treaties or conventions, even on State List matters.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2019_023",
+    "year": 2019,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Judicial Review",
+    "question_type": "statement_based",
+    "question": "Consider the following statements: 1. No High Court shall have jurisdiction to declare any central law constitutionally invalid. 2. An amendment to the Constitution cannot be called into question before the Supreme Court. Which of the statements is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "Both 1 and 2",
+      "D": "Neither 1 nor 2"
+    },
+    "correct_answer": "D",
+    "linked_articles": [
+      "article_13",
+      "article_226",
+      "article_368"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [
+      "kesavananda_bharati_v_state_of_kerala_1973",
+      "l_chandra_kumar_v_union_of_india_1997",
+      "i_r_coelho_v_state_of_tamil_nadu_2007"
+    ],
+    "explanation": "High Courts can examine constitutional validity of laws. Constitutional amendments can be reviewed under the basic structure doctrine.",
+    "elimination_hint": "Absolute phrases like 'no jurisdiction' and 'cannot be called into question' are strong warning signs.",
+    "trap_area": "Judicial review and basic structure",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_13",
+      "article_226",
+      "article_368"
+    ],
+    "question_text": "Consider the following statements: 1. No High Court shall have jurisdiction to declare any central law constitutionally invalid. 2. An amendment to the Constitution cannot be called into question before the Supreme Court. Which of the statements is/are correct?",
+    "answer_dimensions": [],
+    "option_explanation": "High Courts can examine constitutional validity of laws. Constitutional amendments can be reviewed under the basic structure doctrine.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2019_024",
+    "year": 2019,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Liberty",
+    "question_type": "conceptual",
+    "question": "In the context of polity, which one of the following is the most appropriate definition of liberty?",
+    "options": {
+      "A": "Protection against tyranny of political rulers",
+      "B": "Absence of restraint",
+      "C": "Opportunity to do whatever one likes",
+      "D": "Opportunity to develop oneself fully"
+    },
+    "correct_answer": "D",
+    "linked_articles": [
+      "article_19",
+      "article_21"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [
+      "maneka_gandhi_v_union_of_india_1978",
+      "justice_k_s_puttaswamy_v_union_of_india_2017"
+    ],
+    "explanation": "Modern constitutional liberty is not mere absence of restraint; it means conditions that allow full development of personality.",
+    "elimination_hint": "UPSC prefers balanced constitutional meaning over extreme negative liberty.",
+    "trap_area": "Conceptual political theory in Polity",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_19",
+      "article_21"
+    ],
+    "question_text": "In the context of polity, which one of the following is the most appropriate definition of liberty?",
+    "answer_dimensions": [],
+    "option_explanation": "Modern constitutional liberty is not mere absence of restraint; it means conditions that allow full development of personality.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2019_025",
+    "year": 2019,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Governor",
+    "question_type": "factual",
+    "question": "Which body suggested that the Governor should be an eminent person from outside the State and should be a detached figure without intense political links?",
+    "options": {
+      "A": "First Administrative Reforms Commission",
+      "B": "Rajamannar Committee",
+      "C": "Sarkaria Commission",
+      "D": "National Commission to Review the Working of the Constitution"
+    },
+    "correct_answer": "C",
+    "linked_articles": [
+      "article_153",
+      "article_155",
+      "article_156"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "The Sarkaria Commission recommended that the Governor should be an eminent person from outside the State and not recently active in politics.",
+    "elimination_hint": "Governor appointment norms are most closely associated with Sarkaria Commission.",
+    "trap_area": "Commission recommendations",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_153",
+      "article_155",
+      "article_156"
+    ],
+    "question_text": "Which body suggested that the Governor should be an eminent person from outside the State and should be a detached figure without intense political links?",
+    "answer_dimensions": [],
+    "option_explanation": "The Sarkaria Commission recommended that the Governor should be an eminent person from outside the State and not recently active in politics.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2020_026",
+    "year": 2020,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Rajya Sabha",
+    "question_type": "conceptual",
+    "question": "Rajya Sabha has equal powers with Lok Sabha in:",
+    "options": {
+      "A": "Creating new All India Services",
+      "B": "Amending the Constitution",
+      "C": "Removal of the government",
+      "D": "Making cut motions"
+    },
+    "correct_answer": "B",
+    "linked_articles": [
+      "article_312",
+      "article_368",
+      "article_75"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Both Houses have equal powers in constitutional amendment. Rajya Sabha has special power under Article 312 but Lok Sabha does not share that exact role.",
+    "elimination_hint": "Equal power does not mean special power. Article 312 is special power of Rajya Sabha, not equal power.",
+    "trap_area": "Rajya Sabha equal vs special powers",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_312",
+      "article_368",
+      "article_75"
+    ],
+    "question_text": "Rajya Sabha has equal powers with Lok Sabha in:",
+    "answer_dimensions": [],
+    "option_explanation": "Both Houses have equal powers in constitutional amendment. Rajya Sabha has special power under Article 312 but Lok Sabha does not share that exact role.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2020_027",
+    "year": 2020,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Fundamental Rights",
+    "question_type": "factual",
+    "question": "Untouchability as a form of discrimination is prohibited under which category of Fundamental Rights?",
+    "options": {
+      "A": "Right against Exploitation",
+      "B": "Right to Freedom",
+      "C": "Right to Constitutional Remedies",
+      "D": "Right to Equality"
+    },
+    "correct_answer": "D",
+    "linked_articles": [
+      "article_17"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Article 17 abolishes untouchability and is placed under the Right to Equality.",
+    "elimination_hint": "Article 14 to 18 = Right to Equality block.",
+    "trap_area": "Wrong FR category",
+    "difficulty": "easy",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_17"
+    ],
+    "question_text": "Untouchability as a form of discrimination is prohibited under which category of Fundamental Rights?",
+    "answer_dimensions": [],
+    "option_explanation": "Article 17 abolishes untouchability and is placed under the Right to Equality.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2020_028",
+    "year": 2020,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "DPSP",
+    "question_type": "factual",
+    "question": "In India, separation of judiciary from the executive is enjoined by:",
+    "options": {
+      "A": "Preamble",
+      "B": "Directive Principles of State Policy",
+      "C": "Seventh Schedule",
+      "D": "Constitutional convention only"
+    },
+    "correct_answer": "B",
+    "linked_articles": [
+      "article_50"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Article 50, a Directive Principle, directs the State to separate the judiciary from the executive in public services of the State.",
+    "elimination_hint": "Judiciary-executive separation in lower courts = Article 50 = DPSP.",
+    "trap_area": "DPSP article mapping",
+    "difficulty": "easy",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_50"
+    ],
+    "question_text": "In India, separation of judiciary from the executive is enjoined by:",
+    "answer_dimensions": [],
+    "option_explanation": "Article 50, a Directive Principle, directs the State to separate the judiciary from the executive in public services of the State.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2021_029",
+    "year": 2021,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "DPSP",
+    "question_type": "conceptual",
+    "question": "Under the Constitution of India, concentration of wealth violates:",
+    "options": {
+      "A": "The Right to Equality",
+      "B": "The Directive Principles of State Policy",
+      "C": "The Right to Freedom",
+      "D": "The concept of Welfare"
+    },
+    "correct_answer": "B",
+    "linked_articles": [
+      "article_39"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Article 39(c) says that the economic system should not result in concentration of wealth and means of production to the common detriment.",
+    "elimination_hint": "Words like wealth distribution, livelihood, equal pay and children welfare usually point to Article 39 under DPSP.",
+    "trap_area": "DPSP vs Fundamental Rights",
+    "difficulty": "easy",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_39"
+    ],
+    "question_text": "Under the Constitution of India, concentration of wealth violates:",
+    "answer_dimensions": [],
+    "option_explanation": "Article 39(c) says that the economic system should not result in concentration of wealth and means of production to the common detriment.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2021_030",
+    "year": 2021,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Article 14",
+    "question_type": "conceptual",
+    "question": "A legislation which confers on executive or administrative authority an unguided and uncontrolled discretionary power in application of law violates which Article?",
+    "options": {
+      "A": "Article 14",
+      "B": "Article 28",
+      "C": "Article 32",
+      "D": "Article 44"
+    },
+    "correct_answer": "A",
+    "linked_articles": [
+      "article_14"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Unguided and arbitrary discretion violates equality before law and equal protection of laws under Article 14.",
+    "elimination_hint": "Arbitrariness = Article 14.",
+    "trap_area": "Article 14 beyond formal equality",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_14"
+    ],
+    "question_text": "A legislation which confers on executive or administrative authority an unguided and uncontrolled discretionary power in application of law violates which Article?",
+    "answer_dimensions": [],
+    "option_explanation": "Unguided and arbitrary discretion violates equality before law and equal protection of laws under Article 14.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2021_031",
+    "year": 2021,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Federalism",
+    "question_type": "conceptual",
+    "question": "Which one of the following is an essential feature indicating that Indian polity is federal in character?",
+    "options": {
+      "A": "Independence of judiciary is safeguarded",
+      "B": "Union Legislature has elected representatives from constituent units",
+      "C": "Union Cabinet can have elected representatives from regional parties",
+      "D": "Fundamental Rights are enforceable by courts"
+    },
+    "correct_answer": "A",
+    "linked_articles": [
+      "article_124",
+      "article_214",
+      "article_226"
+    ],
+    "linked_schedules": [
+      "schedule_7"
+    ],
+    "linked_amendments": [],
+    "linked_cases": [
+      "s_r_bommai_v_union_of_india_1994"
+    ],
+    "explanation": "Independent judiciary is essential to interpret the Constitution and maintain the federal balance between Union and States.",
+    "elimination_hint": "Federalism needs an umpire; independent judiciary performs that function.",
+    "trap_area": "Federal feature vs democratic feature",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_124",
+      "article_214",
+      "article_226"
+    ],
+    "question_text": "Which one of the following is an essential feature indicating that Indian polity is federal in character?",
+    "answer_dimensions": [],
+    "option_explanation": "Independent judiciary is essential to interpret the Constitution and maintain the federal balance between Union and States.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2021_032",
+    "year": 2021,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Citizenship",
+    "question_type": "statement_based",
+    "question": "Consider the following statements: 1. There is only one citizenship and one domicile in India. 2. A citizen by birth only can become the Head of State. 3. A foreigner once granted citizenship cannot be deprived of it under any circumstances. Which of the statements is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "1 and 3 only",
+      "D": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "linked_articles": [
+      "article_5",
+      "article_6",
+      "article_7",
+      "article_8",
+      "article_9",
+      "article_10",
+      "article_11"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "India has single citizenship. The President need only be a citizen of India, not necessarily citizen by birth. Citizenship can be terminated under law.",
+    "elimination_hint": "Extreme phrase 'under any circumstances' is usually wrong.",
+    "trap_area": "Single citizenship and citizenship termination",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_5",
+      "article_6",
+      "article_7",
+      "article_8",
+      "article_9",
+      "article_10",
+      "article_11"
+    ],
+    "question_text": "Consider the following statements: 1. There is only one citizenship and one domicile in India. 2. A citizen by birth only can become the Head of State. 3. A foreigner once granted citizenship cannot be deprived of it under any circumstances. Which of the statements is/are correct?",
+    "answer_dimensions": [],
+    "option_explanation": "India has single citizenship. The President need only be a citizen of India, not necessarily citizen by birth. Citizenship can be terminated under law.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2021_033",
+    "year": 2021,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Judiciary",
+    "question_type": "statement_based",
+    "question": "With reference to Indian Judiciary, consider the following statements: 1. A retired judge of the Supreme Court can be called back to sit by the Chief Justice of India with prior consent of the President. 2. A High Court has power to review its own judgment as the Supreme Court does. Which of the statements is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "Both 1 and 2",
+      "D": "Neither 1 nor 2"
+    },
+    "correct_answer": "C",
+    "linked_articles": [
+      "article_128",
+      "article_137",
+      "article_226"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Article 128 permits attendance of retired Supreme Court judges with required consent. High Courts, as courts of record, have inherent power to review their judgments.",
+    "elimination_hint": "Do not assume review power belongs only to Supreme Court.",
+    "trap_area": "Judicial powers of High Courts",
+    "difficulty": "hard",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_128",
+      "article_137",
+      "article_226"
+    ],
+    "question_text": "With reference to Indian Judiciary, consider the following statements: 1. A retired judge of the Supreme Court can be called back to sit by the Chief Justice of India with prior consent of the President. 2. A High Court has power to review its own judgment as the Supreme Court does. Which of the statements is/are correct?",
+    "answer_dimensions": [],
+    "option_explanation": "Article 128 permits attendance of retired Supreme Court judges with required consent. High Courts, as courts of record, have inherent power to review their judgments.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2022_034",
+    "year": 2022,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Forest Rights Act",
+    "question_type": "factual",
+    "question": "At the national level, which Ministry is the nodal agency for implementation of the Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act, 2006?",
+    "options": {
+      "A": "Ministry of Environment, Forest and Climate Change",
+      "B": "Ministry of Panchayati Raj",
+      "C": "Ministry of Rural Development",
+      "D": "Ministry of Tribal Affairs"
+    },
+    "correct_answer": "D",
+    "linked_articles": [
+      "article_244"
+    ],
+    "linked_schedules": [
+      "schedule_5"
+    ],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "The Ministry of Tribal Affairs is the nodal ministry for implementation of the Forest Rights Act, 2006.",
+    "elimination_hint": "Forest Rights Act is tribal-rights legislation, not merely forest administration.",
+    "trap_area": "Ministry confusion",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_244"
+    ],
+    "question_text": "At the national level, which Ministry is the nodal agency for implementation of the Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act, 2006?",
+    "answer_dimensions": [],
+    "option_explanation": "The Ministry of Tribal Affairs is the nodal ministry for implementation of the Forest Rights Act, 2006.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2022_035",
+    "year": 2022,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Judicial Custody",
+    "question_type": "statement_based",
+    "question": "With reference to India, consider the following statements: 1. Judicial custody means an accused is in custody of the magistrate and locked up in a police station, not jail. 2. During judicial custody, police cannot interrogate the suspect without court approval. Which of the statements is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "Both 1 and 2",
+      "D": "Neither 1 nor 2"
+    },
+    "correct_answer": "B",
+    "linked_articles": [
+      "article_21",
+      "article_22"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Judicial custody means custody under magistrate's authority, usually in jail. Police interrogation during judicial custody needs court permission.",
+    "elimination_hint": "Police station points to police custody, not judicial custody.",
+    "trap_area": "Police custody vs judicial custody",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_21",
+      "article_22"
+    ],
+    "question_text": "With reference to India, consider the following statements: 1. Judicial custody means an accused is in custody of the magistrate and locked up in a police station, not jail. 2. During judicial custody, police cannot interrogate the suspect without court approval. Which of the statements is/are correct?",
+    "answer_dimensions": [],
+    "option_explanation": "Judicial custody means custody under magistrate's authority, usually in jail. Police interrogation during judicial custody needs court permission.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2022_036",
+    "year": 2022,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Parole",
+    "question_type": "statement_based",
+    "question": "Consider the following statements: 1. When a prisoner makes out a sufficient case, parole cannot be denied because it becomes a matter of right. 2. State Governments have their own Prisoners Release on Parole Rules. Which of the statements is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "Both 1 and 2",
+      "D": "Neither 1 nor 2"
+    },
+    "correct_answer": "B",
+    "linked_articles": [
+      "article_21"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Parole is not an absolute right. States have their own parole rules and authorities decide according to law.",
+    "elimination_hint": "Words like 'cannot be denied' and 'matter of right' are extreme and suspicious.",
+    "trap_area": "Rights of prisoners",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_21"
+    ],
+    "question_text": "Consider the following statements: 1. When a prisoner makes out a sufficient case, parole cannot be denied because it becomes a matter of right. 2. State Governments have their own Prisoners Release on Parole Rules. Which of the statements is/are correct?",
+    "answer_dimensions": [],
+    "option_explanation": "Parole is not an absolute right. States have their own parole rules and authorities decide according to law.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2023_037",
+    "year": 2023,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Fifth Schedule",
+    "question_type": "conceptual",
+    "question": "If a particular area is brought under the Fifth Schedule of the Constitution, which statement best reflects the consequence?",
+    "options": {
+      "A": "It may prevent or restrict transfer of tribal land to non-tribal people",
+      "B": "It creates a local self-governing body in that area",
+      "C": "It converts that area into a Union Territory",
+      "D": "The State is declared a Special Category State"
+    },
+    "correct_answer": "A",
+    "linked_articles": [
+      "article_244",
+      "article_339"
+    ],
+    "linked_schedules": [
+      "schedule_5"
+    ],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Under the Fifth Schedule, the Governor may make regulations for peace and good government of Scheduled Areas, including restricting transfer of land by or among tribals.",
+    "elimination_hint": "Local self-governing body points more towards Sixth Schedule autonomous councils, not Fifth Schedule.",
+    "trap_area": "Fifth vs Sixth Schedule",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_244",
+      "article_339"
+    ],
+    "question_text": "If a particular area is brought under the Fifth Schedule of the Constitution, which statement best reflects the consequence?",
+    "answer_dimensions": [],
+    "option_explanation": "Under the Fifth Schedule, the Governor may make regulations for peace and good government of Scheduled Areas, including restricting transfer of land by or among tribals.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2023_038",
+    "year": 2023,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Article 355 and Preventive Detention",
+    "question_type": "statement_based",
+    "question": "Consider the following statements: 1. The Union has a duty to protect States from internal disturbance. 2. The Constitution exempts States from providing legal counsel to a person held under preventive detention. 3. Under POTA, confession before police could not be used as evidence. How many statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three",
+      "D": "None"
+    },
+    "correct_answer": "B",
+    "linked_articles": [
+      "article_22",
+      "article_355"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Article 355 imposes a duty on the Union to protect States against external aggression and internal disturbance. Preventive detention protections under Article 22 differ from ordinary arrest protections. POTA allowed certain police confessions as evidence, so statement 3 is incorrect.",
+    "elimination_hint": "Security law questions often test exceptions to ordinary criminal procedure.",
+    "trap_area": "Preventive detention and special laws",
+    "difficulty": "hard",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_22",
+      "article_355"
+    ],
+    "question_text": "Consider the following statements: 1. The Union has a duty to protect States from internal disturbance. 2. The Constitution exempts States from providing legal counsel to a person held under preventive detention. 3. Under POTA, confession before police could not be used as evidence. How many statements are correct?",
+    "answer_dimensions": [],
+    "option_explanation": "Article 355 imposes a duty on the Union to protect States against external aggression and internal disturbance. Preventive detention protections under Article 22 differ from ordinary arrest protections. POTA allowed certain police confessions as evidence, so statement 3 is incorrect.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2023_039",
+    "year": 2023,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "President Election",
+    "question_type": "statement_based",
+    "question": "Consider statements about election of President of India: 1. Nominated members of Parliament and State Legislative Assemblies are included in the Electoral College. 2. Higher the number of elective Assembly seats, higher is the value of vote of each MLA. 3. Value of vote of each MLA of Madhya Pradesh is greater than that of Kerala. 4. Value of vote of each MLA of Puducherry is higher than that of Arunachal Pradesh because the population-seat ratio is greater. How many statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "Only three",
+      "D": "All four"
+    },
+    "correct_answer": "A",
+    "linked_articles": [
+      "article_54",
+      "article_55"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [
+      "amendment_070"
+    ],
+    "linked_cases": [],
+    "explanation": "Only elected members participate. MLA vote value depends on population divided by elected Assembly seats. Only statement 4 is correct among the given statements.",
+    "elimination_hint": "Nominated members are almost always excluded in President election questions.",
+    "trap_area": "Presidential electoral college and vote value",
+    "difficulty": "hard",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_54",
+      "article_55"
+    ],
+    "question_text": "Consider statements about election of President of India: 1. Nominated members of Parliament and State Legislative Assemblies are included in the Electoral College. 2. Higher the number of elective Assembly seats, higher is the value of vote of each MLA. 3. Value of vote of each MLA of Madhya Pradesh is greater than that of Kerala. 4. Value of vote of each MLA of Puducherry is higher than that of Arunachal Pradesh because the population-seat ratio is greater. How many statements are correct?",
+    "answer_dimensions": [],
+    "option_explanation": "Only elected members participate. MLA vote value depends on population divided by elected Assembly seats. Only statement 4 is correct among the given statements.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_2023_040",
+    "year": 2023,
+    "exam": "UPSC CSE Prelims",
+    "subject": "Indian Polity",
+    "topic": "Constitution Day",
+    "question_type": "assertion_reason",
+    "question": "Statement I: Constitution Day is celebrated on 26 November every year to promote constitutional values among citizens. Statement II: On 26 November 1949, the Constituent Assembly set up the Drafting Committee under Dr. B.R. Ambedkar to prepare a Draft Constitution. Which is correct?",
+    "options": {
+      "A": "Both statements are correct and Statement II explains Statement I",
+      "B": "Both statements are correct but Statement II does not explain Statement I",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "C",
+    "linked_articles": [],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [],
+    "explanation": "Constitution Day is observed on 26 November because the Constitution was adopted on 26 November 1949. The Drafting Committee was set up on 29 August 1947.",
+    "elimination_hint": "UPSC changes adoption date into Drafting Committee date to create a chronology trap.",
+    "trap_area": "Constituent Assembly dates",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [],
+    "question_text": "Statement I: Constitution Day is celebrated on 26 November every year to promote constitutional values among citizens. Statement II: On 26 November 1949, the Constituent Assembly set up the Drafting Committee under Dr. B.R. Ambedkar to prepare a Draft Constitution. Which is correct?",
+    "answer_dimensions": [],
+    "option_explanation": "Constitution Day is observed on 26 November because the Constitution was adopted on 26 November 1949. The Drafting Committee was set up on 29 August 1947.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_model_2026_041",
+    "year": 2026,
+    "exam": "UPSC CSE Prelims Model",
+    "subject": "Indian Polity",
+    "topic": "Basic Structure",
+    "question_type": "statement_based",
+    "question": "With reference to the basic structure doctrine, consider the following statements: 1. It was propounded in Kesavananda Bharati case. 2. It completely prohibits Parliament from amending Fundamental Rights. 3. Judicial review and federalism have been treated as part of basic structure. Which of the statements is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only",
+      "D": "1, 2 and 3"
+    },
+    "correct_answer": "B",
+    "linked_articles": [
+      "article_13",
+      "article_368"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [
+      "amendment_024",
+      "amendment_042"
+    ],
+    "linked_cases": [
+      "kesavananda_bharati_v_state_of_kerala_1973",
+      "minerva_mills_v_union_of_india_1980",
+      "s_r_bommai_v_union_of_india_1994"
+    ],
+    "explanation": "Parliament can amend Fundamental Rights but cannot destroy the basic structure. Judicial review and federalism have been recognised as basic structure elements.",
+    "elimination_hint": "The word 'completely prohibits' makes statement 2 wrong.",
+    "trap_area": "Golaknath vs Kesavananda",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_13",
+      "article_368"
+    ],
+    "question_text": "With reference to the basic structure doctrine, consider the following statements: 1. It was propounded in Kesavananda Bharati case. 2. It completely prohibits Parliament from amending Fundamental Rights. 3. Judicial review and federalism have been treated as part of basic structure. Which of the statements is/are correct?",
+    "answer_dimensions": [],
+    "option_explanation": "Parliament can amend Fundamental Rights but cannot destroy the basic structure. Judicial review and federalism have been recognised as basic structure elements.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_model_2026_042",
+    "year": 2026,
+    "exam": "UPSC CSE Prelims Model",
+    "subject": "Indian Polity",
+    "topic": "Electoral Bonds and Right to Information",
+    "question_type": "statement_based",
+    "question": "With reference to the Electoral Bonds judgment, consider the following statements: 1. The Supreme Court struck down the Electoral Bonds scheme. 2. The judgment linked voters' right to information with Article 19(1)(a). 3. The scheme was struck down because political funding by companies is absolutely prohibited in India. Which of the statements is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3"
+    },
+    "correct_answer": "A",
+    "linked_articles": [
+      "article_19"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [],
+    "linked_cases": [
+      "association_for_democratic_reforms_v_union_of_india_2024"
+    ],
+    "explanation": "The scheme was struck down for violating voters' right to information through anonymous political funding. Corporate political contribution is not absolutely prohibited.",
+    "elimination_hint": "Absolute word 'absolutely prohibited' is the trap.",
+    "trap_area": "Right to information and political funding",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_19"
+    ],
+    "question_text": "With reference to the Electoral Bonds judgment, consider the following statements: 1. The Supreme Court struck down the Electoral Bonds scheme. 2. The judgment linked voters' right to information with Article 19(1)(a). 3. The scheme was struck down because political funding by companies is absolutely prohibited in India. Which of the statements is/are correct?",
+    "answer_dimensions": [],
+    "option_explanation": "The scheme was struck down for violating voters' right to information through anonymous political funding. Corporate political contribution is not absolutely prohibited.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_model_2026_043",
+    "year": 2026,
+    "exam": "UPSC CSE Prelims Model",
+    "subject": "Indian Polity",
+    "topic": "GST Council",
+    "question_type": "statement_based",
+    "question": "With reference to GST Council, consider the following statements: 1. It is created under Article 279A. 2. Its recommendations are automatically binding on Parliament and State Legislatures. 3. It is an example of cooperative federalism. Which of the statements is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only",
+      "D": "1, 2 and 3"
+    },
+    "correct_answer": "B",
+    "linked_articles": [
+      "article_246a",
+      "article_269a",
+      "article_279a"
+    ],
+    "linked_schedules": [
+      "schedule_7"
+    ],
+    "linked_amendments": [
+      "amendment_101"
+    ],
+    "linked_cases": [
+      "mohit_minerals_v_union_of_india_2022"
+    ],
+    "explanation": "GST Council is under Article 279A. In Mohit Minerals, the Supreme Court held that its recommendations have persuasive value and are not automatically binding.",
+    "elimination_hint": "Automatically binding is the trap phrase.",
+    "trap_area": "GST federalism",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_246a",
+      "article_269a",
+      "article_279a"
+    ],
+    "question_text": "With reference to GST Council, consider the following statements: 1. It is created under Article 279A. 2. Its recommendations are automatically binding on Parliament and State Legislatures. 3. It is an example of cooperative federalism. Which of the statements is/are correct?",
+    "answer_dimensions": [],
+    "option_explanation": "GST Council is under Article 279A. In Mohit Minerals, the Supreme Court held that its recommendations have persuasive value and are not automatically binding.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_model_2026_044",
+    "year": 2026,
+    "exam": "UPSC CSE Prelims Model",
+    "subject": "Indian Polity",
+    "topic": "Women's Reservation",
+    "question_type": "statement_based",
+    "question": "With reference to the 106th Constitutional Amendment, consider the following statements: 1. It provides for one-third reservation for women in Lok Sabha and State Legislative Assemblies. 2. It is immediately operational from the date of commencement. 3. It also applies to the Legislative Assembly of the National Capital Territory of Delhi. Which of the statements is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only",
+      "D": "1, 2 and 3"
+    },
+    "correct_answer": "B",
+    "linked_articles": [
+      "article_239aa",
+      "article_330a",
+      "article_332a",
+      "article_334a"
+    ],
+    "linked_schedules": [],
+    "linked_amendments": [
+      "amendment_106"
+    ],
+    "linked_cases": [],
+    "explanation": "The 106th Amendment provides one-third reservation for women in Lok Sabha, State Assemblies and Delhi Assembly, but operation is linked to census and delimitation.",
+    "elimination_hint": "Immediate implementation is the main trap.",
+    "trap_area": "Current amendment operational status",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_239aa",
+      "article_330a",
+      "article_332a",
+      "article_334a"
+    ],
+    "question_text": "With reference to the 106th Constitutional Amendment, consider the following statements: 1. It provides for one-third reservation for women in Lok Sabha and State Legislative Assemblies. 2. It is immediately operational from the date of commencement. 3. It also applies to the Legislative Assembly of the National Capital Territory of Delhi. Which of the statements is/are correct?",
+    "answer_dimensions": [],
+    "option_explanation": "The 106th Amendment provides one-third reservation for women in Lok Sabha, State Assemblies and Delhi Assembly, but operation is linked to census and delimitation.",
+    "marks": "2",
+    "paper": "GS II"
+  },
+  {
+    "question_id": "upsc_polity_model_2026_045",
+    "year": 2026,
+    "exam": "UPSC CSE Prelims Model",
+    "subject": "Indian Polity",
+    "topic": "Ninth Schedule",
+    "question_type": "statement_based",
+    "question": "With reference to the Ninth Schedule, consider the following statements: 1. It was inserted by the First Constitutional Amendment. 2. Laws placed in the Ninth Schedule after 24 April 1973 can be tested on basic structure grounds. 3. Article 31B gives absolute immunity to all Ninth Schedule laws from judicial review. Which of the statements is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3"
+    },
+    "correct_answer": "A",
+    "linked_articles": [
+      "article_31b",
+      "article_368"
+    ],
+    "linked_schedules": [
+      "schedule_9"
+    ],
+    "linked_amendments": [
+      "amendment_001"
+    ],
+    "linked_cases": [
+      "waman_rao_v_union_of_india_1981",
+      "i_r_coelho_v_state_of_tamil_nadu_2007"
+    ],
+    "explanation": "The Ninth Schedule was added by the First Amendment. Post-Kesavananda insertions are open to basic structure review.",
+    "elimination_hint": "Absolute immunity is incorrect after I.R. Coelho.",
+    "trap_area": "Ninth Schedule immunity",
+    "difficulty": "medium",
+    "exam_type": "Prelims",
+    "articles_referenced": [
+      "article_31b",
+      "article_368"
+    ],
+    "question_text": "With reference to the Ninth Schedule, consider the following statements: 1. It was inserted by the First Constitutional Amendment. 2. Laws placed in the Ninth Schedule after 24 April 1973 can be tested on basic structure grounds. 3. Article 31B gives absolute immunity to all Ninth Schedule laws from judicial review. Which of the statements is/are correct?",
+    "answer_dimensions": [],
+    "option_explanation": "The Ninth Schedule was added by the First Amendment. Post-Kesavananda insertions are open to basic structure review.",
+    "marks": "2",
+    "paper": "GS II"
+  }
+]

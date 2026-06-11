@@ -1,0 +1,236 @@
+[
+  {
+    "part_id": "part_1",
+    "part_number": "I",
+    "part_title": "The Union and its Territory",
+    "article_range": "1\u20134",
+    "upsc_paper": "GS II",
+    "summary": "This Part defines India as a Union of States and explains how states and Union territories may be created, altered or renamed. UPSC often links it with federalism, state reorganisation and Parliament\u2019s power over territory.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_2",
+    "part_number": "II",
+    "part_title": "Citizenship",
+    "article_range": "5\u201311",
+    "upsc_paper": "GS II",
+    "summary": "This Part deals with citizenship at the commencement of the Constitution and Parliament\u2019s power to regulate citizenship by law. It matters for questions on citizenship, migration, NRC, CAA and constitutional identity.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_3",
+    "part_number": "III",
+    "part_title": "Fundamental Rights",
+    "article_range": "12\u201335",
+    "upsc_paper": "GS II, GS IV",
+    "summary": "This Part protects basic freedoms and limits arbitrary State action. It is one of the most tested areas in UPSC through rights, judicial review, writs, equality, liberty and constitutional morality.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_4",
+    "part_number": "IV",
+    "part_title": "Directive Principles of State Policy",
+    "article_range": "36\u201351",
+    "upsc_paper": "GS II, GS IV",
+    "summary": "This Part gives guiding principles for social and economic justice in governance. UPSC frequently asks about its relationship with Fundamental Rights, welfare state and constitutional philosophy.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_4a",
+    "part_number": "IVA",
+    "part_title": "Fundamental Duties",
+    "article_range": "51A",
+    "upsc_paper": "GS II, GS IV",
+    "summary": "This Part lists the duties expected from citizens, such as respecting the Constitution and protecting public property. UPSC links it with civic responsibility, constitutional values and ethical citizenship.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_5",
+    "part_number": "V",
+    "part_title": "The Union",
+    "article_range": "52\u2013151",
+    "upsc_paper": "GS II",
+    "summary": "This Part deals with the President, Vice-President, Parliament, Union judiciary, CAG and Union executive structure. It is a core area for questions on Parliament, executive accountability, judiciary and constitutional offices.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_6",
+    "part_number": "VI",
+    "part_title": "The States",
+    "article_range": "152\u2013237",
+    "upsc_paper": "GS II",
+    "summary": "This Part explains the constitutional structure of state governments, including Governor, State Legislature, High Courts and state executive. UPSC tests it through Centre-State relations, Governor\u2019s powers and federal issues.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_7",
+    "part_number": "VII",
+    "part_title": "The States in Part B of the First Schedule",
+    "article_range": "238",
+    "upsc_paper": "GS II",
+    "summary": "This Part earlier dealt with Part B States but was repealed after reorganisation of states. It is relevant mainly for historical understanding of constitutional restructuring after independence.",
+    "upsc_importance": "LOW"
+  },
+  {
+    "part_id": "part_8",
+    "part_number": "VIII",
+    "part_title": "The Union Territories",
+    "article_range": "239\u2013242",
+    "upsc_paper": "GS II",
+    "summary": "This Part deals with the administration of Union territories and special arrangements for Delhi and Puducherry. UPSC often links it with federalism, Delhi governance and Centre-UT relations.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_9",
+    "part_number": "IX",
+    "part_title": "The Panchayats",
+    "article_range": "243\u2013243O",
+    "upsc_paper": "GS II",
+    "summary": "This Part gives constitutional status to Panchayati Raj institutions. UPSC tests it through decentralisation, local governance, reservation, Gram Sabha and the 73rd Constitutional Amendment.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_9a",
+    "part_number": "IXA",
+    "part_title": "The Municipalities",
+    "article_range": "243P\u2013243ZG",
+    "upsc_paper": "GS II",
+    "summary": "This Part gives constitutional status to urban local bodies. It is important for questions on urban governance, municipal finance, planning committees and the 74th Constitutional Amendment.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_9b",
+    "part_number": "IXB",
+    "part_title": "The Co-operative Societies",
+    "article_range": "243ZH\u2013243ZT",
+    "upsc_paper": "GS II",
+    "summary": "This Part deals with democratic functioning and regulation of co-operative societies. UPSC links it with federalism, co-operative movement, the 97th Amendment and Supreme Court rulings.",
+    "upsc_importance": "MEDIUM"
+  },
+  {
+    "part_id": "part_10",
+    "part_number": "X",
+    "part_title": "The Scheduled and Tribal Areas",
+    "article_range": "244\u2013244A",
+    "upsc_paper": "GS II",
+    "summary": "This Part deals with administration of Scheduled Areas and Tribal Areas. UPSC tests it with Fifth Schedule, Sixth Schedule, tribal autonomy, governance and protection of vulnerable communities.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_11",
+    "part_number": "XI",
+    "part_title": "Relations between the Union and the States",
+    "article_range": "245\u2013263",
+    "upsc_paper": "GS II",
+    "summary": "This Part explains legislative and administrative relations between the Union and States. It is central to UPSC questions on federalism, distribution of powers, inter-state coordination and disputes.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_12",
+    "part_number": "XII",
+    "part_title": "Finance, Property, Contracts and Suits",
+    "article_range": "264\u2013300A",
+    "upsc_paper": "GS II, GS III",
+    "summary": "This Part deals with public finance, taxation, borrowing, property and government contracts. UPSC links it with fiscal federalism, Finance Commission, GST, Consolidated Fund and right to property.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_13",
+    "part_number": "XIII",
+    "part_title": "Trade, Commerce and Intercourse within the Territory of India",
+    "article_range": "301\u2013307",
+    "upsc_paper": "GS II, GS III",
+    "summary": "This Part protects free trade and commerce across India while allowing reasonable restrictions. UPSC may connect it with economic unity, inter-state trade and federal regulation.",
+    "upsc_importance": "MEDIUM"
+  },
+  {
+    "part_id": "part_14",
+    "part_number": "XIV",
+    "part_title": "Services under the Union and the States",
+    "article_range": "308\u2013323",
+    "upsc_paper": "GS II",
+    "summary": "This Part deals with civil services, public employment and Public Service Commissions. UPSC tests it through civil service protection, UPSC/SPSC, bureaucracy and administrative accountability.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_14a",
+    "part_number": "XIVA",
+    "part_title": "Tribunals",
+    "article_range": "323A\u2013323B",
+    "upsc_paper": "GS II",
+    "summary": "This Part deals with administrative and other tribunals. UPSC links it with judicial review, tribunalisation, separation of powers and access to justice.",
+    "upsc_importance": "MEDIUM"
+  },
+  {
+    "part_id": "part_15",
+    "part_number": "XV",
+    "part_title": "Elections",
+    "article_range": "324\u2013329A",
+    "upsc_paper": "GS II",
+    "summary": "This Part deals with the Election Commission and constitutional rules for elections. It is highly important for UPSC questions on electoral reforms, ECI powers, delimitation and democratic representation.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_16",
+    "part_number": "XVI",
+    "part_title": "Special Provisions Relating to Certain Classes",
+    "article_range": "330\u2013342A",
+    "upsc_paper": "GS II",
+    "summary": "This Part provides safeguards and representation for Scheduled Castes, Scheduled Tribes, Anglo-Indians earlier, backward classes and related commissions. UPSC links it with reservation, social justice and constitutional protection.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_17",
+    "part_number": "XVII",
+    "part_title": "Official Language",
+    "article_range": "343\u2013351",
+    "upsc_paper": "GS II",
+    "summary": "This Part deals with official language of the Union, States, courts and language development. UPSC tests it through language policy, Hindi-English debate, Eighth Schedule and linguistic diversity.",
+    "upsc_importance": "MEDIUM"
+  },
+  {
+    "part_id": "part_18",
+    "part_number": "XVIII",
+    "part_title": "Emergency Provisions",
+    "article_range": "352\u2013360",
+    "upsc_paper": "GS II",
+    "summary": "This Part gives rules for National Emergency, President\u2019s Rule and Financial Emergency. UPSC repeatedly tests it through federalism, civil liberties, Article 356, 44th Amendment and misuse safeguards.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_19",
+    "part_number": "XIX",
+    "part_title": "Miscellaneous",
+    "article_range": "361\u2013367",
+    "upsc_paper": "GS II",
+    "summary": "This Part contains special protections, definitions and miscellaneous constitutional rules. UPSC relevance is selective, especially for immunity of President/Governor and interpretation clauses.",
+    "upsc_importance": "MEDIUM"
+  },
+  {
+    "part_id": "part_20",
+    "part_number": "XX",
+    "part_title": "Amendment of the Constitution",
+    "article_range": "368",
+    "upsc_paper": "GS II",
+    "summary": "This Part explains how the Constitution can be amended. It is crucial for UPSC questions on basic structure, constitutional rigidity-flexibility and Parliament\u2019s amending power.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_21",
+    "part_number": "XXI",
+    "part_title": "Temporary, Transitional and Special Provisions",
+    "article_range": "369\u2013392",
+    "upsc_paper": "GS II",
+    "summary": "This Part contains special provisions for certain states and transitional arrangements. UPSC links it with asymmetric federalism, special state provisions and historical constitutional settlements.",
+    "upsc_importance": "HIGH"
+  },
+  {
+    "part_id": "part_22",
+    "part_number": "XXII",
+    "part_title": "Short Title, Commencement, Authoritative Text in Hindi and Repeals",
+    "article_range": "393\u2013395",
+    "upsc_paper": "GS II",
+    "summary": "This Part deals with the short title, commencement, authoritative Hindi text and repeal of earlier constitutional laws. It has low direct UPSC relevance but helps understand constitutional finalisation.",
+    "upsc_importance": "LOW"
+  }
+]

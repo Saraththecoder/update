@@ -1,0 +1,503 @@
+[
+  {
+    "schedule_id": "schedule_1",
+    "schedule_number": "First Schedule",
+    "schedule_title": "The States and the Union territories",
+    "articles_linked": [
+      "article_1",
+      "article_4"
+    ],
+    "part_linked": "part_1",
+    "broad_content": "Lists the States and Union territories of India and their territorial descriptions.",
+    "upsc_importance": "HIGH",
+    "upsc_angle": "State reorganisation, Union territories, Article 1, Article 3, Article 4, map-based polity questions.",
+    "key_traps": [
+      "Article 3 changes state boundaries; Article 4 says such laws are not Article 368 amendments.",
+      "India is a Union of States, not a federation of states.",
+      "Union territories are also part of the territory of India."
+    ],
+    "static_tags": [
+      "Union and its Territory",
+      "State Reorganisation",
+      "Federalism",
+      "Indian Map"
+    ],
+    "current_linkage": "Linked with creation/alteration of Union territories, Delhi governance, Jammu and Kashmir reorganisation, and demands for new States.",
+    "memory_trigger": "First Schedule = Political map of India.",
+    "linked_articles": [
+      "article_1",
+      "article_4"
+    ],
+    "plain_language": "Lists the States and Union territories of India and their territorial descriptions.",
+    "full_text": "Lists the States and Union territories of India and their territorial descriptions."
+  },
+  {
+    "schedule_id": "schedule_2",
+    "schedule_number": "Second Schedule",
+    "schedule_title": "Provisions as to the President, Governors, Speakers, Judges, CAG and related constitutional offices",
+    "articles_linked": [
+      "article_59",
+      "article_65",
+      "article_75",
+      "article_97",
+      "article_125",
+      "article_148",
+      "article_158",
+      "article_164",
+      "article_186",
+      "article_221"
+    ],
+    "part_linked": "part_5, part_6",
+    "broad_content": "Deals with salaries, allowances, privileges and conditions of service of major constitutional authorities.",
+    "upsc_importance": "MEDIUM",
+    "upsc_angle": "Constitutional offices, charged expenditure, independence of judiciary and CAG, Speaker/Chairman provisions.",
+    "key_traps": [
+      "Salary provisions are constitutional, but amounts may be changed by law.",
+      "Judges\u2019 salaries and CAG expenses are linked with independence.",
+      "Do not confuse Second Schedule with Third Schedule oaths."
+    ],
+    "static_tags": [
+      "Constitutional Offices",
+      "Judiciary",
+      "CAG",
+      "Presiding Officers"
+    ],
+    "current_linkage": "Relevant in debates on judicial independence, CAG independence and salaries of constitutional authorities.",
+    "memory_trigger": "Second Schedule = Salary and privileges.",
+    "linked_articles": [
+      "article_59",
+      "article_65",
+      "article_75",
+      "article_97",
+      "article_125",
+      "article_148",
+      "article_158",
+      "article_164",
+      "article_186",
+      "article_221"
+    ],
+    "plain_language": "Deals with salaries, allowances, privileges and conditions of service of major constitutional authorities.",
+    "full_text": "Deals with salaries, allowances, privileges and conditions of service of major constitutional authorities."
+  },
+  {
+    "schedule_id": "schedule_3",
+    "schedule_number": "Third Schedule",
+    "schedule_title": "Forms of Oaths or Affirmations",
+    "articles_linked": [
+      "article_75",
+      "article_84",
+      "article_99",
+      "article_124",
+      "article_146",
+      "article_164",
+      "article_173",
+      "article_188",
+      "article_219"
+    ],
+    "part_linked": "part_5, part_6",
+    "broad_content": "Contains oath or affirmation forms for Union Ministers, candidates for Parliament, MPs, Supreme Court judges, CAG, State Ministers, State legislators and High Court judges.",
+    "upsc_importance": "HIGH",
+    "upsc_angle": "Oath-taking authorities, constitutional posts, sovereignty and integrity phrase, difference between oath of office and secrecy.",
+    "key_traps": [
+      "President\u2019s oath is under Article 60, not Third Schedule.",
+      "Governor\u2019s oath is under Article 159, not Third Schedule.",
+      "MPs and MLAs take oath before sitting/voting; violation attracts Article 104 or Article 193 penalty."
+    ],
+    "static_tags": [
+      "Oath",
+      "MPs",
+      "MLAs",
+      "Judges",
+      "CAG",
+      "Ministers"
+    ],
+    "current_linkage": "Relevant whenever appointments to constitutional offices, disqualification, or oath controversies appear in news.",
+    "memory_trigger": "Third Schedule = Oaths, but not President/Governor.",
+    "linked_articles": [
+      "article_75",
+      "article_84",
+      "article_99",
+      "article_124",
+      "article_146",
+      "article_164",
+      "article_173",
+      "article_188",
+      "article_219"
+    ],
+    "plain_language": "Contains oath or affirmation forms for Union Ministers, candidates for Parliament, MPs, Supreme Court judges, CAG, State Ministers, State legislators and High Court judges.",
+    "full_text": "Contains oath or affirmation forms for Union Ministers, candidates for Parliament, MPs, Supreme Court judges, CAG, State Ministers, State legislators and High Court judges."
+  },
+  {
+    "schedule_id": "schedule_4",
+    "schedule_number": "Fourth Schedule",
+    "schedule_title": "Allocation of seats in the Council of States",
+    "articles_linked": [
+      "article_4",
+      "article_80"
+    ],
+    "part_linked": "part_5",
+    "broad_content": "Allocates Rajya Sabha seats to States and Union territories.",
+    "upsc_importance": "HIGH",
+    "upsc_angle": "Rajya Sabha composition, unequal state representation, population-based allocation, federalism.",
+    "key_traps": [
+      "Rajya Sabha does not give equal representation to all States.",
+      "Fourth Schedule is amended when State boundaries or status change.",
+      "Article 80 governs Rajya Sabha composition; Fourth Schedule gives allocation."
+    ],
+    "static_tags": [
+      "Rajya Sabha",
+      "Federalism",
+      "Parliament",
+      "Representation"
+    ],
+    "current_linkage": "Relevant when new States/UTs are created or Rajya Sabha seat distribution is discussed.",
+    "memory_trigger": "Fourth Schedule = Rajya Sabha seats.",
+    "linked_articles": [
+      "article_4",
+      "article_80"
+    ],
+    "plain_language": "Allocates Rajya Sabha seats to States and Union territories.",
+    "full_text": "Allocates Rajya Sabha seats to States and Union territories."
+  },
+  {
+    "schedule_id": "schedule_5",
+    "schedule_number": "Fifth Schedule",
+    "schedule_title": "Administration and control of Scheduled Areas and Scheduled Tribes",
+    "articles_linked": [
+      "article_244",
+      "article_339"
+    ],
+    "part_linked": "part_10, part_16",
+    "broad_content": "Deals with Scheduled Areas and Scheduled Tribes in States other than those covered by the Sixth Schedule.",
+    "upsc_importance": "HIGH",
+    "upsc_angle": "Scheduled Areas, Governor\u2019s report, Tribes Advisory Council, PESA, tribal autonomy, land alienation.",
+    "key_traps": [
+      "Fifth Schedule applies to Scheduled Areas in several States; Sixth Schedule applies to tribal areas of specific North-Eastern States.",
+      "Governor has special responsibility in Fifth Schedule areas.",
+      "President declares Scheduled Areas."
+    ],
+    "static_tags": [
+      "Scheduled Areas",
+      "STs",
+      "Governor",
+      "PESA",
+      "Tribal Welfare"
+    ],
+    "current_linkage": "Linked with PESA implementation, forest rights, tribal land issues, mining in tribal areas and Governor\u2019s role.",
+    "memory_trigger": "Fifth Schedule = Scheduled Areas outside Sixth Schedule States.",
+    "linked_articles": [
+      "article_244",
+      "article_339"
+    ],
+    "plain_language": "Deals with Scheduled Areas and Scheduled Tribes in States other than those covered by the Sixth Schedule.",
+    "full_text": "Deals with Scheduled Areas and Scheduled Tribes in States other than those covered by the Sixth Schedule."
+  },
+  {
+    "schedule_id": "schedule_6",
+    "schedule_number": "Sixth Schedule",
+    "schedule_title": "Administration of Tribal Areas in Assam, Meghalaya, Tripura and Mizoram",
+    "articles_linked": [
+      "article_244",
+      "article_275"
+    ],
+    "part_linked": "part_10, part_12",
+    "broad_content": "Provides for Autonomous District Councils and Regional Councils in tribal areas of Assam, Meghalaya, Tripura and Mizoram.",
+    "upsc_importance": "HIGH",
+    "upsc_angle": "Autonomous councils, tribal self-governance, North-East polity, legislative/judicial/financial powers of councils.",
+    "key_traps": [
+      "Sixth Schedule does not apply to all North-Eastern States.",
+      "It applies to Assam, Meghalaya, Tripura and Mizoram only.",
+      "Autonomous councils have law-making powers on specified local subjects."
+    ],
+    "static_tags": [
+      "Sixth Schedule",
+      "Autonomous District Councils",
+      "North-East",
+      "Tribal Autonomy"
+    ],
+    "current_linkage": "Linked with demands for inclusion/exclusion from Sixth Schedule, autonomy movements and North-East governance.",
+    "memory_trigger": "Sixth Schedule = Autonomous District Councils in four NE States.",
+    "linked_articles": [
+      "article_244",
+      "article_275"
+    ],
+    "plain_language": "Provides for Autonomous District Councils and Regional Councils in tribal areas of Assam, Meghalaya, Tripura and Mizoram.",
+    "full_text": "Provides for Autonomous District Councils and Regional Councils in tribal areas of Assam, Meghalaya, Tripura and Mizoram."
+  },
+  {
+    "schedule_id": "schedule_7",
+    "schedule_number": "Seventh Schedule",
+    "schedule_title": "Union List, State List and Concurrent List",
+    "articles_linked": [
+      "article_246",
+      "article_246a",
+      "article_248",
+      "article_254"
+    ],
+    "part_linked": "part_11",
+    "broad_content": "Distributes legislative subjects between Union, States and both jointly through three lists.",
+    "upsc_importance": "HIGH",
+    "upsc_angle": "Federalism, legislative competence, residuary powers, Centre-State conflict, GST, criminal law, agriculture, police, public order.",
+    "list_structure": {
+      "union_list": {
+        "description": "Subjects on which Parliament has exclusive power, such as defence, foreign affairs, banking, currency, atomic energy, railways and citizenship.",
+        "upsc_trap": "Residuary subjects belong to Parliament, not States."
+      },
+      "state_list": {
+        "description": "Subjects normally under State legislatures, such as public order, police, public health, agriculture, local government and land.",
+        "upsc_trap": "Parliament can legislate on State List subjects in special situations under Articles 249, 250, 252 and 253."
+      },
+      "concurrent_list": {
+        "description": "Subjects where both Parliament and States can legislate, such as criminal law, marriage, education, forests, labour welfare and electricity.",
+        "upsc_trap": "In case of conflict, Article 254 generally gives Union law primacy, subject to exceptions."
+      }
+    },
+    "static_tags": [
+      "Federalism",
+      "Legislative Relations",
+      "Union List",
+      "State List",
+      "Concurrent List"
+    ],
+    "current_linkage": "Linked with GST, farm laws debate, education policy, criminal law reforms, public health federalism and environmental regulation.",
+    "memory_trigger": "Seventh Schedule = Who makes law on what.",
+    "linked_articles": [
+      "article_246",
+      "article_246a",
+      "article_248",
+      "article_254"
+    ],
+    "plain_language": "Distributes legislative subjects between Union, States and both jointly through three lists.",
+    "full_text": "Distributes legislative subjects between Union, States and both jointly through three lists."
+  },
+  {
+    "schedule_id": "schedule_8",
+    "schedule_number": "Eighth Schedule",
+    "schedule_title": "Languages",
+    "articles_linked": [
+      "article_344",
+      "article_351"
+    ],
+    "part_linked": "part_17",
+    "broad_content": "Lists constitutionally recognised languages.",
+    "languages": [
+      "Assamese",
+      "Bengali",
+      "Bodo",
+      "Dogri",
+      "Gujarati",
+      "Hindi",
+      "Kannada",
+      "Kashmiri",
+      "Konkani",
+      "Maithili",
+      "Malayalam",
+      "Manipuri",
+      "Marathi",
+      "Nepali",
+      "Odia",
+      "Punjabi",
+      "Sanskrit",
+      "Santali",
+      "Sindhi",
+      "Tamil",
+      "Telugu",
+      "Urdu"
+    ],
+    "upsc_importance": "HIGH",
+    "upsc_angle": "Official language, linguistic diversity, constitutional recognition, language movements.",
+    "key_traps": [
+      "There are 22 languages in the Eighth Schedule.",
+      "English is not in the Eighth Schedule.",
+      "Sindhi was added by the 21st Amendment; Konkani, Manipuri and Nepali by the 71st; Bodo, Dogri, Maithili and Santali by the 92nd."
+    ],
+    "static_tags": [
+      "Languages",
+      "Official Language",
+      "Cultural Diversity"
+    ],
+    "current_linkage": "Linked with demands for inclusion of more languages such as Bhojpuri, Rajasthani and others.",
+    "memory_trigger": "Eighth Schedule = 22 recognised languages.",
+    "linked_articles": [
+      "article_344",
+      "article_351"
+    ],
+    "plain_language": "Lists constitutionally recognised languages.",
+    "full_text": "Lists constitutionally recognised languages."
+  },
+  {
+    "schedule_id": "schedule_9",
+    "schedule_number": "Ninth Schedule",
+    "schedule_title": "Validation of certain Acts and Regulations",
+    "articles_linked": [
+      "article_31b"
+    ],
+    "part_linked": "part_3",
+    "broad_content": "Contains laws given protection from challenge on the ground of violation of Fundamental Rights, subject to basic structure review.",
+    "upsc_importance": "HIGH",
+    "upsc_angle": "Land reforms, judicial review, basic structure, Article 31B, I.R. Coelho judgment.",
+    "key_traps": [
+      "Ninth Schedule is not completely immune from judicial review.",
+      "Post-24 April 1973 insertions can be tested against basic structure.",
+      "Article 31B is linked to Ninth Schedule."
+    ],
+    "landmark_cases": [
+      "Kesavananda Bharati v. State of Kerala",
+      "Waman Rao v. Union of India",
+      "I.R. Coelho v. State of Tamil Nadu"
+    ],
+    "static_tags": [
+      "Ninth Schedule",
+      "Judicial Review",
+      "Basic Structure",
+      "Land Reforms"
+    ],
+    "current_linkage": "Relevant whenever Parliament or States seek to protect reservation or land laws from judicial challenge.",
+    "memory_trigger": "Ninth Schedule = Protected laws, but not above basic structure.",
+    "linked_articles": [
+      "article_31b"
+    ],
+    "plain_language": "Contains laws given protection from challenge on the ground of violation of Fundamental Rights, subject to basic structure review.",
+    "full_text": "Contains laws given protection from challenge on the ground of violation of Fundamental Rights, subject to basic structure review."
+  },
+  {
+    "schedule_id": "schedule_10",
+    "schedule_number": "Tenth Schedule",
+    "schedule_title": "Provisions as to disqualification on ground of defection",
+    "articles_linked": [
+      "article_102",
+      "article_191"
+    ],
+    "part_linked": "part_5, part_6",
+    "broad_content": "Contains anti-defection law provisions for MPs and State legislators.",
+    "upsc_importance": "HIGH",
+    "upsc_angle": "Anti-defection, Speaker\u2019s role, merger, whip, voluntary giving up membership, judicial review.",
+    "key_traps": [
+      "Disqualification is decided by Speaker/Chairman, but decision is subject to judicial review.",
+      "Voluntarily giving up membership is wider than formal resignation.",
+      "Merger exception requires two-thirds of members of the legislative party."
+    ],
+    "landmark_cases": [
+      "Kihoto Hollohan v. Zachillhu",
+      "Rajendra Singh Rana v. Swami Prasad Maurya",
+      "Nabam Rebia v. Deputy Speaker"
+    ],
+    "static_tags": [
+      "Anti-Defection",
+      "Speaker",
+      "Political Parties",
+      "Disqualification"
+    ],
+    "current_linkage": "Highly relevant due to frequent government formation disputes, party splits and Speaker delay controversies.",
+    "memory_trigger": "Tenth Schedule = Anti-defection law.",
+    "linked_articles": [
+      "article_102",
+      "article_191"
+    ],
+    "plain_language": "Contains anti-defection law provisions for MPs and State legislators.",
+    "full_text": "Contains anti-defection law provisions for MPs and State legislators."
+  },
+  {
+    "schedule_id": "schedule_11",
+    "schedule_number": "Eleventh Schedule",
+    "schedule_title": "Panchayats",
+    "articles_linked": [
+      "article_243g"
+    ],
+    "part_linked": "part_9",
+    "broad_content": "Lists 29 subjects that may be devolved to Panchayats.",
+    "subjects_count": 29,
+    "major_subjects": [
+      "Agriculture",
+      "Land improvement",
+      "Minor irrigation",
+      "Animal husbandry",
+      "Fisheries",
+      "Social forestry",
+      "Minor forest produce",
+      "Small-scale industries",
+      "Rural housing",
+      "Drinking water",
+      "Roads",
+      "Rural electrification",
+      "Poverty alleviation programmes",
+      "Education",
+      "Health and sanitation",
+      "Women and child development",
+      "Social welfare",
+      "Public distribution system",
+      "Maintenance of community assets"
+    ],
+    "upsc_importance": "HIGH",
+    "upsc_angle": "73rd Amendment, decentralisation, Gram Sabha, local planning, State Finance Commission.",
+    "key_traps": [
+      "Eleventh Schedule subjects are not automatically transferred; State law devolves powers.",
+      "Panchayats are under Part IX.",
+      "State Election Commission conducts Panchayat elections."
+    ],
+    "static_tags": [
+      "Panchayati Raj",
+      "73rd Amendment",
+      "Local Government",
+      "Decentralisation"
+    ],
+    "current_linkage": "Linked with rural development schemes, Gram Panchayat finance, localisation of SDGs and digital Panchayat governance.",
+    "memory_trigger": "Eleventh Schedule = 29 Panchayat subjects.",
+    "linked_articles": [
+      "article_243g"
+    ],
+    "plain_language": "Lists 29 subjects that may be devolved to Panchayats.",
+    "full_text": "Lists 29 subjects that may be devolved to Panchayats."
+  },
+  {
+    "schedule_id": "schedule_12",
+    "schedule_number": "Twelfth Schedule",
+    "schedule_title": "Municipalities",
+    "articles_linked": [
+      "article_243w"
+    ],
+    "part_linked": "part_9a",
+    "broad_content": "Lists 18 subjects that may be devolved to Municipalities.",
+    "subjects_count": 18,
+    "major_subjects": [
+      "Urban planning",
+      "Regulation of land use",
+      "Roads and bridges",
+      "Water supply",
+      "Public health",
+      "Sanitation",
+      "Solid waste management",
+      "Fire services",
+      "Urban forestry",
+      "Protection of environment",
+      "Safeguarding interests of weaker sections",
+      "Slum improvement",
+      "Urban poverty alleviation",
+      "Urban amenities",
+      "Burials and cremations",
+      "Cattle pounds",
+      "Vital statistics",
+      "Public amenities"
+    ],
+    "upsc_importance": "HIGH",
+    "upsc_angle": "74th Amendment, urban local bodies, municipal finance, Metropolitan Planning Committee, District Planning Committee.",
+    "key_traps": [
+      "Twelfth Schedule subjects are not automatically transferred; State law devolves powers.",
+      "Municipalities are under Part IXA.",
+      "District Planning Committee is Article 243ZD; Metropolitan Planning Committee is Article 243ZE."
+    ],
+    "static_tags": [
+      "Municipalities",
+      "74th Amendment",
+      "Urban Governance",
+      "Local Bodies"
+    ],
+    "current_linkage": "Linked with urbanisation, municipal finance, Smart Cities Mission, AMRUT and solid waste management.",
+    "memory_trigger": "Twelfth Schedule = 18 Municipal subjects.",
+    "linked_articles": [
+      "article_243w"
+    ],
+    "plain_language": "Lists 18 subjects that may be devolved to Municipalities.",
+    "full_text": "Lists 18 subjects that may be devolved to Municipalities."
+  }
+]

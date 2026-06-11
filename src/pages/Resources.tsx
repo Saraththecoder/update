@@ -1,5 +1,5 @@
 import React from "react";
-import { BookOpen, Compass, Brain, ArrowRight, Sparkle, TrendUp, ShieldCheck } from "@phosphor-icons/react";
+import { BookOpen, Compass, Brain, ArrowRight, Sparkle, TrendUp, ShieldCheck, ListNumbers, Scales } from "@phosphor-icons/react";
 import { motion } from "motion/react";
 
 interface ResourcesProps {
@@ -31,7 +31,7 @@ export default function Resources({ setActivePage }: ResourcesProps) {
 
       {/* Interactive Resource Cards */}
       <motion.div 
-        className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
         initial="hidden"
         animate="visible"
         variants={{
@@ -154,7 +154,7 @@ export default function Resources({ setActivePage }: ResourcesProps) {
           </button>
         </motion.div>
 
-        {/* Card 4: UPSC Mains Model Answers */}
+        {/* Card 4: UPSC Mains Cockroach Answers */}
         <motion.div 
           variants={{
             hidden: { opacity: 0, y: 25 },
@@ -171,10 +171,10 @@ export default function Resources({ setActivePage }: ResourcesProps) {
             <div className="space-y-2">
               <span className="text-[10px] font-mono font-bold text-brand-red uppercase tracking-wider">High Scoring Blueprints</span>
               <h3 className="text-xl font-display font-bold text-navy-950">
-                UPSC Mains Model Answers
+                UPSC Mains Cockroach Answers
               </h3>
               <p className="text-xs text-slate-500 leading-relaxed">
-                Step-by-step model answers covering UPSC GS Mains questions. Analyze the structural flow, introduction formats, arguments, and conclusions.
+                Step-by-step expert solutions covering UPSC GS Mains questions. Analyze the structural flow, logical layout, data insertions, and high-impact conclusions.
               </p>
             </div>
 
@@ -184,10 +184,86 @@ export default function Resources({ setActivePage }: ResourcesProps) {
           </div>
 
           <button
-            onClick={() => setActivePage("mains-model-answers")}
+            onClick={() => setActivePage("mains-cockroach-answers")}
             className="mt-8 bg-brand-red hover:bg-brand-red-hover text-white text-xs font-bold uppercase tracking-wider py-3.5 px-6 rounded-xl transition duration-150 flex items-center justify-center gap-2 cursor-pointer w-full shadow-md"
           >
-            <span>Explore Model Answers</span>
+            <span>Explore Cockroach Answers</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </button>
+        </motion.div>
+
+        {/* Card 5: UPSC Mains Theme Wise Analysis */}
+        <motion.div 
+          variants={{
+            hidden: { opacity: 0, y: 25 },
+            visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 120, damping: 15 } }
+          }}
+          whileHover={{ y: -6, transition: { duration: 0.2 } }}
+          className="card-blueprint bg-white border border-slate-200 p-8 rounded-2xl shadow-xs flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition-all duration-300 group"
+        >
+          <div className="space-y-5">
+            <div className="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center text-brand-red border border-brand-red/10">
+              <ListNumbers className="w-6 h-6" />
+            </div>
+            
+            <div className="space-y-2">
+              <span className="text-[10px] font-mono font-bold text-brand-red uppercase tracking-wider">Syllabus Mapping Engine</span>
+              <h3 className="text-xl font-display font-bold text-navy-950">
+                UPSC Mains Theme Wise Analysis
+              </h3>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                Subjective questions grouped by GS Papers (GS1-GS4), subjects, topics, and microthemes. Understand the exact syllabus linkage and priority areas.
+              </p>
+            </div>
+
+            <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 text-[11px] text-slate-500 leading-relaxed">
+              <strong>Interactive Grid:</strong> Drill down into microthemes, filter by year and marks, and identify recurrent trends across a decade of Mains examinations.
+            </div>
+          </div>
+
+          <button
+            onClick={() => setActivePage("mains-theme-analysis")}
+            className="mt-8 bg-[#171717] hover:bg-black text-white text-xs font-bold uppercase tracking-wider py-3.5 px-6 rounded-xl transition duration-150 flex items-center justify-center gap-2 cursor-pointer w-full shadow-xs"
+          >
+            <span>Analyze Subjective Themes</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </button>
+        </motion.div>
+
+        {/* Card 6: Constitution Explorer */}
+        <motion.div 
+          variants={{
+            hidden: { opacity: 0, y: 25 },
+            visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 120, damping: 15 } }
+          }}
+          whileHover={{ y: -6, transition: { duration: 0.2 } }}
+          className="card-blueprint bg-white border border-slate-200 p-8 rounded-2xl shadow-xs flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition-all duration-300 group"
+        >
+          <div className="space-y-5">
+            <div className="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center text-brand-red border border-brand-red/10">
+              <Scales className="w-6 h-6" />
+            </div>
+            
+            <div className="space-y-2">
+              <span className="text-[10px] font-mono font-bold text-brand-red uppercase tracking-wider font-bold">Article Diagnostic Workspace</span>
+              <h3 className="text-xl font-display font-bold text-navy-950">
+                Indian Constitution Explorer
+              </h3>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                A multi-dimensional workspace mapping Articles to plain language meanings, landmark Supreme Court judgments, and direct UPSC syllabus priorities.
+              </p>
+            </div>
+
+            <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 text-[11px] text-slate-500 leading-relaxed">
+              <strong>Three-Pane Layout:</strong> Interactive navigation tree, complete article breakdown, and landmark judicial case/UPSC question linkages.
+            </div>
+          </div>
+
+          <button
+            onClick={() => setActivePage("constitution-explorer")}
+            className="mt-8 bg-brand-red hover:bg-brand-red-hover text-white text-xs font-bold uppercase tracking-wider py-3.5 px-6 rounded-xl transition duration-150 flex items-center justify-center gap-2 cursor-pointer w-full shadow-md animate-pulse"
+          >
+            <span>Explore Constitution</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
         </motion.div>
