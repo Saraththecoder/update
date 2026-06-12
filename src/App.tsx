@@ -13,6 +13,7 @@ import MainsThemeWiseAnalysisPage from "./pages/MainsThemeWiseAnalysisPage";
 import ConstitutionExplorerPage from "./pages/ConstitutionExplorerPage";
 import { Sparkle, X, Handshake } from "@phosphor-icons/react";
 import { AnimatePresence, motion } from "motion/react";
+import Chatbot from "./components/Chatbot";
 export default function App() {
   const [activePage, setActivePage] = useState<string>("home");
   const [showTopToast, setShowTopToast] = useState<boolean>(true);
@@ -97,6 +98,9 @@ export default function App() {
 
       {/* 4. THE TRUSTED FOOTER */}
       <Footer setActivePage={setActivePage} />
+
+      {/* 5. FLOATING COMPANION CHATBOT */}
+      <Chatbot setActivePage={setActivePage} />
 
     </div>
   );

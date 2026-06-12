@@ -1,7 +1,7 @@
 import React from "react";
-import { 
-  Users, Target, Compass, Sparkle, 
-  Heart, Trophy, Coffee, BookOpen 
+import {
+  Users, Target, Compass, Sparkle,
+  Heart, Trophy, Coffee, BookOpen
 } from "@phosphor-icons/react";
 import { TEAM_MEMBERS } from "../data";
 import { motion } from "motion/react";
@@ -25,9 +25,9 @@ export default function AboutUs() {
   const renderCard = (member: TeamMember | undefined) => {
     if (!member) return null;
     const photo = member.name in memberPhotos ? memberPhotos[member.name] : null;
-    
+
     return (
-      <div 
+      <div
         id={`team-member-card-${member.name.replace(/\s+/g, '-').toLowerCase()}`}
         className="bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-xs flex flex-col justify-between hover:border-navy-300 transition duration-300 overflow-hidden h-full card-blueprint"
       >
@@ -36,10 +36,10 @@ export default function AboutUs() {
           <div className="relative h-28 bg-navy-950 rounded-t-2xl -mx-6 sm:-mx-8 -mt-6 sm:-mt-8 mb-12 border-b border-slate-800 overflow-visible flex flex-col justify-center items-center p-4">
             {/* Subtle overlay gradient */}
             <div className="absolute inset-0 bg-gradient-to-r from-navy-900 to-navy-950 opacity-95" />
-            
+
             {/* Designation / Role text displayed prominently in the banner */}
-            <div className="relative z-10 text-center -translate-y-2">
-              <span className="text-[10px] font-mono font-bold tracking-widest text-brand-red-light bg-brand-red/20 border border-brand-red/35 px-3.5 py-1 rounded-full uppercase shadow-xs">
+            <div className="absolute top-[15%] z-10 text-center">
+              <span className="text-[20px] font-mono font-bold tracking-widest text-brand-red-light bg-brand-red/20 border border-brand-red/35 px-3.5 py-1 rounded-full uppercase shadow-xs">
                 {member.role}
               </span>
             </div>
@@ -47,10 +47,10 @@ export default function AboutUs() {
             {/* Floating Profile Image (Increased by 20%: w-24 h-24 / 96px) */}
             <div className="absolute bottom-0 translate-y-8 w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-md bg-white shrink-0 z-20">
               {photo ? (
-                <img 
-                  src={photo} 
-                  alt={member.name} 
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" 
+                <img
+                  src={photo}
+                  alt={member.name}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                   style={{ transform: member.name === "Anusha PC" ? "scale(1.15)" : "scale(1)" }}
                 />
               ) : (
@@ -63,9 +63,9 @@ export default function AboutUs() {
 
           <div className="space-y-4 pt-2">
             {/* Micro metrics tracking */}
-            <div className="flex items-center justify-between text-xs font-mono">
+            <div className="flex flex-col gap-1 text-xs font-mono">
               <span className="text-slate-400 uppercase tracking-widest font-bold text-[9px]">SPECIALIZATION</span>
-              <span className="text-navy-700 bg-navy-50 px-2.5 py-0.5 rounded-sm font-bold text-[9px] truncate max-w-[180px]">
+              <span className="text-navy-700 bg-navy-50 px-2.5 py-1.5 rounded-sm font-bold text-[10px] leading-relaxed">
                 {member.specialization}
               </span>
             </div>
@@ -96,14 +96,14 @@ export default function AboutUs() {
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-20" 
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-20"
       id="about-us-root"
     >
-      
+
       {/* 1. SECTION: Mission and Vision Headline */}
       <section className="text-center max-w-3xl mx-auto space-y-4" id="about-main-header">
         <span className="text-xs font-mono font-bold text-brand-red tracking-widest uppercase">The Sovereign Manifesto</span>
@@ -172,7 +172,7 @@ export default function AboutUs() {
           </h2>
         </div>
 
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-4 gap-6"
           initial="hidden"
           whileInView="visible"
@@ -187,14 +187,14 @@ export default function AboutUs() {
             }
           }}
         >
-          
-          <motion.div 
+
+          <motion.div
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 150, damping: 18 } }
             }}
             whileHover={{ y: -6, transition: { duration: 0.2 } }}
-            className="card-blueprint bg-white border border-slate-200 p-6 rounded-2xl space-y-3 overflow-hidden shadow-xs hover:shadow-md transition-shadow duration-300" 
+            className="card-blueprint bg-white border border-slate-200 p-6 rounded-2xl space-y-3 overflow-hidden shadow-xs hover:shadow-md transition-shadow duration-300"
             id="pillar-card-1"
           >
             <div className="bg-brand-red-light text-brand-red p-2.5 rounded-lg inline-block">
@@ -206,13 +206,13 @@ export default function AboutUs() {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 150, damping: 18 } }
             }}
             whileHover={{ y: -6, transition: { duration: 0.2 } }}
-            className="card-blueprint bg-white border border-slate-200 p-6 rounded-2xl space-y-3 overflow-hidden shadow-xs hover:shadow-md transition-shadow duration-300" 
+            className="card-blueprint bg-white border border-slate-200 p-6 rounded-2xl space-y-3 overflow-hidden shadow-xs hover:shadow-md transition-shadow duration-300"
             id="pillar-card-2"
           >
             <div className="bg-navy-100 text-navy-900 p-2.5 rounded-lg inline-block">
@@ -224,13 +224,13 @@ export default function AboutUs() {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 150, damping: 18 } }
             }}
             whileHover={{ y: -6, transition: { duration: 0.2 } }}
-            className="card-blueprint bg-white border border-slate-200 p-6 rounded-2xl space-y-3 overflow-hidden shadow-xs hover:shadow-md transition-shadow duration-300" 
+            className="card-blueprint bg-white border border-slate-200 p-6 rounded-2xl space-y-3 overflow-hidden shadow-xs hover:shadow-md transition-shadow duration-300"
             id="pillar-card-3"
           >
             <div className="bg-slate-100 text-slate-700 p-2.5 rounded-lg inline-block">
@@ -242,13 +242,13 @@ export default function AboutUs() {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 150, damping: 18 } }
             }}
             whileHover={{ y: -6, transition: { duration: 0.2 } }}
-            className="card-blueprint bg-white border border-slate-200 p-6 rounded-2xl space-y-3 overflow-hidden shadow-xs hover:shadow-md transition-shadow duration-300" 
+            className="card-blueprint bg-white border border-slate-200 p-6 rounded-2xl space-y-3 overflow-hidden shadow-xs hover:shadow-md transition-shadow duration-300"
             id="pillar-card-4"
           >
             <div className="bg-brand-red-light text-brand-red p-2.5 rounded-lg inline-block">
@@ -277,7 +277,7 @@ export default function AboutUs() {
 
         {/* Pyramid Card Structure */}
         <div className="space-y-10" id="allies-grid">
-          
+
           {/* Row 1: Founder and CEO (centered in the middle) */}
           <div className="flex justify-center" id="team-row-1">
             <div className="w-full md:w-[380px] h-full">

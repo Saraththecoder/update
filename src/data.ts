@@ -101,7 +101,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Anusha PC",
     role: "Managing Director",
-    bio: "A trusted UPSC mentor known for simplifying Anthropology and mastering Prelims strategy. Beyond academics, he serves as a constant companion, emotional anchor, and unwavering supporter throughout the preparation journey. His mission is to help aspirants build knowledge, confidence, resilience, and the determination needed for success.",
+    bio: "A trusted UPSC mentor known for simplifying Anthropology and mastering Prelims strategy. Beyond academics, she serves as a constant companion, emotional anchor, and unwavering supporter throughout the preparation journey. Her mission is to help aspirants build knowledge, confidence, resilience, and the determination needed for success.",
     yearsOfStruggle: 4,
     specialization: "Anthropology Expert | Prelims Wizard | Constant Companion",
     image: "anusha.jpg"
@@ -117,7 +117,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Sanjeeva Reddy",
     role: "CTO",
-    bio: "A technology leader dedicated to engineering seamless learning workspaces and resilient cognitive tools. Sanjeeva ensures that the platform delivers high-speed, interactive syllabus mapping and analytical workspaces for aspirants.",
+    bio: "A tech lead dedicated to engineering seamless learning workspaces and resilient cognitive tools. Sanju ensures that the platform delivers high-speed, interactive syllabus mapping and analytical workspaces for aspirants.",
     yearsOfStruggle: 3,
     specialization: "Tech Architecture | Platform Operations",
     image: "sanjeeva.png"
