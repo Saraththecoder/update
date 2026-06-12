@@ -5,16 +5,96 @@ import {
 } from "@phosphor-icons/react";
 import { TEAM_MEMBERS } from "../data";
 import { motion } from "motion/react";
+import { TeamMember } from "../types";
 
 import prashanthPhoto from "../../assets/prashanth.jpg";
 import anushaPhoto from "../../assets/anusha.jpg";
+import varunPhoto from "../../assets/varun.png";
+import riyaPhoto from "../../assets/riya.png";
+import sanjeevaPhoto from "../../assets/sanjeeva.png";
 
 const memberPhotos: Record<string, string> = {
-  "Prashanth Navle": prashanthPhoto,
-  "Anusha PC": anushaPhoto
+  "Prashanth N": prashanthPhoto,
+  "Anusha PC": anushaPhoto,
+  "Varun Amidal": varunPhoto,
+  "Sanjeeva Reddy": sanjeevaPhoto,
+  "Riya P Kabadi": riyaPhoto
 };
 
 export default function AboutUs() {
+  const renderCard = (member: TeamMember | undefined) => {
+    if (!member) return null;
+    const photo = member.name in memberPhotos ? memberPhotos[member.name] : null;
+    
+    return (
+      <div 
+        id={`team-member-card-${member.name.replace(/\s+/g, '-').toLowerCase()}`}
+        className="bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-xs flex flex-col justify-between hover:border-navy-300 transition duration-300 overflow-hidden h-full card-blueprint"
+      >
+        <div>
+          {/* Card Header Profile Layout with Designation as the Banner */}
+          <div className="relative h-28 bg-navy-950 rounded-t-2xl -mx-6 sm:-mx-8 -mt-6 sm:-mt-8 mb-12 border-b border-slate-800 overflow-visible flex flex-col justify-center items-center p-4">
+            {/* Subtle overlay gradient */}
+            <div className="absolute inset-0 bg-gradient-to-r from-navy-900 to-navy-950 opacity-95" />
+            
+            {/* Designation / Role text displayed prominently in the banner */}
+            <div className="relative z-10 text-center -translate-y-2">
+              <span className="text-[10px] font-mono font-bold tracking-widest text-brand-red-light bg-brand-red/20 border border-brand-red/35 px-3.5 py-1 rounded-full uppercase shadow-xs">
+                {member.role}
+              </span>
+            </div>
+
+            {/* Floating Profile Image (Increased by 20%: w-24 h-24 / 96px) */}
+            <div className="absolute bottom-0 translate-y-8 w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-md bg-white shrink-0 z-20">
+              {photo ? (
+                <img 
+                  src={photo} 
+                  alt={member.name} 
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" 
+                  style={{ transform: member.name === "Anusha PC" ? "scale(1.15)" : "scale(1)" }}
+                />
+              ) : (
+                <div className="w-full h-full bg-gradient-to-br from-slate-800 to-navy-950 text-white flex items-center justify-center font-display font-bold text-xl tracking-wider">
+                  {member.name.split(" ").map(n => n[0]).join("")}
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div className="space-y-4 pt-2">
+            {/* Micro metrics tracking */}
+            <div className="flex items-center justify-between text-xs font-mono">
+              <span className="text-slate-400 uppercase tracking-widest font-bold text-[9px]">SPECIALIZATION</span>
+              <span className="text-navy-700 bg-navy-50 px-2.5 py-0.5 rounded-sm font-bold text-[9px] truncate max-w-[180px]">
+                {member.specialization}
+              </span>
+            </div>
+
+            <div className="space-y-1">
+              <h3 className="text-base font-bold font-display text-navy-950 text-center">{member.name}</h3>
+            </div>
+
+            <p className="text-xs text-slate-600 leading-relaxed min-h-[90px]">
+              {member.bio}
+            </p>
+          </div>
+        </div>
+
+        {/* Unique Empathy Metric Block */}
+        <div className="border-t border-slate-100 pt-4 mt-6 flex items-center justify-between bg-slate-50 border border-slate-100 -mx-6 sm:-mx-8 -mb-6 sm:-mb-8 p-4 sm:p-5 rounded-b-2xl">
+          <div>
+            <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest block leading-none">STRUGGLE TIME</span>
+            <span className="text-xs font-bold text-navy-950 font-display block mt-1">{member.yearsOfStruggle} Years of Intensive Prep</span>
+          </div>
+          <div className="bg-navy-900 text-white rounded-full p-1 text-[10px] font-semibold px-2">
+            LIVED IT
+          </div>
+        </div>
+
+      </div>
+    );
+  };
+
   return (
     <motion.div 
       initial={{ opacity: 0, y: 15 }}
@@ -183,75 +263,48 @@ export default function AboutUs() {
         </motion.div>
       </section>
 
-      {/* 4. MEET YOUR ALLIES (Team Grid with custom metrics) */}
-      <section className="space-y-12" id="mentors-allies-section">
-        <div className="text-center max-w-xl mx-auto">
+      {/* 4. MEET YOUR ALLIES (Structured Pyramid Grid Layout) */}
+      <section className="space-y-16" id="mentors-allies-section">
+        <div className="text-center max-w-xl mx-auto space-y-3">
           <span className="text-xs font-mono font-bold text-brand-red tracking-widest uppercase">The Companion Council</span>
           <h2 className="text-3xl font-display font-medium text-navy-950 mt-1">
             Meet the allies who lived your struggle.
           </h2>
-          <p className="text-xs text-slate-500 mt-2">
+          <p className="text-xs text-slate-500 leading-relaxed">
             No superstars, no commercial salespeople. Just experienced seniors who understand the intense pressure and know how to navigate the exam.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8" id="allies-grid">
-          {TEAM_MEMBERS.map((member, idx) => {
-            const photo = member.name in memberPhotos ? memberPhotos[member.name] : null;
-            return (
-              <div 
-                key={idx} 
-                id={`team-member-card-${idx}`}
-                className="bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-xs flex flex-col justify-between hover:border-navy-300 transition duration-300 overflow-hidden"
-              >
-                <div>
-                  {/* Card Header Profile Layout */}
-                  <div className="relative h-28 bg-slate-50 rounded-t-xl -mx-6 sm:-mx-8 -mt-6 sm:-mt-8 mb-10 border-b border-slate-100 overflow-visible flex items-end justify-center">
-                    <div className="absolute inset-0 bg-gradient-to-tr from-slate-100 to-slate-200/50" />
-                    
-                    <div className="relative translate-y-6 w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow-md bg-white shrink-0">
-                      {photo ? (
-                        <img src={photo} alt={member.name} className="w-full h-full object-cover" />
-                      ) : (
-                        <div className="w-full h-full bg-gradient-to-br from-slate-800 to-navy-950 text-white flex items-center justify-center font-display font-bold text-lg tracking-wider">
-                          {member.name.split(" ").map(n => n[0]).join("")}
-                        </div>
-                      )}
-                    </div>
-                  </div>
+        {/* Pyramid Card Structure */}
+        <div className="space-y-10" id="allies-grid">
+          
+          {/* Row 1: Founder and CEO (centered in the middle) */}
+          <div className="flex justify-center" id="team-row-1">
+            <div className="w-full md:w-[380px] h-full">
+              {renderCard(TEAM_MEMBERS.find(m => m.role === "Founder & CEO"))}
+            </div>
+          </div>
 
-                  <div className="space-y-4">
-                    {/* Micro metrics tracking */}
-                    <div className="flex items-center justify-between text-xs font-mono">
-                      <span className="text-slate-400 uppercase tracking-widest font-bold">SPECIALIZATION</span>
-                      <span className="text-navy-700 bg-navy-50 px-2 py-0.5 rounded-sm font-bold">{member.specialization}</span>
-                    </div>
+          {/* Row 2: Anusha (Left) and Varun (Right) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto" id="team-row-2">
+            <div className="w-full h-full">
+              {renderCard(TEAM_MEMBERS.find(m => m.name === "Anusha PC"))}
+            </div>
+            <div className="w-full h-full">
+              {renderCard(TEAM_MEMBERS.find(m => m.name === "Varun Amidal"))}
+            </div>
+          </div>
 
-                    <div className="space-y-1">
-                      <h3 className="text-lg font-bold font-display text-navy-950">{member.name}</h3>
-                      <p className="text-xs text-slate-400 font-mono font-medium">{member.role}</p>
-                    </div>
+          {/* Row 3: Bottom of Anusha (Sanjeeva Reddy) and Bottom of Varun (Riya P Kabadi) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto" id="team-row-3">
+            <div className="w-full h-full">
+              {renderCard(TEAM_MEMBERS.find(m => m.name === "Sanjeeva Reddy"))}
+            </div>
+            <div className="w-full h-full">
+              {renderCard(TEAM_MEMBERS.find(m => m.name === "Riya P Kabadi"))}
+            </div>
+          </div>
 
-                    <p className="text-xs text-slate-600 leading-relaxed">
-                      {member.bio}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Unique Empathy Metric Block */}
-                <div className="border-t border-slate-100 pt-4 mt-6 flex items-center justify-between bg-slate-50 border border-slate-100 -mx-6 sm:-mx-8 -mb-6 sm:-mb-8 p-4 sm:p-5 rounded-b-2xl">
-                  <div>
-                    <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest block leading-none">STRUGGLE TIME</span>
-                    <span className="text-sm font-bold text-navy-950 font-display block mt-1">{member.yearsOfStruggle} Years of Intensive Prep</span>
-                  </div>
-                  <div className="bg-navy-900 text-white rounded-full p-1 text-[10px] font-semibold px-2">
-                    LIVED IT
-                  </div>
-                </div>
-
-              </div>
-            );
-          })}
         </div>
       </section>
 

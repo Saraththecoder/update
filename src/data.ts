@@ -91,27 +91,44 @@ export const COURSES: Course[] = [
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
-    name: "Prashanth Navle",
-    role: "Founding Mentor & Core Companion (Educator)",
-    bio: "Spent six grueling years in intensive civil services preparation, appearing in 3 mains and 2 interviews. He founded 'Cockroachias' to establish a supportive, hand-holding mentorship platform for aspirants.",
+    name: "Prashanth N",
+    role: "Founder & CEO",
+    bio: "Visionary behind the academys' student-first approach to UPSC preparation. An oracle in Ethics, Essay, and Mains Answer Writing, he is known for helping aspirants transform ideas into tech enabled impactful answers and develop the clarity, integrity, and analytical depth expected of future civil servants.",
     yearsOfStruggle: 6,
-    specialization: "Indian Polity, IR & Ethics (GS IV)",
+    specialization: "Ethics & Essay Oracle | Mains Answer Writing Coach",
     image: "prashanth.jpg"
   },
   {
     name: "Anusha PC",
-    role: "Academic Coach & Strategy Specialist",
-    bio: "A researcher who left a high-paying corporate role to work on cognitive learning and structural UPSC preparation methods. She designs our simplified conceptual notes that map complex current affairs into single-sheet memorization schemas.",
+    role: "Managing Director",
+    bio: "A trusted UPSC mentor known for simplifying Anthropology and mastering Prelims strategy. Beyond academics, he serves as a constant companion, emotional anchor, and unwavering supporter throughout the preparation journey. His mission is to help aspirants build knowledge, confidence, resilience, and the determination needed for success.",
     yearsOfStruggle: 4,
-    specialization: "Indian Economy & Environmental Ecology",
+    specialization: "Anthropology Expert | Prelims Wizard | Constant Companion",
     image: "anusha.jpg"
   },
   {
     name: "Varun Amidal",
-    role: "Survival Ally & Mental Support Lead",
-    bio: "After giving his last attempt, Varun Amidal realized that the biggest killer of UPSC dreams isn't the syllabus, but the profound isolation and anxiety. He acts as the 24/7 designated listener and answer-evaluator who will hold your hand through severe self-doubt.",
+    role: "President",
+    bio: "A dedicated UPSC mentor specializing in Political Science & International Relations (PSIR) and CSAT. Known for his approachable nature, patient listening, and long-term mentorship, he helps aspirants navigate challenges with clarity and confidence. His guidance combines academic excellence, strategic preparation, and genuine care for every student's growth.",
     yearsOfStruggle: 5,
-    specialization: "Daily Answer Review & Aspirant Well-being"
+    specialization: "PSIR Expert | CSAT Strategist | Smiling Mentor",
+    image: "varun.png"
+  },
+  {
+    name: "Sanjeeva Reddy",
+    role: "CTO",
+    bio: "A technology leader dedicated to engineering seamless learning workspaces and resilient cognitive tools. Sanjeeva ensures that the platform delivers high-speed, interactive syllabus mapping and analytical workspaces for aspirants.",
+    yearsOfStruggle: 3,
+    specialization: "Tech Architecture | Platform Operations",
+    image: "sanjeeva.png"
+  },
+  {
+    name: "Riya P Kabadi",
+    role: "CFO and HR",
+    bio: "Manages the academy's fiscal operations and builds supportive mentor networks. Riya ensures that our trial companion cohorts remain highly affordable while selecting top-tier, empathetic mentors for handholding.",
+    yearsOfStruggle: 3,
+    specialization: "Finance Operations | Talent Acquisition",
+    image: "riya.png"
   }
 ];
 
