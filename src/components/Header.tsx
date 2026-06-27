@@ -78,83 +78,33 @@ export default function Header({ activePage, setActivePage }: HeaderProps) {
                         >
                           <button
                             onClick={() => {
-                              setActivePage("pyq-analysis");
+                              setActivePage("resources");
                               setShowDropdown(false);
                             }}
                             className="w-full text-left px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-brand-red font-semibold uppercase tracking-wider transition-colors duration-150 flex items-center gap-2 cursor-pointer text-[11px]"
                           >
                             <span className="w-1.5 h-1.5 bg-brand-red rounded-full" />
-                            <span>Prelims PYQ Analysis</span>
+                            <span>Prelims Command System</span>
                           </button>
                           <button
                             onClick={() => {
-                              setActivePage("mains-pyq");
+                              setActivePage("resources");
                               setShowDropdown(false);
                             }}
                             className="w-full text-left px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-brand-red font-semibold uppercase tracking-wider transition-colors duration-150 flex items-center gap-2 cursor-pointer text-[11px]"
                           >
                             <span className="w-1.5 h-1.5 bg-brand-red rounded-full" />
-                            <span>Mains PYQ Analysis</span>
+                            <span>Mains Blueprint Engine</span>
                           </button>
                           <button
                             onClick={() => {
-                              setActivePage("mains-cockroach-answers");
+                              setActivePage("resources");
                               setShowDropdown(false);
                             }}
                             className="w-full text-left px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-brand-red font-semibold uppercase tracking-wider transition-colors duration-150 flex items-center gap-2 cursor-pointer text-[11px]"
                           >
                             <span className="w-1.5 h-1.5 bg-brand-red rounded-full" />
-                            <span>Mains Cockroach Answers</span>
-                          </button>
-                          <button
-                            onClick={() => {
-                              setActivePage("mains-theme-analysis");
-                              setShowDropdown(false);
-                            }}
-                            className="w-full text-left px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-brand-red font-semibold uppercase tracking-wider transition-colors duration-150 flex items-center gap-2 cursor-pointer text-[11px]"
-                          >
-                            <span className="w-1.5 h-1.5 bg-brand-red rounded-full" />
-                            <span>Mains Theme Wise Analysis</span>
-                          </button>
-                          <button
-                            onClick={() => {
-                              setActivePage("constitution-explorer");
-                              setShowDropdown(false);
-                            }}
-                            className="w-full text-left px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-brand-red font-semibold uppercase tracking-wider transition-colors duration-150 flex items-center gap-2 cursor-pointer text-[11px]"
-                          >
-                            <span className="w-1.5 h-1.5 bg-brand-red rounded-full" />
-                            <span>Constitution Explorer</span>
-                          </button>
-                          <button
-                            onClick={() => {
-                              setActivePage("metro-map");
-                              setShowDropdown(false);
-                            }}
-                            className="w-full text-left px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-brand-red font-semibold uppercase tracking-wider transition-colors duration-150 flex items-center gap-2 cursor-pointer text-[11px]"
-                          >
-                            <span className="w-1.5 h-1.5 bg-brand-red rounded-full" />
-                            <span>UPSC Metro Map</span>
-                          </button>
-                          <button
-                            onClick={() => {
-                              setActivePage("governance-pioneers");
-                              setShowDropdown(false);
-                            }}
-                            className="w-full text-left px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-brand-red font-semibold uppercase tracking-wider transition-colors duration-150 flex items-center gap-2 cursor-pointer text-[11px]"
-                          >
-                            <span className="w-1.5 h-1.5 bg-brand-red rounded-full" />
-                            <span>Governance Pioneers</span>
-                          </button>
-                          <button
-                            onClick={() => {
-                              setActivePage("mythology-ethics");
-                              setShowDropdown(false);
-                            }}
-                            className="w-full text-left px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-brand-red font-semibold uppercase tracking-wider transition-colors duration-150 flex items-center gap-2 cursor-pointer text-[11px]"
-                          >
-                            <span className="w-1.5 h-1.5 bg-brand-red rounded-full" />
-                            <span>Mythology for Ethics</span>
+                            <span>Administrative Integrity Workspace</span>
                           </button>
                         </motion.div>
                       )}

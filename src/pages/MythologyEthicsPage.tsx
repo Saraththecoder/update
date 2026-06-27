@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from "react";
-import { ArrowLeft, MagnifyingGlass, Sparkle, Trophy, Tag, ShieldCheck, ListNumbers, X, BookOpen, Copy, Check } from "@phosphor-icons/react";
+import { ArrowLeft, MagnifyingGlass, BookOpen, Copy, Check, ArrowsClockwise } from "@phosphor-icons/react";
 import { motion, AnimatePresence } from "motion/react";
 import rawStoriesData from "../data/mythologyEthics.json";
 
@@ -25,8 +25,8 @@ export default function MythologyEthicsPage({ setActivePage }: MythologyEthicsPa
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedSource, setSelectedSource] = useState("All");
   const [viewMode, setViewMode] = useState<"grid" | "table">("grid");
-  const [selectedStory, setSelectedStory] = useState<MythStory | null>(null);
   const [copiedId, setCopiedId] = useState<number | null>(null);
+  const [flippedCards, setFlippedCards] = useState<Record<number, boolean>>({});
 
   useEffect(() => {
     document.title = "Mythology for Ethics: Dilemmas & Cases | CockroachIAS";
@@ -36,11 +36,13 @@ export default function MythologyEthicsPage({ setActivePage }: MythologyEthicsPa
   const sources = useMemo(() => {
     const set = new Set<string>();
     rawStoriesData.forEach(s => {
-      // Normalize sources to get parent groups (Mahabharata, Ramayana, Puranas, Upanishads)
       if (s.source.includes("Mahabharata")) set.add("Mahabharata");
       else if (s.source.includes("Ramayana")) set.add("Ramayana");
       else if (s.source.includes("Purana")) set.add("Puranas");
       else if (s.source.includes("Upanishad")) set.add("Upanishads");
+      else if (s.source.includes("Greek")) set.add("Greek");
+      else if (s.source.includes("Norse")) set.add("Norse");
+      else if (s.source.includes("Biblical") || s.source.includes("Roman")) set.add("World");
       else set.add("Other");
     });
     return ["All", ...Array.from(set)];
@@ -62,14 +64,22 @@ export default function MythologyEthicsPage({ setActivePage }: MythologyEthicsPa
       if (selectedSource === "Ramayana") return matchesSearch && s.source.includes("Ramayana");
       if (selectedSource === "Puranas") return matchesSearch && s.source.includes("Purana");
       if (selectedSource === "Upanishads") return matchesSearch && s.source.includes("Upanishad");
+      if (selectedSource === "Greek") return matchesSearch && s.source.includes("Greek");
+      if (selectedSource === "Norse") return matchesSearch && s.source.includes("Norse");
+      if (selectedSource === "World") return matchesSearch && (s.source.includes("Biblical") || s.source.includes("Roman"));
       return matchesSearch;
     });
   }, [searchQuery, selectedSource]);
 
-  const handleCopyQuote = (quote: string, id: number) => {
+  const handleCopyQuote = (quote: string, id: number, e: React.MouseEvent) => {
+    e.stopPropagation();
     navigator.clipboard.writeText(quote);
     setCopiedId(id);
     setTimeout(() => setCopiedId(null), 2000);
+  };
+
+  const toggleFlip = (id: number) => {
+    setFlippedCards(prev => ({ ...prev, [id]: !prev[id] }));
   };
 
   return (
@@ -102,7 +112,7 @@ export default function MythologyEthicsPage({ setActivePage }: MythologyEthicsPa
             </h1>
           </div>
           <p className="text-xs sm:text-sm text-slate-500 leading-relaxed max-w-4xl">
-            An interactive cognitive catalog of 30 classic ethical dilemmas from Indian Epics & Puranas. Use these dilemmas and quote-ready scripts to anchor your GS Paper 4 arguments and Essay introductions.
+            An interactive catalog of 40 classic dilemmas from Indian Epics and World Mythology. Flip each card to study the dilemma context, structural arguments, and quote-ready scripts.
           </p>
         </div>
       </div>
@@ -157,7 +167,7 @@ export default function MythologyEthicsPage({ setActivePage }: MythologyEthicsPa
                   : "text-slate-500 hover:text-slate-800"
               }`}
             >
-              Workspace Grid
+              Reference Cards
             </button>
             <button
               onClick={() => setViewMode("table")}
@@ -173,47 +183,124 @@ export default function MythologyEthicsPage({ setActivePage }: MythologyEthicsPa
         </div>
       </div>
 
-      {/* Case studies list rendering */}
+      {/* Case studies rendering */}
       {viewMode === "grid" ? (
-        /* Workspace Card Grid View */
+        /* Workspace Reference Cards View with CSS 3D Flipping */
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredStories.map((story) => (
-            <motion.div
-              key={story.id}
-              whileHover={{ y: -4 }}
-              onClick={() => setSelectedStory(story)}
-              className="p-6 rounded-xl border border-slate-200 bg-white shadow-xs cursor-pointer hover:shadow-md hover:border-slate-350 transition-all flex flex-col justify-between"
-            >
-              <div className="space-y-4">
-                <div className="flex items-start justify-between">
-                  <span className="text-[9px] font-mono font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-500 uppercase tracking-widest">
-                    {story.source}
-                  </span>
-                  <span className="text-[9px] font-mono font-bold text-brand-red uppercase tracking-wider">
-                    {story.useIn.split("·")[0].trim()}
-                  </span>
+          {filteredStories.map((story) => {
+            const isFlipped = !!flippedCards[story.id];
+            return (
+              <div 
+                key={story.id} 
+                className="perspective-container cursor-pointer"
+                onClick={() => toggleFlip(story.id)}
+              >
+                <div className={`flip-card ${isFlipped ? "flipped" : ""}`}>
+                  
+                  {/* Front Side of Card */}
+                  <div className="flip-card-front p-6 border border-slate-200 rounded-2xl flex flex-col justify-between shadow-xs hover:shadow-md hover:border-slate-350 transition-all duration-300">
+                    <div className="space-y-4">
+                      <div className="flex items-start justify-between">
+                        <span className="text-[9px] font-mono font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-500 uppercase tracking-widest">
+                          {story.source}
+                        </span>
+                        <span className="text-[9px] font-mono font-bold text-brand-red uppercase tracking-wider">
+                          Dilemma Card
+                        </span>
+                      </div>
+                      <div className="space-y-1">
+                        <h4 className="text-base font-bold text-navy-950 font-display">
+                          {story.title}
+                        </h4>
+                        <span className="text-xs text-slate-500 italic block">
+                          {story.subtitle}
+                        </span>
+                      </div>
+                      <div className="space-y-1.5 pt-2">
+                        <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-widest block">THE DILEMMA</span>
+                        <p className="text-xs font-semibold text-navy-900 leading-relaxed font-sans line-clamp-4">
+                          {story.dilemma}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-[10px] font-bold text-slate-400 hover:text-brand-red transition-colors">
+                      <span className="flex items-center gap-1.5">
+                        <ArrowsClockwise className="w-3.5 h-3.5 animate-spin-slow" />
+                        <span>Flip to read context and usage in answers</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Back Side of Card */}
+                  <div className="flip-card-back p-6 border border-slate-200 rounded-2xl flex flex-col justify-between shadow-xs bg-slate-50/50">
+                    <div className="space-y-3.5 overflow-hidden flex flex-col h-[300px]">
+                      <div className="flex items-center justify-between shrink-0">
+                        <span className="text-[9px] font-mono font-bold text-slate-500 uppercase tracking-widest">
+                          CASE INSIGHT
+                        </span>
+                        <div className="flex gap-1.5">
+                          {story.useIn.split("·").map(u => (
+                            <span key={u.trim()} className="text-[8px] font-mono font-bold text-brand-red bg-brand-red-light px-1.5 py-0.5 rounded uppercase">
+                              {u.trim()}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Scrollable details wrapper to prevent text clippings */}
+                      <div className="space-y-3 overflow-y-auto pr-1 flex-1">
+                        {/* Context */}
+                        <div className="space-y-0.5">
+                          <span className="text-[8px] font-mono font-bold text-slate-400 uppercase tracking-widest block">Context</span>
+                          <p className="text-[11px] text-slate-600 leading-normal font-sans font-normal">
+                            {selectedSource === "All" || story.context.length > 150 ? story.context : story.context}
+                          </p>
+                        </div>
+                        {/* Usage in Answer */}
+                        <div className="space-y-0.5">
+                          <span className="text-[8px] font-mono font-bold text-brand-red uppercase tracking-widest block">Modern Parallel</span>
+                          <p className="text-[11px] text-slate-700 font-semibold leading-normal font-sans">
+                            {story.modernParallel}
+                          </p>
+                        </div>
+                        {/* Quote Ready Script */}
+                        <div className="relative group bg-navy-950 text-slate-300 p-2.5 rounded-lg font-mono text-[9px] leading-normal flex items-center justify-between gap-2 shrink-0">
+                          <span>{story.quoteReady}</span>
+                          <button
+                            onClick={(e) => handleCopyQuote(story.quoteReady, story.id, e)}
+                            className="p-1 bg-slate-800 hover:bg-slate-700 text-white rounded-md transition-colors cursor-pointer shrink-0"
+                          >
+                            {copiedId === story.id ? (
+                              <Check className="w-3 text-green-400" />
+                            ) : (
+                              <Copy className="w-3" />
+                            )}
+                          </button>
+                        </div>
+                        {/* Themes */}
+                        <div className="flex flex-wrap gap-1 pt-1">
+                          {story.theme.split("·").map(t => (
+                            <span key={t.trim()} className="text-[8px] font-bold bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full uppercase">
+                              {t.trim()}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[10px] font-bold text-slate-400 hover:text-brand-red transition-colors shrink-0">
+                      <span className="flex items-center gap-1.5">
+                        <ArrowsClockwise className="w-3.5 h-3.5" />
+                        <span>Flip to read dilemma</span>
+                      </span>
+                    </div>
+                  </div>
+
                 </div>
-                <div>
-                  <h4 className="text-sm font-bold text-navy-950 font-display line-clamp-1">
-                    {story.title}
-                  </h4>
-                  <span className="text-xs font-semibold text-slate-500 block mt-1">
-                    {story.subtitle}
-                  </span>
-                </div>
-                <p className="text-xs text-slate-600 leading-relaxed line-clamp-3">
-                  {story.context}
-                </p>
               </div>
-              <div className="mt-4 pt-4 border-t border-slate-100 flex flex-wrap gap-1.5" onClick={(e) => e.stopPropagation()}>
-                {story.theme.split("·").map(t => (
-                  <span key={t.trim()} className="text-[9px] font-bold bg-slate-50 text-slate-500 px-2 py-0.5 rounded-full border border-slate-200/50">
-                    {t.trim()}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+            );
+          })}
         </div>
       ) : (
         /* Table View Mode */
@@ -232,7 +319,7 @@ export default function MythologyEthicsPage({ setActivePage }: MythologyEthicsPa
                 {filteredStories.map((story) => (
                   <tr
                     key={story.id}
-                    onClick={() => setSelectedStory(story)}
+                    onClick={() => toggleFlip(story.id)}
                     className="hover:bg-slate-50/50 cursor-pointer transition-colors text-xs text-slate-700"
                   >
                     <td className="p-4 align-top leading-relaxed text-navy-950 font-bold font-sans">
@@ -266,126 +353,6 @@ export default function MythologyEthicsPage({ setActivePage }: MythologyEthicsPa
           </div>
         </div>
       )}
-
-      {/* Slide-over Briefing Drawer */}
-      <AnimatePresence>
-        {selectedStory && (
-          <>
-            {/* Backdrop overlay */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.4 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setSelectedStory(null)}
-              className="fixed inset-0 bg-black z-40 cursor-pointer"
-            />
-            {/* Drawer panel */}
-            <motion.div
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "spring", damping: 25, stiffness: 220 }}
-              className="fixed right-0 top-0 bottom-0 w-full sm:w-[480px] bg-white border-l border-slate-200 z-50 shadow-2xl p-6 sm:p-8 flex flex-col justify-between overflow-y-auto"
-            >
-              <div className="space-y-8">
-                {/* Header block */}
-                <div className="flex justify-between items-start border-b border-slate-100 pb-4">
-                  <div className="space-y-1">
-                    <span className="text-[10px] font-mono font-bold text-brand-red bg-brand-red-light px-2.5 py-0.5 rounded-md uppercase border border-brand-red/10">
-                      {selectedStory.source} Case
-                    </span>
-                    <h3 className="text-xl font-display font-bold text-navy-950 pt-2">{selectedStory.title}</h3>
-                    <span className="text-xs text-slate-500 italic block mt-1">{selectedStory.subtitle}</span>
-                  </div>
-                  <button
-                    onClick={() => setSelectedStory(null)}
-                    className="p-1.5 hover:bg-slate-100 rounded-full transition-colors text-slate-400 hover:text-slate-600 cursor-pointer shrink-0"
-                  >
-                    <X className="w-5 h-5" />
-                  </button>
-                </div>
-
-                {/* Content blocks */}
-                <div className="space-y-6">
-                  {/* Theme Tags */}
-                  <div className="flex flex-wrap gap-2">
-                    {selectedStory.theme.split("·").map(t => (
-                      <span key={t.trim()} className="text-[9px] font-bold bg-[#171717] text-white px-2.5 py-1 rounded-sm uppercase tracking-wider">
-                        {t.trim()}
-                      </span>
-                    ))}
-                    {selectedStory.useIn.split("·").map(u => (
-                      <span key={u.trim()} className="text-[9px] font-bold bg-brand-red-light text-brand-red border border-brand-red/10 px-2.5 py-1 rounded-sm uppercase tracking-wider">
-                        {u.trim()}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Context */}
-                  <div className="space-y-2">
-                    <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-widest block">EPIC CONTEXT</span>
-                    <p className="text-xs text-slate-600 leading-relaxed font-sans font-normal">
-                      {selectedStory.context}
-                    </p>
-                  </div>
-
-                  {/* Dilemma */}
-                  <div className="space-y-2">
-                    <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-widest block">THE CENTRAL DILEMMA</span>
-                    <p className="text-xs font-semibold text-navy-950 leading-relaxed bg-brand-red-light/10 p-4 rounded-xl border border-brand-red/10 font-sans">
-                      {selectedStory.dilemma}
-                    </p>
-                  </div>
-
-                  {/* Cuts Both Ways */}
-                  <div className="space-y-2">
-                    <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-widest block">CUTS BOTH WAYS (CRITIQUE)</span>
-                    <p className="text-xs text-slate-500 leading-relaxed font-sans">
-                      {selectedStory.cutsBothWays}
-                    </p>
-                  </div>
-
-                  {/* Modern Parallel */}
-                  <div className="space-y-2 pt-4 border-t border-slate-100">
-                    <span className="text-[9px] font-mono font-bold text-brand-red uppercase tracking-widest block">MODERN ADMINISTRATOR PARALLEL</span>
-                    <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 text-xs text-navy-950 font-semibold leading-relaxed">
-                      {selectedStory.modernParallel}
-                    </div>
-                  </div>
-
-                  {/* Quote Ready */}
-                  <div className="space-y-2 pt-4 border-t border-slate-100">
-                    <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-widest block">QUOTE-READY SCRIPT</span>
-                    <div className="relative group bg-navy-950 text-slate-300 p-4 rounded-xl font-mono text-[11px] leading-relaxed flex items-center justify-between gap-4">
-                      <span>{selectedStory.quoteReady}</span>
-                      <button
-                        onClick={() => handleCopyQuote(selectedStory.quoteReady, selectedStory.id)}
-                        className="p-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg transition-colors cursor-pointer shrink-0"
-                        title="Copy quote"
-                      >
-                        {copiedId === selectedStory.id ? (
-                          <Check className="w-3.5 h-3.5 text-green-400" />
-                        ) : (
-                          <Copy className="w-3.5 h-3.5" />
-                        )}
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-6 border-t border-slate-100 mt-8">
-                <button
-                  onClick={() => setSelectedStory(null)}
-                  className="w-full bg-[#171717] hover:bg-black text-white text-xs font-bold uppercase tracking-wider py-3 rounded-lg transition-colors cursor-pointer"
-                >
-                  Close Case File
-                </button>
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
     </motion.div>
   );
 }
