@@ -4,6 +4,7 @@ import {
   PaperPlane, Check, Warning, Smiley, Sparkle 
 } from "@phosphor-icons/react";
 import { motion } from "motion/react";
+import LocationMap from "../components/LocationMap";
 
 export default function Contact() {
   const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
@@ -64,12 +65,18 @@ export default function Contact() {
               <div className="bg-white border border-slate-200 p-5 rounded-xl flex items-start space-x-4 shadow-xs hover:shadow-md transition-shadow duration-300">
                 <MapPin className="w-5 h-5 text-navy-700 shrink-0 mt-0.5" />
                 <div className="text-xs leading-relaxed space-y-1">
-                  <h4 className="font-bold text-navy-950 text-sm">100% Online & Accessible</h4>
-                  <p className="text-slate-500">We operate entirely online to eliminate physical overhead and pass the savings directly to you. Your desk is our classroom.</p>
-                  <p className="text-slate-400 font-mono text-[10px] mt-1 flex items-center gap-1">
-                    <Clock className="w-3 h-3" />
-                    <span>Available 24/7 digitally & telephonically</span>
+                  <h4 className="font-bold text-navy-950 text-sm">Hybrid Operations: Online & Offline</h4>
+                  <p className="text-slate-500">We operate both online and offline to be there when you need us. Your desk is our classroom, or you can visit us physically.</p>
+                  <p className="text-slate-400 font-mono text-[10px] mt-1 flex flex-col gap-1">
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-3 h-3" />
+                      <span>Available 24/7 digitally & telephonically</span>
+                    </span>
+                    <a href="https://maps.app.goo.gl/EeuBLKRay9dzYbrQA" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">
+                      View our Location on Google Maps
+                    </a>
                   </p>
+                  <LocationMap />
                 </div>
               </div>
 
@@ -77,7 +84,7 @@ export default function Contact() {
                 <EnvelopeSimple className="w-5 h-5 text-navy-700 shrink-0 mt-0.5" />
                 <div className="text-xs leading-relaxed space-y-1">
                   <h4 className="font-bold text-navy-950 text-sm">Direct Companion Inbox</h4>
-                  <p className="text-slate-500">companions@cockroachias.org</p>
+                  <p className="text-slate-500">cockroachiasinfo@gmail.com</p>
                   <p className="text-[10px] text-slate-400">Checked directly by our academic leads three times daily</p>
                 </div>
               </div>
@@ -86,7 +93,7 @@ export default function Contact() {
                 <PhoneCall className="w-5 h-5 text-navy-700 shrink-0 mt-0.5" />
                 <div className="text-xs leading-relaxed space-y-1">
                   <h4 className="font-bold text-navy-950 text-sm">The 24/7 Aspirant Line</h4>
-                  <p className="text-slate-500">1800-889-2026 (Toll-Free Support)</p>
+                  <p className="text-slate-500">7620811812 (Toll-Free Support)</p>
                   <p className="text-slate-400 font-mono text-[10px]">Speak to ex-aspirants who are trained listeners</p>
                 </div>
               </div>
