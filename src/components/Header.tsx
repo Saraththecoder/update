@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Compass, BookOpen, Users, PhoneCall } from "@phosphor-icons/react";
+import { Compass, BookOpen, Users, PhoneCall, List, X } from "@phosphor-icons/react";
 import { motion, AnimatePresence } from "motion/react";
 import logo from "../../assets/logo.jpg";
 
@@ -11,6 +11,7 @@ interface HeaderProps {
 
 export default function Header({ activePage, setActivePage, setResourcePhase }: HeaderProps) {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
     { id: "home", label: "Home", icon: Compass },
@@ -20,13 +21,16 @@ export default function Header({ activePage, setActivePage, setResourcePhase }: 
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/50 backdrop-blur-2xl border-b border-white/60 shadow-[0_4px_30px_rgba(0,0,0,0.05)] transition-all duration-300">
+    <header className="sticky top-0 z-50 w-full bg-white/50 backdrop-blur-2xl border-b border-white/60 shadow-[0_4px_30px_rgba(0,0,0,0.05)] transition-all duration-300 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
           {/* Logo Brand */}
           <div 
-            onClick={() => setActivePage("home")} 
+            onClick={() => {
+              setActivePage("home");
+              setIsMobileMenuOpen(false);
+            }} 
             className="flex items-center space-x-3 cursor-pointer group"
             id="header-logo-container"
           >
@@ -139,44 +143,77 @@ export default function Header({ activePage, setActivePage, setResourcePhase }: 
             })}
           </nav>
 
-          {/* Login CTA */}
+          {/* Desktop Login & Mobile Hamburger Container */}
           <div className="flex items-center space-x-3">
+            {/* Login CTA (Desktop) */}
             <a
               id="header-login-btn"
               href="https://classplusapp.com/diy"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-brand-red hover:bg-brand-red-hover text-white px-5 py-2.5 rounded-lg text-xs font-semibold tracking-wide uppercase transition-all duration-200 shadow-md hover:shadow-lg active:translate-y-0.5 flex items-center space-x-2 border border-brand-red"
+              className="hidden md:flex bg-brand-red hover:bg-brand-red-hover text-white px-5 py-2.5 rounded-lg text-xs font-semibold tracking-wide uppercase transition-all duration-200 shadow-md hover:shadow-lg active:translate-y-0.5 items-center space-x-2 border border-brand-red"
             >
               <span>Login</span>
             </a>
+            
+            {/* Hamburger Button (Mobile) */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden flex items-center justify-center p-2 rounded-lg text-slate-600 hover:text-brand-red hover:bg-slate-50 transition-colors"
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <List className="w-6 h-6" />}
+            </button>
           </div>
 
         </div>
       </div>
 
-      {/* Mobile Nav Rail (Horizontal scrollable for lightweight mobile UX) */}
-      <div className="md:hidden flex items-center justify-start overflow-x-auto whitespace-nowrap py-2 px-4 shadow-inner border-t border-slate-100 bg-slate-50/50">
-        {navItems.map((item) => {
-          const Icon = item.icon;
-          const isActive = activePage === item.id;
-          return (
-            <button
-              key={item.id}
-              id={`mobile-nav-btn-${item.id}`}
-              onClick={() => setActivePage(item.id)}
-              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-semibold uppercase mr-2.5 transition-all ${
-                isActive
-                  ? "bg-navy-900 text-white"
-                  : "bg-white text-slate-600 border border-slate-200/80"
-              }`}
-            >
-              <Icon className="w-3.5 h-3.5" />
-              <span>{item.label}</span>
-            </button>
-          );
-        })}
-      </div>
+      {/* Mobile Nav Dropdown */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden border-t border-slate-100 bg-white shadow-lg overflow-hidden absolute w-full left-0 top-full"
+          >
+            <div className="flex flex-col py-4 px-4 space-y-2">
+              {navItems.map((item) => {
+                const Icon = item.icon;
+                const isActive = activePage === item.id;
+                return (
+                  <button
+                    key={item.id}
+                    onClick={() => {
+                      setActivePage(item.id);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-semibold uppercase tracking-widest transition-all ${
+                      isActive
+                        ? "bg-navy-50 text-brand-red"
+                        : "text-slate-600 hover:bg-slate-50"
+                    }`}
+                  >
+                    <Icon className="w-5 h-5" />
+                    <span>{item.label}</span>
+                  </button>
+                );
+              })}
+              
+              <div className="pt-4 mt-2 border-t border-slate-100">
+                <a
+                  href="https://classplusapp.com/diy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-full bg-brand-red hover:bg-brand-red-hover text-white px-5 py-3 rounded-lg text-sm font-semibold tracking-wide uppercase transition-all duration-200 shadow-sm"
+                >
+                  <span>Login</span>
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

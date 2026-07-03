@@ -116,10 +116,6 @@
 }
 
 /* 3. Subtle Dot Grid background pattern for administrative precision */
-.bg-dot-grid {
-  background-image: radial-gradient(rgba(10, 10, 10, 0.04) 1px, transparent 1px);
-  background-size: 20px 20px;
-}
 
 /* 4. Fade-in animation for page sections */
 @keyframes fade-in {
