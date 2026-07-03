@@ -55,20 +55,6 @@ export default function Footer({ setActivePage }: FooterProps) {
             >
               Our Honest Story
             </button>
-            <div className="flex items-center gap-3">
-              <div className="text-right hidden sm:block">
-                <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest block">Support Line</span>
-                <span className="text-[10px] text-slate-500 italic">We listen. Always.</span>
-              </div>
-              <a
-                href="https://classplusapp.com/diy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-brand-red hover:bg-brand-red-hover text-white font-bold text-[10px] sm:text-xs px-4 py-2 rounded-lg uppercase tracking-widest transition duration-200 cursor-pointer shadow-md hover:shadow-lg"
-              >
-                Login
-              </a>
-            </div>
           </div>
 
           {/* Legal / Copyright Bottom Row */}

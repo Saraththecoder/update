@@ -68,7 +68,6 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
     tl.from(".gsap-hero-badge", { opacity: 0, scale: 0.8, duration: 0.8, ease: "expo.out" })
       .from(heroTitle.chars, { opacity: 0, y: 30, rotateX: -90, stagger: 0.015, duration: 0.9, ease: "expo.out" }, "-=0.6")
       .from(".gsap-hero-text", { opacity: 0, y: 20, duration: 0.8, ease: "expo.out" }, "-=0.7")
-      .from(".gsap-hero-btn", { opacity: 0, y: 20, stagger: 0.1, duration: 0.7, ease: "expo.out" }, "-=0.6")
       .from(".gsap-hero-ribbon", { opacity: 0, scale: 0.95, duration: 0.8, ease: "expo.out" }, "-=0.5");
 
     // Scroll trigger for manifesto cards
@@ -190,10 +189,9 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
         >
           <button
             onClick={() => {
-              const element = document.getElementById("trial-section");
-              element?.scrollIntoView({ behavior: "smooth" });
+              window.open("https://web.classplusapp.com/login", "_blank");
             }}
-            className="gsap-hero-btn w-full sm:w-auto bg-brand-red hover:bg-brand-red-hover text-white font-medium text-base px-8 py-4 rounded-xl shadow-lg transition duration-200 hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center space-x-3 cursor-pointer"
+            className="w-full sm:w-auto bg-brand-red hover:bg-brand-red-hover text-white font-medium text-base px-8 py-4 rounded-xl shadow-lg transition duration-200 hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center space-x-3 cursor-pointer"
             id="hero-primary-cta"
           >
             <span>Try a Course module</span>
@@ -205,7 +203,7 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
               const element = document.getElementById("quiz-section");
               element?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="gsap-hero-btn w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-700 font-semibold text-base px-8 py-4 rounded-xl border border-slate-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition duration-200 flex items-center justify-center space-x-2 cursor-pointer"
+            className="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-700 font-semibold text-base px-8 py-4 rounded-xl border border-slate-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition duration-200 flex items-center justify-center space-x-2 cursor-pointer"
             id="hero-secondary-cta"
           >
             <Question className="w-5 h-5 text-slate-400" />
@@ -244,7 +242,7 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
-              <div className="bg-navy-950/80 backdrop-blur-2xl text-white p-8 rounded-2xl shadow-xl border border-white/10 relative overflow-hidden group">
+              <div className="bg-[#0a0a0a] text-white p-8 rounded-2xl shadow-xl border border-white/10 relative overflow-hidden group">
                 <div className="absolute top-0 right-0 p-4 opacity-5 transition-transform duration-500 group-hover:scale-110">
                   <Quotes className="w-36 h-36" />
                 </div>
@@ -335,7 +333,7 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
  
               {/* Card 2 - Centered with brand-red highlight border */}
               <div 
-                className="gsap-manifesto-card text-left p-8 bg-navy-950/80 backdrop-blur-2xl text-white rounded-2xl transition-all duration-300 shadow-[0_8px_32px_rgba(0,0,0,0.15)] border border-white/10 md:translate-y-2 flex flex-col justify-between relative"
+                className="gsap-manifesto-card text-left p-8 bg-[#0a0a0a] text-white rounded-2xl transition-all duration-300 shadow-[0_8px_32px_rgba(0,0,0,0.15)] border border-white/10 md:translate-y-2 flex flex-col justify-between relative"
               >
                 <div className="absolute top-0 right-0 w-8 h-8 bg-brand-red text-white flex items-center justify-center rounded-bl-xl rounded-tr-2xl text-xs font-bold font-mono">
                   02

@@ -141,10 +141,6 @@ export default function Header({ activePage, setActivePage, setResourcePhase }: 
 
           {/* Login CTA */}
           <div className="flex items-center space-x-3">
-            <div className="text-right hidden lg:block">
-              <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-widest block">Support Line</span>
-              <span className="text-[9px] text-slate-400 italic">We listen. Always.</span>
-            </div>
             <a
               id="header-login-btn"
               href="https://classplusapp.com/diy"

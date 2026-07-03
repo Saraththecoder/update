@@ -18,8 +18,6 @@ import RefundPolicy from "./pages/RefundPolicy";
 import { Sparkle, X, Handshake } from "@phosphor-icons/react";
 import { AnimatePresence, motion } from "motion/react";
 import Chatbot from "./components/Chatbot";
-import CustomCursor from "./components/CustomCursor";
-import AmbientBackground from "./components/AmbientBackground";
 import { ReactLenis } from "lenis/react";
 
 export default function App() {
@@ -70,9 +68,7 @@ export default function App() {
 
   return (
     <ReactLenis root options={{ lerp: 0.08, smoothWheel: true }}>
-      <div className="min-h-screen flex flex-col relative selection:bg-brand-red-light selection:text-navy-950 cursor-none sm:cursor-auto text-slate-800">
-        <AmbientBackground />
-        <CustomCursor />
+      <div className="min-h-screen flex flex-col relative selection:bg-brand-red-light selection:text-navy-950 text-slate-800 bg-white">
       
       {/* 0. WELCOME & LAUNCH SCREEN REMOVED */}
 
