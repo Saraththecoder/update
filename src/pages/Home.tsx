@@ -8,8 +8,17 @@ import { SURVIVAL_TRAITS, CONTROVERSY_DETAILS, SURVIVOR_QUIZ_QUESTIONS } from ".
 import { Course, SurvivalTrait } from "../types";
 import { motion, AnimatePresence } from "motion/react";
 import IndiaMapSection from "../components/IndiaMapSection";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitType from "split-type";
+import confetti from "canvas-confetti";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home({ setActivePage }: { setActivePage: (page: string) => void }) {
+  const container = React.useRef<HTMLDivElement>(null);
+  
   // Selected trait for philosophy viewer
   const [selectedTrait, setSelectedTrait] = useState<string>("resilience");
   
@@ -22,6 +31,85 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
   const [currentQuizIndex, setCurrentQuizIndex] = useState<number>(0);
   const [quizScore, setQuizScore] = useState<string[]>([]);
   const [quizFinished, setQuizFinished] = useState<boolean>(false);
+  
+  useGSAP(() => {
+    // Split Text Hero
+    let heroTitle = new SplitType(".gsap-hero-title", { types: "chars,words" });
+
+    // Handle Resize for SplitType
+    const handleResize = () => {
+      heroTitle.revert();
+      heroTitle = new SplitType(".gsap-hero-title", { types: "chars,words" });
+    };
+    window.addEventListener("resize", handleResize);
+
+    // Magnetic Buttons
+    const magneticBtns = document.querySelectorAll(".gsap-hero-btn");
+    magneticBtns.forEach((btn: any) => {
+      const xTo = gsap.quickTo(btn, "x", {duration: 0.4, ease: "power3"}),
+            yTo = gsap.quickTo(btn, "y", {duration: 0.4, ease: "power3"});
+
+      btn.addEventListener("mousemove", (e: any) => {
+        const rect = btn.getBoundingClientRect();
+        const relX = e.clientX - rect.left;
+        const relY = e.clientY - rect.top;
+        xTo((relX - rect.width / 2) * 0.3);
+        yTo((relY - rect.height / 2) * 0.3);
+      });
+      btn.addEventListener("mouseleave", () => {
+        xTo(0);
+        yTo(0);
+      });
+    });
+
+    // Hero timeline
+    const tl = gsap.timeline();
+    
+    tl.from(".gsap-hero-badge", { opacity: 0, scale: 0.8, duration: 0.8, ease: "expo.out" })
+      .from(heroTitle.chars, { opacity: 0, y: 30, rotateX: -90, stagger: 0.015, duration: 0.9, ease: "expo.out" }, "-=0.6")
+      .from(".gsap-hero-text", { opacity: 0, y: 20, duration: 0.8, ease: "expo.out" }, "-=0.7")
+      .from(".gsap-hero-btn", { opacity: 0, y: 20, stagger: 0.1, duration: 0.7, ease: "expo.out" }, "-=0.6")
+      .from(".gsap-hero-ribbon", { opacity: 0, scale: 0.95, duration: 0.8, ease: "expo.out" }, "-=0.5");
+
+    // Scroll trigger for manifesto cards
+    gsap.utils.toArray(".gsap-manifesto-card").forEach((card: any, i) => {
+      gsap.from(card, {
+        scrollTrigger: {
+          trigger: card,
+          start: "top bottom-=50",
+          toggleActions: "play none none reverse",
+          scrub: 1.2
+        },
+        y: 60,
+        opacity: 0,
+        rotation: 1,
+        duration: 1.2,
+        ease: "expo.out"
+      });
+    });
+
+    // Quiz Completion Elastic Animation
+    if (quizFinished) {
+      confetti({
+        particleCount: 150,
+        spread: 80,
+        origin: { y: 0.5 },
+        colors: ['#0D6E6E', '#E31837', '#1C1C1E'],
+        disableForReducedMotion: true
+      });
+
+      const quizTl = gsap.timeline();
+      quizTl.fromTo(".quiz-complete-icon", { scale: 0, rotation: -90 }, { scale: 1, rotation: 0, duration: 1, ease: "expo.out" })
+            .fromTo(".quiz-complete-title", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, ease: "expo.out" }, "-=0.8")
+            .fromTo(".quiz-result-item", { opacity: 0, x: -20 }, { opacity: 1, x: 0, stagger: 0.1, duration: 0.7, ease: "expo.out" }, "-=0.6")
+            .fromTo(".quiz-complete-text", { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.7, ease: "expo.out" }, "-=0.5")
+            .fromTo(".quiz-complete-btns", { opacity: 0, scale: 0.95 }, { opacity: 1, scale: 1, duration: 0.6, ease: "expo.out" }, "-=0.5");
+    }
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, { scope: container, dependencies: [quizFinished] });
 
   // Activate trait select
   const currentTraitData = SURVIVAL_TRAITS.find(t => t.id === selectedTrait) || SURVIVAL_TRAITS[0];
@@ -65,7 +153,7 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
   };
 
   return (
-    <div className="space-y-20 py-8" id="home-page-container">
+    <div className="space-y-20 py-8" id="home-page-container" ref={container}>
       
       {/* 1. HERO SECTION: Direct, powerful, empathetic */}
       <motion.section 
@@ -75,79 +163,59 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <motion.div 
-          className="inline-flex items-center space-x-2 bg-brand-red-light text-brand-red px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6 border border-brand-red/20"
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.2, duration: 0.4 }}
-          whileHover={{ scale: 1.03 }}
+        <div 
+          className="gsap-hero-badge inline-flex items-center space-x-2 bg-brand-red-light text-brand-red px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6 border border-brand-red/20"
         >
           <Sparkle className="w-3.5 h-3.5 text-brand-red animate-pulse" />
           <span>FOR THOSE WHO REFUSED TO QUIT.</span>
-        </motion.div>
+        </div>
         
-        <motion.h1 
-          className="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-navy-950 tracking-tight max-w-4xl mx-auto leading-[1.15] text-balance"
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.5 }}
+        <h1 
+          className="gsap-hero-title text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-navy-950 tracking-tight max-w-4xl mx-auto leading-[1.15] text-balance"
         >
           <span className="block">Even one who stumbles can</span>
           <span className="block text-brand-red">rise again</span>
           <span className="block">through <span className="text-navy-900 bg-brand-red-light px-2 rounded-md border border-brand-red/15">perseverance</span>.</span>
-        </motion.h1>
+        </h1>
  
-        <motion.p 
-          className="mt-8 text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed text-balance"
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
+        <p 
+          className="gsap-hero-text mt-8 text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed text-balance"
         >
           <span className="font-semibold text-navy-900 block">We are here to stand with you as true companions, support your mental well-being, and transform your resilience into nation-building power.</span>
-        </motion.p>
+        </p>
  
         {/* Companion Call-to-action */}
-        <motion.div 
+        <div 
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
         >
-          <motion.button
+          <button
             onClick={() => {
               const element = document.getElementById("trial-section");
               element?.scrollIntoView({ behavior: "smooth" });
             }}
-            whileHover={{ scale: 1.02, y: -2 }}
-            whileTap={{ scale: 0.98 }}
-            className="w-full sm:w-auto bg-brand-red hover:bg-brand-red-hover text-white font-medium text-base px-8 py-4 rounded-xl shadow-lg transition duration-200 hover:shadow-xl flex items-center justify-center space-x-3 cursor-pointer"
+            className="gsap-hero-btn w-full sm:w-auto bg-brand-red hover:bg-brand-red-hover text-white font-medium text-base px-8 py-4 rounded-xl shadow-lg transition duration-200 hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center space-x-3 cursor-pointer"
             id="hero-primary-cta"
           >
             <span>Try a Course module</span>
             <ArrowRight className="w-5 h-5 animate-bounce-right" />
-          </motion.button>
+          </button>
           
-          <motion.button
+          <button
             onClick={() => {
               const element = document.getElementById("quiz-section");
               element?.scrollIntoView({ behavior: "smooth" });
             }}
-            whileHover={{ scale: 1.02, y: -2 }}
-            whileTap={{ scale: 0.98 }}
-            className="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-700 font-semibold text-base px-8 py-4 rounded-xl border border-slate-200 shadow-xs transition duration-200 flex items-center justify-center space-x-2 cursor-pointer"
+            className="gsap-hero-btn w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-700 font-semibold text-base px-8 py-4 rounded-xl border border-slate-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition duration-200 flex items-center justify-center space-x-2 cursor-pointer"
             id="hero-secondary-cta"
           >
             <Question className="w-5 h-5 text-slate-400" />
             <span>Test Your Survival Quotient</span>
-          </motion.button>
-        </motion.div>
+          </button>
+        </div>
  
         {/* Handholding reassuring ribbon */}
-        <motion.div 
-          className="mt-12 p-5 bg-white border border-slate-200/80 rounded-2xl max-w-2xl mx-auto flex items-center space-x-4 text-left shadow-xs hover:shadow-md transition-shadow duration-300"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
+        <div 
+          className="gsap-hero-ribbon mt-12 p-5 bg-white/40 backdrop-blur-xl border border-white/60 rounded-2xl max-w-2xl mx-auto flex items-center space-x-4 text-left shadow-[0_8px_32px_rgba(0,0,0,0.04)] hover:shadow-md transition-shadow duration-300"
         >
           <div className="bg-emerald-50 text-emerald-700 p-2.5 rounded-full shrink-0">
             <Handshake className="w-6 h-6" />
@@ -158,11 +226,11 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
               UPSC is a brutal marathon of isolation. We don't demand upfront lakhs or push pushy sales executives. Try or test any premium module starting from just ₹249. If you feel it holds your hand and clarifies concepts, stay. Otherwise, we still remain your companions.
             </p>
           </div>
-        </motion.div>
+        </div>
       </motion.section>
 
       {/* 2. RESILIENCE MANIFESTO: Origin story, positive symbolism, Gita verse, Inspirational figures */}
-      <section className="bg-white border-y border-slate-200/80 py-20 overflow-hidden" id="resilience-manifesto">
+      <section className="bg-white/10 backdrop-blur-sm border-y border-white/40 py-20 overflow-hidden" id="resilience-manifesto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
@@ -176,7 +244,7 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
-              <div className="bg-navy-950 text-white p-8 rounded-2xl shadow-xl border border-navy-900 relative overflow-hidden group">
+              <div className="bg-navy-950/80 backdrop-blur-2xl text-white p-8 rounded-2xl shadow-xl border border-white/10 relative overflow-hidden group">
                 <div className="absolute top-0 right-0 p-4 opacity-5 transition-transform duration-500 group-hover:scale-110">
                   <Quotes className="w-36 h-36" />
                 </div>
@@ -227,7 +295,7 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
               </div>
 
               {/* Aspirant quote */}
-              <div className="p-6 bg-slate-50 rounded-xl border border-slate-200 relative">
+              <div className="p-6 bg-white/40 backdrop-blur-xl rounded-xl border border-white/60 shadow-sm relative">
                 <Quotes className="w-6 h-6 text-brand-red/20 absolute top-3 left-3" />
                 <p className="text-sm text-slate-700 leading-relaxed italic pl-4">
                   Many aspirants are told they are not good enough. Many fail Prelims, Mains, or Interviews. Many are underestimated because of their background, language, or financial condition. Yet <strong className="text-navy-950 not-italic">they continue.</strong> Like the cockroach, they survive every setback and return stronger.
@@ -250,10 +318,8 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative items-stretch mt-8">
               {/* Card 1 - Shifted up */}
-              <motion.div 
-                whileHover={{ y: -6 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="text-left p-8 bg-white border border-slate-200 rounded-2xl hover:border-brand-red/30 transition-all duration-300 shadow-xs hover:shadow-md md:-translate-y-4 flex flex-col justify-between relative"
+              <div 
+                className="gsap-manifesto-card text-left p-8 bg-white/60 backdrop-blur-2xl border border-white/60 rounded-2xl hover:border-brand-red/40 transition-all duration-300 shadow-[0_8px_32px_rgba(0,0,0,0.04)] hover:shadow-lg md:-translate-y-4 flex flex-col justify-between relative"
               >
                 <div className="absolute top-0 right-0 w-8 h-8 bg-[#f5f5f5] text-slate-500 border-l border-b border-slate-200 flex items-center justify-center rounded-bl-xl rounded-tr-2xl text-xs font-bold font-mono">
                   01
@@ -265,13 +331,11 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
                     Navigated consecutive political and personal failures, demonstrating that mass resilience is built over decades of slow, persistent work.
                   </p>
                 </div>
-              </motion.div>
+              </div>
  
               {/* Card 2 - Centered with brand-red highlight border */}
-              <motion.div 
-                whileHover={{ y: -6 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="text-left p-8 bg-navy-950 text-white rounded-2xl transition-all duration-300 shadow-lg border border-navy-900 md:translate-y-2 flex flex-col justify-between relative"
+              <div 
+                className="gsap-manifesto-card text-left p-8 bg-navy-950/80 backdrop-blur-2xl text-white rounded-2xl transition-all duration-300 shadow-[0_8px_32px_rgba(0,0,0,0.15)] border border-white/10 md:translate-y-2 flex flex-col justify-between relative"
               >
                 <div className="absolute top-0 right-0 w-8 h-8 bg-brand-red text-white flex items-center justify-center rounded-bl-xl rounded-tr-2xl text-xs font-bold font-mono">
                   02
@@ -283,13 +347,11 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
                     Overcame compounding institutional discrimination and structural barriers to draft India's constitutional bedrock.
                   </p>
                 </div>
-              </motion.div>
+              </div>
  
               {/* Card 3 - Shifted down */}
-              <motion.div 
-                whileHover={{ y: -6 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="text-left p-8 bg-white border border-slate-200 rounded-2xl hover:border-brand-red/30 transition-all duration-300 shadow-xs hover:shadow-md md:-translate-y-4 flex flex-col justify-between relative"
+              <div 
+                className="gsap-manifesto-card text-left p-8 bg-white/60 backdrop-blur-2xl border border-white/60 rounded-2xl hover:border-brand-red/40 transition-all duration-300 shadow-[0_8px_32px_rgba(0,0,0,0.04)] hover:shadow-lg md:-translate-y-4 flex flex-col justify-between relative"
               >
                 <div className="absolute top-0 right-0 w-8 h-8 bg-[#f5f5f5] text-slate-500 border-l border-b border-slate-200 flex items-center justify-center rounded-bl-xl rounded-tr-2xl text-xs font-bold font-mono">
                   03
@@ -301,7 +363,7 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
                     Transformed setbacks, imprisonment, and social boundaries into national milestones as India's premier poet and administrator.
                   </p>
                 </div>
-              </motion.div>
+              </div>
             </div>
             <p className="text-sm text-slate-500 text-center italic">
               Their journeys were not about privilege; they were about <strong className="text-brand-red not-italic">persistence</strong>.
@@ -362,7 +424,7 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
           </div>
 
           {/* Interactive Viewer Card */}
-          <div className="lg:col-span-8 bg-white border border-slate-200 p-8 sm:p-10 rounded-2xl shadow-sm flex flex-col justify-between overflow-hidden" id="trait-interactive-viewer">
+          <div className="lg:col-span-8 bg-white/50 backdrop-blur-2xl border border-white/60 p-8 sm:p-10 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.04)] flex flex-col justify-between overflow-hidden" id="trait-interactive-viewer">
             <AnimatePresence mode="wait">
               <motion.div
                 key={selectedTrait}
@@ -473,7 +535,7 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.2 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 25 }}
                   className="space-y-6"
                 >
                   
@@ -518,26 +580,23 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
                 </motion.div>
               ) : (
                 // Quiz completion state
-                <motion.div
+                <div
                   key="quiz-finished"
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.3 }}
-                  className="text-center py-6 space-y-6"
+                  className="text-center py-6 space-y-6 opacity-100"
                 >
-                  <div className="inline-flex bg-navy-50 text-navy-800 p-4 rounded-full justify-center animate-bounce">
+                  <div className="quiz-complete-icon inline-flex bg-navy-50 text-navy-800 p-4 rounded-full justify-center">
                     <Handshake className="w-10 h-10" />
                   </div>
                   
-                  <h3 className="text-2xl font-display font-bold text-navy-950">
+                  <h3 className="quiz-complete-title text-2xl font-display font-bold text-navy-950">
                     Quiz Complete: You are a True Survivor.
                   </h3>
                   
-                  <div className="max-w-xl mx-auto space-y-4 bg-slate-50/70 p-5 rounded-xl border border-slate-100 text-left">
-                    <h4 className="text-xs font-mono font-bold text-navy-700 uppercase tracking-wider block font-sans">Your Cumulative Companion Analysis:</h4>
+                  <div className="max-w-xl mx-auto space-y-4 bg-slate-50/70 p-5 rounded-xl border border-slate-100 text-left overflow-hidden">
+                    <h4 className="text-xs font-mono font-bold text-navy-700 uppercase tracking-wider block font-sans quiz-result-item">Your Cumulative Companion Analysis:</h4>
                     <ul className="space-y-2 text-xs text-slate-600 font-sans">
                       {quizScore.map((result, rIdx) => (
-                        <li key={rIdx} className="flex items-start space-x-2">
+                        <li key={rIdx} className="flex items-start space-x-2 quiz-result-item">
                           <CheckCircle className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                           <span><strong>Question {rIdx + 1}:</strong> {result}</span>
                         </li>
@@ -545,27 +604,27 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
                     </ul>
                   </div>
 
-                  <p className="text-sm text-slate-500 max-w-lg mx-auto font-sans">
+                  <p className="quiz-complete-text text-sm text-slate-500 max-w-lg mx-auto font-sans">
                     Remember: No mental state is permanent. Fear and anxiety are normal. We are here to companion you so you don't feel alone in the dark room. We can review your daily schedules, study maps, or answers for free.
                   </p>
 
-                  <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2 font-sans">
+                  <div className="quiz-complete-btns flex flex-col sm:flex-row items-center justify-center gap-3 pt-2 font-sans">
                     <button
                       onClick={resetQuiz}
-                      className="w-full sm:w-auto px-5 py-2.5 rounded-lg border border-slate-300 text-xs font-semibold hover:bg-slate-50 cursor-pointer text-slate-600"
+                      className="w-full sm:w-auto px-5 py-2.5 rounded-lg border border-slate-300 text-xs font-semibold hover:bg-slate-50 cursor-pointer text-slate-600 transition-transform duration-200 hover:-translate-y-0.5"
                       id="quiz-reset-btn"
                     >
                       Take Quiz Again
                     </button>
                     <button
                       onClick={() => setActivePage("contact")}
-                      className="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-navy-900 text-white text-xs font-semibold hover:bg-navy-800 shadow-md cursor-pointer"
+                      className="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-navy-900 text-white text-xs font-semibold hover:bg-navy-800 shadow-md cursor-pointer transition-transform duration-200 hover:-translate-y-0.5"
                       id="quiz-advisor-btn"
                     >
                       Schedule Free Mental Health Check-in
                     </button>
                   </div>
-                </motion.div>
+                </div>
               )}
             </AnimatePresence>
           </div>

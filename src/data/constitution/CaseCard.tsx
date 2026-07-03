@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import React, { useState, useCallback } from 'react'
 import { ChevronDown } from 'lucide-react'
 import type { Case } from '@/lib/constitution-helpers'
 
@@ -9,7 +9,8 @@ import type { Case } from '@/lib/constitution-helpers'
 /* ------------------------------------------------------------------ */
 
 interface CaseCardProps {
-  caseData: Case
+  caseData: Case;
+  key?: React.Key;
 }
 
 /* ------------------------------------------------------------------ */

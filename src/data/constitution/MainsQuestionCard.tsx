@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import React, { useState, useCallback } from 'react'
 import { ListChecks } from 'lucide-react'
 import type { UPSCQuestion } from '@/lib/constitution-helpers'
 
@@ -9,7 +9,8 @@ import type { UPSCQuestion } from '@/lib/constitution-helpers'
 /* ------------------------------------------------------------------ */
 
 interface MainsQuestionCardProps {
-  question: UPSCQuestion
+  question: UPSCQuestion;
+  key?: React.Key;
 }
 
 /* ------------------------------------------------------------------ */

@@ -13,9 +13,14 @@ import MainsThemeWiseAnalysisPage from "./pages/MainsThemeWiseAnalysisPage";
 import ConstitutionExplorerPage from "./pages/ConstitutionExplorerPage";
 import AdministrativePioneersPage from "./pages/AdministrativePioneersPage";
 import MythologyEthicsPage from "./pages/MythologyEthicsPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import { Sparkle, X, Handshake } from "@phosphor-icons/react";
 import { AnimatePresence, motion } from "motion/react";
 import Chatbot from "./components/Chatbot";
+import CustomCursor from "./components/CustomCursor";
+import AmbientBackground from "./components/AmbientBackground";
+import { ReactLenis } from "lenis/react";
+
 export default function App() {
   const [activePage, setActivePage] = useState<string>("home");
   const [resourcePhase, setResourcePhase] = useState<"none" | "prelims" | "mains" | "integrity">("none");
@@ -53,13 +58,18 @@ export default function App() {
         return <AboutUs />;
       case "contact":
         return <Contact />;
+      case "privacy-policy":
+        return <PrivacyPolicy />;
       default:
         return <Home setActivePage={setActivePage} />;
     }
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 bg-dot-grid relative selection:bg-brand-red-light selection:text-navy-950">
+    <ReactLenis root options={{ lerp: 0.08, smoothWheel: true }}>
+      <div className="min-h-screen flex flex-col relative selection:bg-brand-red-light selection:text-navy-950 cursor-none sm:cursor-auto text-slate-800">
+        <AmbientBackground />
+        <CustomCursor />
       
       {/* 0. WELCOME & LAUNCH SCREEN REMOVED */}
 
@@ -93,10 +103,10 @@ export default function App() {
         <AnimatePresence mode="wait">
           <motion.div
             key={activePage}
-            initial={{ opacity: 0, transform: "translateY(15px)" }}
-            animate={{ opacity: 1, transform: "translateY(0px)" }}
-            exit={{ opacity: 0, transform: "translateY(-15px)" }}
-            transition={{ duration: 0.22, ease: [0.23, 1, 0.32, 1] }}
+            initial={{ opacity: 0, scale: 0.98, filter: "blur(8px)" }}
+            animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+            exit={{ opacity: 0, scale: 1.02, filter: "blur(8px)" }}
+            transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
           >
             {renderPage()}
           </motion.div>
@@ -109,6 +119,7 @@ export default function App() {
       {/* 5. FLOATING COMPANION CHATBOT */}
       <Chatbot setActivePage={setActivePage} />
 
-    </div>
+      </div>
+    </ReactLenis>
   );
 }

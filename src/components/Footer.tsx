@@ -55,13 +55,18 @@ export default function Footer({ setActivePage }: FooterProps) {
             >
               Our Honest Story
             </button>
-            <span className="text-slate-700 hidden sm:inline">|</span>
-            <button
-              onClick={() => setActivePage("contact")}
-              className="hover:text-white transition duration-200 cursor-pointer"
-            >
-              24/7 Support Line
-            </button>
+            <div className="flex items-center gap-3">
+              <div className="text-right hidden sm:block">
+                <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest block">Support Line</span>
+                <span className="text-[10px] text-slate-500 italic">We listen. Always.</span>
+              </div>
+              <button
+                onClick={() => setActivePage("login")}
+                className="bg-brand-red hover:bg-brand-red-hover text-white font-bold text-[10px] sm:text-xs px-4 py-2 rounded-lg uppercase tracking-widest transition duration-200 cursor-pointer shadow-md hover:shadow-lg"
+              >
+                Login
+              </button>
+            </div>
           </div>
 
           {/* Legal / Copyright Bottom Row */}
@@ -72,8 +77,13 @@ export default function Footer({ setActivePage }: FooterProps) {
             <p className="order-1 md:order-2 font-medium">
               © {new Date().getFullYear()} CockroachIAS Companion Institute. Built on the bedrock of disciplined consistency.
             </p>
-            <p className="order-3">
-              Supporting aspirants nationwide.
+            <p className="order-3 flex gap-2">
+              <button 
+                onClick={() => setActivePage("privacy-policy")}
+                className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2"
+              >
+                Privacy Policy
+              </button>
             </p>
           </div>
         </div>

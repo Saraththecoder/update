@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import React, { useState, useCallback } from 'react'
 import type { UPSCQuestion } from '@/lib/constitution-helpers'
 
 /* ------------------------------------------------------------------ */
@@ -8,7 +8,8 @@ import type { UPSCQuestion } from '@/lib/constitution-helpers'
 /* ------------------------------------------------------------------ */
 
 interface PrelimsQuestionCardProps {
-  question: UPSCQuestion
+  question: UPSCQuestion;
+  key?: React.Key;
 }
 
 /* ------------------------------------------------------------------ */

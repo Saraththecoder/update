@@ -20,7 +20,7 @@ export default function Header({ activePage, setActivePage, setResourcePhase }: 
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
+    <header className="sticky top-0 z-50 w-full bg-white/50 backdrop-blur-2xl border-b border-white/60 shadow-[0_4px_30px_rgba(0,0,0,0.05)] transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
@@ -79,7 +79,7 @@ export default function Header({ activePage, setActivePage, setResourcePhase }: 
                           exit={{ opacity: 0, y: 10, scale: 0.95 }}
                           transition={{ type: "spring", stiffness: 350, damping: 25 }}
                           style={{ transformOrigin: "top" }}
-                          className="absolute top-full left-0 mt-1 w-56 bg-white border border-slate-200 rounded-lg shadow-lg py-1.5 z-50 font-sans"
+                          className="absolute top-full left-0 mt-1 w-56 bg-white/70 backdrop-blur-xl border border-white/60 rounded-lg shadow-[0_8px_32px_rgba(0,0,0,0.08)] py-1.5 z-50 font-sans"
                         >
                           <button
                             onClick={() => {
@@ -139,19 +139,18 @@ export default function Header({ activePage, setActivePage, setResourcePhase }: 
             })}
           </nav>
 
-          {/* Supportive Sub-cta */}
+          {/* Login CTA */}
           <div className="flex items-center space-x-3">
-            <div className="hidden lg:flex flex-col items-end text-right">
-              <span className="text-[11px] font-mono text-slate-500 block">SUPPORT LINE</span>
-              <span className="text-xs font-semibold text-navy-800 block">We listen. Always.</span>
+            <div className="text-right hidden lg:block">
+              <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-widest block">Support Line</span>
+              <span className="text-[9px] text-slate-400 italic">We listen. Always.</span>
             </div>
             <button
-              id="header-quick-support-btn"
-              onClick={() => setActivePage("contact")}
-              className="bg-brand-red hover:bg-brand-red-hover text-white px-4 py-2 rounded-lg text-xs font-semibold tracking-wide uppercase transition-all duration-200 shadow-md hover:shadow-lg active:translate-y-0.5 flex items-center space-x-2"
+              id="header-login-btn"
+              onClick={() => setActivePage("login")}
+              className="bg-brand-red hover:bg-brand-red-hover text-white px-5 py-2.5 rounded-lg text-xs font-semibold tracking-wide uppercase transition-all duration-200 shadow-md hover:shadow-lg active:translate-y-0.5 flex items-center space-x-2 border border-brand-red"
             >
-              <span>Talk to Mentor</span>
-              <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-ping"></span>
+              <span>Login</span>
             </button>
           </div>
 

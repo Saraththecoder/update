@@ -56,6 +56,52 @@ export interface Schedule {
   full_text: string;
 }
 
+export interface Case {
+  case_id: string;
+  case_name: string;
+  year: number;
+  citation: string;
+  articles_interpreted: string[];
+  what_decided: string;
+  upsc_one_liner: string;
+  upsc_asked_directly: boolean;
+  is_recent: boolean;
+  overruled: string;
+  overruled_by: string;
+}
+
+export interface UPSCQuestion {
+  question_id: string;
+  year: number;
+  exam: string;
+  subject: string;
+  topic: string;
+  question_type: string;
+  question: string;
+  options: {
+    A: string;
+    B: string;
+    C: string;
+    D: string;
+  };
+  correct_answer: string;
+  linked_articles: string[];
+  linked_schedules: string[];
+  linked_amendments: string[];
+  linked_cases: string[];
+  explanation: string;
+  elimination_hint: string;
+  trap_area: string;
+  difficulty: string;
+  exam_type: string;
+  articles_referenced: string[];
+  question_text: string;
+  answer_dimensions: string[];
+  option_explanation: string;
+  marks: string;
+  paper: string;
+}
+
 export function buildTreeData(): TreeNode[] {
   return parts.map(part => {
     const partArticles = articles.filter(art => art.part_id === part.part_id);
@@ -155,7 +201,7 @@ export function getCasesByArticle(articleId: string) {
 }
 
 export function getQuestionsByArticle(articleId: string) {
-  return upscQuestions.filter(q => q.articles_linked && q.articles_linked.includes(articleId));
+  return upscQuestions.filter(q => q.linked_articles && q.linked_articles.includes(articleId)) as UPSCQuestion[];
 }
 
 export function getSchedulesByArticle(articleId: string) {

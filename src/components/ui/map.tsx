@@ -15,6 +15,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import * as React from "react";
 import { createPortal } from "react-dom";
 import { X, Minus, Plus, Locate, Maximize, Loader2 } from "lucide-react";
 
