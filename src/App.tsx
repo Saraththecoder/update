@@ -14,6 +14,7 @@ import ConstitutionExplorerPage from "./pages/ConstitutionExplorerPage";
 import AdministrativePioneersPage from "./pages/AdministrativePioneersPage";
 import MythologyEthicsPage from "./pages/MythologyEthicsPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import RefundPolicy from "./pages/RefundPolicy";
 import { Sparkle, X, Handshake } from "@phosphor-icons/react";
 import { AnimatePresence, motion } from "motion/react";
 import Chatbot from "./components/Chatbot";
@@ -60,6 +61,8 @@ export default function App() {
         return <Contact />;
       case "privacy-policy":
         return <PrivacyPolicy />;
+      case "refund-policy":
+        return <RefundPolicy />;
       default:
         return <Home setActivePage={setActivePage} />;
     }

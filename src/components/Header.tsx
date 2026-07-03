@@ -145,13 +145,15 @@ export default function Header({ activePage, setActivePage, setResourcePhase }: 
               <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-widest block">Support Line</span>
               <span className="text-[9px] text-slate-400 italic">We listen. Always.</span>
             </div>
-            <button
+            <a
               id="header-login-btn"
-              onClick={() => setActivePage("login")}
+              href="https://classplusapp.com/diy"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-brand-red hover:bg-brand-red-hover text-white px-5 py-2.5 rounded-lg text-xs font-semibold tracking-wide uppercase transition-all duration-200 shadow-md hover:shadow-lg active:translate-y-0.5 flex items-center space-x-2 border border-brand-red"
             >
               <span>Login</span>
-            </button>
+            </a>
           </div>
 
         </div>

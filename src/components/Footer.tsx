@@ -60,12 +60,14 @@ export default function Footer({ setActivePage }: FooterProps) {
                 <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest block">Support Line</span>
                 <span className="text-[10px] text-slate-500 italic">We listen. Always.</span>
               </div>
-              <button
-                onClick={() => setActivePage("login")}
+              <a
+                href="https://classplusapp.com/diy"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-brand-red hover:bg-brand-red-hover text-white font-bold text-[10px] sm:text-xs px-4 py-2 rounded-lg uppercase tracking-widest transition duration-200 cursor-pointer shadow-md hover:shadow-lg"
               >
                 Login
-              </button>
+              </a>
             </div>
           </div>
 
@@ -83,6 +85,13 @@ export default function Footer({ setActivePage }: FooterProps) {
                 className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2"
               >
                 Privacy Policy
+              </button>
+              <span className="text-slate-700">|</span>
+              <button 
+                onClick={() => setActivePage("refund-policy")}
+                className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2"
+              >
+                Refund Policy
               </button>
             </p>
           </div>
