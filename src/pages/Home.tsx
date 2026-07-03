@@ -496,7 +496,7 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
         <div className="mt-16 bg-navy-900 text-white p-8 sm:p-12 rounded-2xl relative overflow-hidden shadow-lg border border-navy-950 text-center space-y-6">
           <div className="max-w-3xl mx-auto space-y-4">
             <h3 className="text-2xl sm:text-3xl font-display font-medium text-navy-100">
-              Remember: We are not another coaching academy. <br/>We are trying to set a trend.
+              Not another coaching academy.
             </h3>
             <p className="text-sm text-slate-300 leading-relaxed max-w-2xl mx-auto">
               "We have made sure our prices correspond to what a regular student pays for tea or a simple pencil daily. If this platform resolves your conceptual gridlocks, we will guide you forward with absolute fairness. If you are unsatisfied, your hand-holding fees are returned with a thank you note."

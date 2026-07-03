@@ -80,7 +80,7 @@ export default function RefundPolicy() {
         <h2 className="text-xl sm:text-2xl font-bold text-navy-950 mt-10 mb-4 font-display">5. How to Request a Refund</h2>
         <p>To initiate a refund request:</p>
         <ol className="list-decimal pl-6 space-y-2 text-sm sm:text-base">
-          <li>Email us at <strong className="text-navy-950">cockroachiasinfo@gmail.com</strong> with the subject line: <em>"Refund Request — [Your Name]"</em></li>
+          <li>Email us at <strong className="text-navy-950">infocockroachias@gmail.com</strong> with the subject line: <em>"Refund Request — [Your Name]"</em></li>
           <li>Include your registered name, email, phone number, and the course/cohort name.</li>
           <li>Briefly describe the reason for your refund request.</li>
           <li>Our team will review your request and respond within <strong>3–5 business days</strong>.</li>
@@ -116,7 +116,7 @@ export default function RefundPolicy() {
             Last updated: July 2025
           </p>
           <p className="text-sm text-slate-500">
-            Contact: cockroachiasinfo@gmail.com
+            Contact: infocockroachias@gmail.com
           </p>
         </div>
       </div>

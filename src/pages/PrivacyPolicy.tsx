@@ -76,7 +76,7 @@ export default function PrivacyPolicy() {
           <li>Raise a complaint if you believe your data has been mishandled.</li>
         </ul>
         <p>
-          For any privacy-related requests, please reach out to us at <strong className="text-navy-950">cockroachiasinfo@gmail.com</strong> or through our Contact page.
+          For any privacy-related requests, please reach out to us at <strong className="text-navy-950">infocockroachias@gmail.com</strong> or through our Contact page.
         </p>
 
         <h2 className="text-xl sm:text-2xl font-bold text-navy-950 mt-10 mb-4 font-display">7. Children's Privacy</h2>
@@ -94,7 +94,7 @@ export default function PrivacyPolicy() {
             Last updated: July 2025
           </p>
           <p className="text-sm text-slate-500">
-            Contact: cockroachiasinfo@gmail.com
+            Contact: infocockroachias@gmail.com
           </p>
         </div>
       </div>

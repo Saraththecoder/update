@@ -21,9 +21,33 @@ import Chatbot from "./components/Chatbot";
 import { ReactLenis } from "lenis/react";
 
 export default function App() {
-  const [activePage, setActivePage] = useState<string>("home");
+  const [activePage, setActivePageState] = useState<string>(() => {
+    const hash = window.location.hash.replace('#', '');
+    return hash || 'home';
+  });
   const [resourcePhase, setResourcePhase] = useState<"none" | "prelims" | "mains" | "integrity">("none");
   const [showTopToast, setShowTopToast] = useState<boolean>(true);
+
+  // Sync with browser back button
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      setActivePageState(hash || 'home');
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    
+    // Initialize hash if not present
+    if (!window.location.hash) {
+      window.history.replaceState(null, '', '#home');
+    }
+
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const setActivePage = (page: string) => {
+    window.location.hash = page;
+    setActivePageState(page);
+  };
 
   // Scroll to top on page change
   useEffect(() => {

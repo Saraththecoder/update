@@ -115,8 +115,8 @@ export default function AboutUs() {
       <section className="text-center max-w-3xl mx-auto space-y-4" id="about-main-header">
         <span className="text-xs font-mono font-bold text-brand-red tracking-widest uppercase">The Sovereign Manifesto</span>
         <h1 className="text-3xl sm:text-5xl font-display font-medium text-navy-950 leading-tight">
-          To turn extreme survivors into <br />
-          <span className="text-navy-700 bg-slate-100 px-3 py-1 rounded-lg border border-slate-200 inline-block mt-1">nation builders.</span>
+          For those who refused to <br />
+          <span className="text-navy-700 bg-slate-100 px-3 py-1 rounded-lg border border-slate-200 inline-block mt-1">Quit</span>
         </h1>
         <p className="text-sm sm:text-base text-slate-500 max-w-2xl mx-auto leading-relaxed pt-2">
           We did not emerge from standard corporate design rooms. We emerged from intense study hours, quiet persistence, and the quiet dignity of student rooms where dreams are nurtured.

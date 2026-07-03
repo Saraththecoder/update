@@ -84,7 +84,7 @@ export default function Contact() {
                 <EnvelopeSimple className="w-5 h-5 text-navy-700 shrink-0 mt-0.5" />
                 <div className="text-xs leading-relaxed space-y-1">
                   <h4 className="font-bold text-navy-950 text-sm">Direct Companion Inbox</h4>
-                  <p className="text-slate-500">cockroachiasinfo@gmail.com</p>
+                  <p className="text-slate-500">infocockroachias@gmail.com</p>
                   <p className="text-[10px] text-slate-400">Checked directly by our academic leads three times daily</p>
                 </div>
               </div>
