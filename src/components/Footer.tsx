@@ -63,7 +63,7 @@ export default function Footer({ setActivePage }: FooterProps) {
               UPSC is a marathon. Walk slow, walk long.
             </p>
             <p className="order-1 md:order-2 font-medium">
-              © {new Date().getFullYear()} CockroachIAS Companion Institute. Built on the bedrock of disciplined consistency.
+              © {new Date().getFullYear()} CockroachIAS Companion Institute. Built on the bedrock of Resilience.
             </p>
             <p className="order-3 flex gap-2">
               <button 

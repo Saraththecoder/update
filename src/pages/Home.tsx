@@ -485,7 +485,7 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs font-mono font-bold text-brand-red tracking-widest uppercase">The Companion Academy</span>
           <h2 className="text-3xl font-display font-bold text-navy-950 mt-2">
-            Something big is coming soon.
+            Something big is waiting for YOU
           </h2>
           <p className="text-sm text-slate-500 mt-2 leading-relaxed">
             We don't sell 2-year upfront packages. We don't employ aggressive counsellors who pester you. We are building companion modules designed to hold your hand through every stage of UPSC preparation.

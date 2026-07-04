@@ -22,6 +22,20 @@ export default function Contact() {
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    const waMessage = `*New Companion Ticket*
+*Name:* ${formData.name}
+*Email:* ${formData.email}
+*Phone:* ${formData.phone || "Not provided"}
+*Target Year:* ${formData.targetYear}
+*Reason:* ${formData.reason}
+
+*Message:*
+${formData.message}`;
+
+    const waUrl = `https://wa.me/917620811812?text=${encodeURIComponent(waMessage)}`;
+    window.open(waUrl, "_blank");
+    
     setFormSubmitted(true);
   };
 
@@ -85,7 +99,7 @@ export default function Contact() {
                 <div className="text-xs leading-relaxed space-y-1">
                   <h4 className="font-bold text-navy-950 text-sm">Direct Companion Inbox</h4>
                   <p className="text-slate-500">infocockroachias@gmail.com</p>
-                  <p className="text-[10px] text-slate-400">Checked directly by our academic leads three times daily</p>
+                  <p className="text-[10px] text-slate-400">Checked directly by our academic leads daily</p>
                 </div>
               </div>
 
@@ -93,7 +107,7 @@ export default function Contact() {
                 <PhoneCall className="w-5 h-5 text-navy-700 shrink-0 mt-0.5" />
                 <div className="text-xs leading-relaxed space-y-1">
                   <h4 className="font-bold text-navy-950 text-sm">The 24/7 Aspirant Line</h4>
-                  <p className="text-slate-500">7620811812 (Toll-Free Support)</p>
+                  <p className="text-slate-500">7620811812</p>
                   <p className="text-slate-400 font-mono text-[10px]">Speak to ex-aspirants who are trained listeners</p>
                 </div>
               </div>

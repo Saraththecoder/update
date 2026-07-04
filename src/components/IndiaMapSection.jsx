@@ -109,6 +109,13 @@ const TIER_COLOR = {
 };
 
 export default function IndiaMapSection() {
+  const [aspirantsCount, setAspirantsCount] = React.useState(2500);
+
+  React.useEffect(() => {
+    // Generate a random number between 2500 and 3500 when component mounts
+    const randomCount = Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500;
+    setAspirantsCount(randomCount);
+  }, []);
 
   return (
     <section id="community" className="bg-[#FAF9F6] py-20 border-y border-slate-200">
@@ -134,7 +141,7 @@ export default function IndiaMapSection() {
               <span className="relative inline-flex rounded-full h-3 w-3 bg-brand-red"></span>
             </span>
             <span className="text-sm font-bold text-navy-950 font-display">
-              <span className="text-brand-red text-lg">2,847</span> Live Aspirants
+              <span className="text-brand-red text-lg">{aspirantsCount.toLocaleString()}</span> Live Aspirants
             </span>
             <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider">across India</span>
           </div>
@@ -190,19 +197,7 @@ export default function IndiaMapSection() {
               })}
             </ComposableMap>
 
-            <div className="mt-4 flex flex-wrap justify-center gap-x-5 gap-y-2 border-t border-slate-100 pt-4 w-full">
-              {[
-                { color: TIER_COLOR.high, label: 'Coaching clusters' },
-                { color: TIER_COLOR.mid, label: 'Mobile-first cities' },
-                { color: TIER_COLOR.emerging, label: 'Regional growth' },
-                { color: TIER_COLOR.remote, label: 'Remote access' },
-              ].map((item) => (
-                <div key={item.label} className="flex items-center gap-2 text-xs font-semibold text-slate-500 uppercase tracking-wider">
-                  <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-full" style={{ background: item.color }} />
-                  {item.label}
-                </div>
-              ))}
-            </div>
+            {/* Removed legends */}
           </div>
         </div>
       </div>
