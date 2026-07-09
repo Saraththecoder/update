@@ -57,6 +57,20 @@ export default function Footer({ setActivePage }: FooterProps) {
             </button>
           </div>
 
+          {/* SEO FOOTER INJECTION */}
+          <div className="w-full text-[10px] sm:text-xs text-slate-400 text-center max-w-4xl mx-auto border-t border-navy-900 pt-6 pb-2">
+            <p className="mb-4 leading-relaxed">
+              <strong>Cockroachias</strong> is India's leading empathy-driven <strong>UPSC preparation companion platform</strong>. Unlike traditional coaching academies, we focus on what truly matters: providing <strong>affordable UPSC courses</strong>, honest hand-holding guidance from ex-aspirants, and <strong>24/7 mental health support for IAS candidates</strong>. We stand firmly with every aspirant who refuses to quit.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 font-medium">
+              <span className="text-slate-500">Popular Searches:</span>
+              <button onClick={() => setActivePage("resources")} className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2">Affordable UPSC Courses</button>
+              <button onClick={() => setActivePage("about")} className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2">UPSC Mentorship India</button>
+              <button onClick={() => setActivePage("contact")} className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2">UPSC Mental Support</button>
+              <button onClick={() => setActivePage("home")} className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2">IAS Preparation Guidance</button>
+            </div>
+          </div>
+
           {/* Legal / Copyright Bottom Row */}
           <div className="w-full border-t border-navy-900 pt-4 sm:pt-6 flex flex-col md:flex-row items-center justify-between text-[10px] sm:text-xs text-slate-500 gap-2 sm:gap-4 text-center md:text-left">
             <p className="order-2 md:order-1">
