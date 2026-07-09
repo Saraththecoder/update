@@ -7,6 +7,8 @@ import {
 import { motion, AnimatePresence } from "motion/react";
 import chatbotIcon from "../../assets/chatbot.jpeg";
 
+import { useNavigate } from "react-router-dom";
+
 interface Message {
   id: string;
   sender: "bot" | "user";
@@ -15,11 +17,8 @@ interface Message {
   actions?: { label: string; action: () => void; primary?: boolean }[];
 }
 
-interface ChatbotProps {
-  setActivePage: (page: string) => void;
-}
-
-export default function Chatbot({ setActivePage }: ChatbotProps) {
+export default function Chatbot() {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [nameInput, setNameInput] = useState("");
@@ -168,7 +167,7 @@ Our platform is built on ground-level empathy and total honesty. What would you 
         botResponse = `The **Companion's Syllabus Metro Map** is our signature interactive tool! It strips down the complex terms of the UPSC syllabus into simple, clickable metro lines and stations, linking each micro-topic directly to relevant resources. Avoid studying blindly—let's keep your direction locked in!`;
         routeLabel = "🗺️ Open Syllabus Metro Map";
         routeAction = () => {
-          setActivePage("metro-map");
+          navigate("/metro-map");
           setIsOpen(false);
         };
         break;
@@ -177,7 +176,7 @@ Our platform is built on ground-level empathy and total honesty. What would you 
         botResponse = `We have loaded detailed blueprints for **UPSC Mains PYQs (2023, 2024, and 2025)** under the **Cockroach Answers** section. Instead of unachievable academic model answers, we show you how to write structured, honest answers in exactly 7 minutes under exam pressure! Check them out on our resources page.`;
         routeLabel = "📝 View Cockroach Answers";
         routeAction = () => {
-          setActivePage("mains-cockroach-answers");
+          navigate("/mains-cockroach-answers");
           setIsOpen(false);
         };
         break;
@@ -186,7 +185,7 @@ Our platform is built on ground-level empathy and total honesty. What would you 
         botResponse = `Standard elimination shortcuts are dead post-2023. Our **Prelims PYQ Analysis** resource maps out past questions topic-by-topic to help you understand the examiner's mind, decode option traps, and build conceptual depth that stands the test of changes.`;
         routeLabel = "🔍 Browse Prelims PYQs";
         routeAction = () => {
-          setActivePage("pyq-analysis");
+          navigate("/pyq-analysis");
           setIsOpen(false);
         };
         break;
@@ -195,7 +194,7 @@ Our platform is built on ground-level empathy and total honesty. What would you 
         botResponse = `Our new **Constitution Explorer** offers a clean dynamic column view to search, read, and master every article, part, and schedule of the Indian Constitution. It's the ultimate visual guide for GS Paper 2!`;
         routeLabel = "🏛️ Open Constitution Explorer";
         routeAction = () => {
-          setActivePage("constitution-explorer");
+          navigate("/constitution-explorer");
           setIsOpen(false);
         };
         break;
@@ -204,7 +203,7 @@ Our platform is built on ground-level empathy and total honesty. What would you 
         botResponse = `We don't charge ₹1.5 Lakhs upfront. You can unlock premium 3-day hand-holding cohorts (GS Foundation, Editorial Linkages, Ethics/Essay companion rooms) starting at just **₹249**! Log in and check them out to try our empathetic trial methodology today.`;
         routeLabel = "📖 Explore Trial Courses";
         routeAction = () => {
-          setActivePage("home");
+          navigate("/");
           // Scroll to courses section
           setTimeout(() => {
             const el = document.getElementById("courses-pricing-section");
@@ -218,7 +217,7 @@ Our platform is built on ground-level empathy and total honesty. What would you 
         botResponse = `Need an emotional anchor, a study planner check-in, or syllabus clarity? Our mentors are ex-aspirants who have lived the struggle. We will support you. Head to our Contact page to send a query or check our resources!`;
         routeLabel = "💬 Go to Contact Page";
         routeAction = () => {
-          setActivePage("contact");
+          navigate("/contact");
           setIsOpen(false);
         };
         break;

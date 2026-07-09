@@ -13,11 +13,13 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
 import confetti from "canvas-confetti";
+import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Home({ setActivePage }: { setActivePage: (page: string) => void }) {
+export default function Home() {
   const container = React.useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
   
   // Selected trait for philosophy viewer
   const [selectedTrait, setSelectedTrait] = useState<string>("resilience");
@@ -465,7 +467,7 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
                 <div className="mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between text-xs gap-4 font-sans">
                   <span className="text-slate-500 italic">No matter how competitive or intense the pressure feels, your capacity to survive is absolute.</span>
                   <button 
-                    onClick={() => setActivePage("about")}
+                    onClick={() => navigate("/about")}
                     className="text-navy-700 hover:text-navy-900 font-semibold flex items-center space-x-1 cursor-pointer"
                   >
                     <span>Read more survivor hacks</span>
@@ -615,7 +617,7 @@ export default function Home({ setActivePage }: { setActivePage: (page: string) 
                       Take Quiz Again
                     </button>
                     <button
-                      onClick={() => setActivePage("contact")}
+                      onClick={() => navigate("/contact")}
                       className="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-navy-900 text-white text-xs font-semibold hover:bg-navy-800 shadow-md cursor-pointer transition-transform duration-200 hover:-translate-y-0.5"
                       id="quiz-advisor-btn"
                     >

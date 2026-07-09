@@ -6,12 +6,10 @@ import ArticleDetail from "../data/constitution/ArticleDetail";
 import ContextPanel from "../data/constitution/ContextPanel";
 import MobileDrawer from "../data/constitution/MobileDrawer";
 import { type FilterTag } from "@/lib/constitution-helpers";
+import { useNavigate } from "react-router-dom";
 
-interface ConstitutionExplorerPageProps {
-  setActivePage?: (page: string) => void;
-}
-
-export default function ConstitutionExplorerPage({ setActivePage }: ConstitutionExplorerPageProps) {
+export default function ConstitutionExplorerPage() {
+  const navigate = useNavigate();
   const [selectedArticleId, setSelectedArticleId] = useState<string>("article_1");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [activeFilter, setActiveFilter] = useState<FilterTag>("all");
@@ -53,20 +51,18 @@ export default function ConstitutionExplorerPage({ setActivePage }: Constitution
       {/* Top Header Navigation */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-5 shrink-0">
         <div className="space-y-1">
-          {setActivePage && (
-            <button
-              onClick={() => {
-                // Clear URL param when leaving
-                const newUrl = `${window.location.origin}${window.location.pathname}`;
-                window.history.pushState({ path: newUrl }, "", newUrl);
-                setActivePage("resources");
-              }}
-              className="flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-brand-red uppercase tracking-wider transition-colors cursor-pointer group mb-2"
-            >
-              <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
-              <span>Back to Resources</span>
-            </button>
-          )}
+          <button
+            onClick={() => {
+              // Clear URL param when leaving
+              const newUrl = `${window.location.origin}${window.location.pathname}`;
+              window.history.pushState({ path: newUrl }, "", newUrl);
+              navigate("/resources");
+            }}
+            className="flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-brand-red uppercase tracking-wider transition-colors cursor-pointer group mb-2"
+          >
+            <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
+            <span>Back to Resources</span>
+          </button>
           <div className="flex items-center gap-2">
             <span className="p-1.5 bg-brand-red-light text-brand-red rounded-lg border border-brand-red/10">
               <Scales className="w-5 h-5" />

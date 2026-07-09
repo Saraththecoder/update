@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { Compass, Brain, ArrowRight, ArrowLeft, Sparkle, TrendUp, ShieldCheck, ListNumbers, Scales, Trophy, BookOpen } from "@phosphor-icons/react";
 import { motion, AnimatePresence } from "motion/react";
+import { useNavigate } from "react-router-dom";
 
 interface ResourcesProps {
-  setActivePage: (page: string) => void;
   activePhase?: "none" | "prelims" | "mains" | "integrity";
   setActivePhase?: (phase: "none" | "prelims" | "mains" | "integrity") => void;
 }
 
-export default function Resources({ setActivePage, activePhase: propActivePhase, setActivePhase: propSetActivePhase }: ResourcesProps) {
+export default function Resources({ activePhase: propActivePhase, setActivePhase: propSetActivePhase }: ResourcesProps) {
+  const navigate = useNavigate();
   const [localActivePhase, setLocalActivePhase] = useState<"none" | "prelims" | "mains" | "integrity">("none");
   const activePhase = propSetActivePhase && propActivePhase !== undefined ? propActivePhase : localActivePhase;
   const setActivePhase = propSetActivePhase || setLocalActivePhase;
@@ -222,7 +223,7 @@ export default function Resources({ setActivePage, activePhase: propActivePhase,
                     </div>
                   </div>
                   <button
-                    onClick={() => setActivePage("metro-map")}
+                    onClick={() => navigate("/metro-map")}
                     className="mt-8 bg-[#171717] hover:bg-black text-white text-xs font-bold uppercase tracking-wider py-3.5 px-6 rounded-xl transition duration-150 flex items-center justify-center gap-2 cursor-pointer w-full shadow-xs"
                   >
                     <span>Launch Syllabus Map</span>
@@ -257,7 +258,7 @@ export default function Resources({ setActivePage, activePhase: propActivePhase,
                     </div>
                   </div>
                   <button
-                    onClick={() => setActivePage("constitution-explorer")}
+                    onClick={() => navigate("/constitution-explorer")}
                     className="mt-8 bg-brand-red hover:bg-brand-red-hover text-white text-xs font-bold uppercase tracking-wider py-3.5 px-6 rounded-xl transition duration-150 flex items-center justify-center gap-2 cursor-pointer w-full shadow-md"
                   >
                     <span>Explore Constitution</span>
@@ -292,7 +293,7 @@ export default function Resources({ setActivePage, activePhase: propActivePhase,
                     </div>
                   </div>
                   <button
-                    onClick={() => setActivePage("pyq-analysis")}
+                    onClick={() => navigate("/pyq-analysis")}
                     className="mt-8 bg-[#171717] hover:bg-black text-white text-xs font-bold uppercase tracking-wider py-3.5 px-6 rounded-xl transition duration-150 flex items-center justify-center gap-2 cursor-pointer w-full shadow-xs"
                   >
                     <span>Analyze Prelims Patterns</span>
@@ -360,7 +361,7 @@ export default function Resources({ setActivePage, activePhase: propActivePhase,
                     </div>
                   </div>
                   <button
-                    onClick={() => setActivePage("mains-pyq")}
+                    onClick={() => navigate("/mains-pyq")}
                     className="mt-8 bg-[#171717] hover:bg-black text-white text-xs font-bold uppercase tracking-wider py-3.5 px-6 rounded-xl transition duration-150 flex items-center justify-center gap-2 cursor-pointer w-full shadow-xs"
                   >
                     <span>Analyze Subjective Trends</span>
@@ -395,7 +396,7 @@ export default function Resources({ setActivePage, activePhase: propActivePhase,
                     </div>
                   </div>
                   <button
-                    onClick={() => setActivePage("mains-cockroach-answers")}
+                    onClick={() => navigate("/mains-cockroach-answers")}
                     className="mt-8 bg-brand-red hover:bg-brand-red-hover text-white text-xs font-bold uppercase tracking-wider py-3.5 px-6 rounded-xl transition duration-150 flex items-center justify-center gap-2 cursor-pointer w-full shadow-md"
                   >
                     <span>Explore Cockroach Answers</span>
@@ -430,7 +431,7 @@ export default function Resources({ setActivePage, activePhase: propActivePhase,
                     </div>
                   </div>
                   <button
-                    onClick={() => setActivePage("mains-theme-analysis")}
+                    onClick={() => navigate("/mains-theme-analysis")}
                     className="mt-8 bg-[#171717] hover:bg-black text-white text-xs font-bold uppercase tracking-wider py-3.5 px-6 rounded-xl transition duration-150 flex items-center justify-center gap-2 cursor-pointer w-full shadow-xs"
                   >
                     <span>Analyze Subjective Themes</span>
@@ -495,7 +496,7 @@ export default function Resources({ setActivePage, activePhase: propActivePhase,
                     </div>
                   </div>
                   <button
-                    onClick={() => setActivePage("governance-pioneers")}
+                    onClick={() => navigate("/governance-pioneers")}
                     className="mt-8 bg-[#171717] hover:bg-black text-white text-xs font-bold uppercase tracking-wider py-3.5 px-8 rounded-xl transition duration-150 flex items-center justify-center gap-2 cursor-pointer shadow-xs w-full"
                   >
                     <span>Launch Case Library</span>
@@ -527,7 +528,7 @@ export default function Resources({ setActivePage, activePhase: propActivePhase,
                     </div>
                   </div>
                   <button
-                    onClick={() => setActivePage("mythology-ethics")}
+                    onClick={() => navigate("/mythology-ethics")}
                     className="mt-8 bg-[#171717] hover:bg-black text-white text-xs font-bold uppercase tracking-wider py-3.5 px-8 rounded-xl transition duration-150 flex items-center justify-center gap-2 cursor-pointer shadow-xs w-full"
                   >
                     <span>Launch Dilemma Space</span>

@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from "react";
 import { ArrowLeft, MagnifyingGlass, Sparkle, TrendUp, Info, ListNumbers, BookOpen } from "@phosphor-icons/react";
 import { motion, AnimatePresence } from "motion/react";
 import rawMainsData from "../data/upscmainspyqanalysis2013-2025.json";
+import { useNavigate } from "react-router-dom";
 
 interface MainsSyllabusItem {
   Syllabus: string;
@@ -23,11 +24,8 @@ const GS_PAPERS = [
 
 const YEARS = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
 
-interface MainsPYQAnalysisPageProps {
-  setActivePage?: (page: string) => void;
-}
-
-export default function MainsPYQAnalysisPage({ setActivePage }: MainsPYQAnalysisPageProps) {
+export default function MainsPYQAnalysisPage() {
+  const navigate = useNavigate();
   const [selectedPaper, setSelectedPaper] = useState<string>("GS 1");
   const [searchQuery, setSearchQuery] = useState<string>("");
 
@@ -104,15 +102,13 @@ export default function MainsPYQAnalysisPage({ setActivePage }: MainsPYQAnalysis
       {/* Header and Back Button */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-6">
         <div className="space-y-2">
-          {setActivePage && (
-            <button
-              onClick={() => setActivePage("resources")}
-              className="flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-brand-red uppercase tracking-wider transition-colors cursor-pointer group mb-2"
-            >
-              <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
-              <span>Back to Resources</span>
-            </button>
-          )}
+          <button
+            onClick={() => navigate("/resources")}
+            className="flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-brand-red uppercase tracking-wider transition-colors cursor-pointer group mb-2"
+          >
+            <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
+            <span>Back to Resources</span>
+          </button>
           <div className="flex items-center gap-2">
             <span className="p-1.5 bg-brand-red-light text-brand-red rounded-lg border border-brand-red/10">
               <TrendUp className="w-5 h-5" />

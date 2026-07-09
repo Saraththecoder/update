@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from "react";
 import { ArrowLeft, MagnifyingGlass, BookOpen, Copy, Check, ArrowsClockwise } from "@phosphor-icons/react";
 import { motion, AnimatePresence } from "motion/react";
 import rawStoriesData from "../data/mythologyEthics.json";
+import { useNavigate } from "react-router-dom";
 
 interface MythStory {
   id: number;
@@ -17,11 +18,8 @@ interface MythStory {
   quoteReady: string;
 }
 
-interface MythologyEthicsPageProps {
-  setActivePage?: (page: string) => void;
-}
-
-export default function MythologyEthicsPage({ setActivePage }: MythologyEthicsPageProps) {
+export default function MythologyEthicsPage() {
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedSource, setSelectedSource] = useState("All");
   const [viewMode, setViewMode] = useState<"grid" | "table">("grid");
@@ -94,15 +92,13 @@ export default function MythologyEthicsPage({ setActivePage }: MythologyEthicsPa
       {/* Header section with Back Button */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-6">
         <div className="space-y-2">
-          {setActivePage && (
-            <button
-              onClick={() => setActivePage("resources")}
-              className="flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-brand-red uppercase tracking-wider transition-colors cursor-pointer group mb-2"
-            >
-              <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
-              <span>Back to Resources</span>
-            </button>
-          )}
+          <button
+            onClick={() => navigate("/resources")}
+            className="flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-brand-red uppercase tracking-wider transition-colors cursor-pointer group mb-2"
+          >
+            <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
+            <span>Back to Resources</span>
+          </button>
           <div className="flex items-center gap-2">
             <span className="p-1.5 bg-brand-red-light text-brand-red rounded-lg border border-brand-red/10">
               <BookOpen className="w-5 h-5" />

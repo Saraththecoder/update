@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -15,87 +16,25 @@ import AdministrativePioneersPage from "./pages/AdministrativePioneersPage";
 import MythologyEthicsPage from "./pages/MythologyEthicsPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import RefundPolicy from "./pages/RefundPolicy";
-import { Sparkle, X, Handshake } from "@phosphor-icons/react";
+import { X, Handshake } from "@phosphor-icons/react";
 import { AnimatePresence, motion } from "motion/react";
 import Chatbot from "./components/Chatbot";
 import { ReactLenis } from "lenis/react";
 
 export default function App() {
-  const [activePage, setActivePageState] = useState<string>(() => {
-    const hash = window.location.hash.replace('#', '');
-    return hash || 'home';
-  });
+  const location = useLocation();
   const [resourcePhase, setResourcePhase] = useState<"none" | "prelims" | "mains" | "integrity">("none");
   const [showTopToast, setShowTopToast] = useState<boolean>(true);
-
-  // Sync with browser back button
-  useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash.replace('#', '');
-      setActivePageState(hash || 'home');
-    };
-    window.addEventListener('hashchange', handleHashChange);
-    
-    // Initialize hash if not present
-    if (!window.location.hash) {
-      window.history.replaceState(null, '', '#home');
-    }
-
-    return () => window.removeEventListener('hashchange', handleHashChange);
-  }, []);
-
-  const setActivePage = (page: string) => {
-    window.location.hash = page;
-    setActivePageState(page);
-  };
 
   // Scroll to top on page change
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [activePage]);
-
-  // Dynamic Page Rendering
-  const renderPage = () => {
-    switch (activePage) {
-      case "home":
-        return <Home setActivePage={setActivePage} />;
-      case "resources":
-        return <Resources setActivePage={setActivePage} activePhase={resourcePhase} setActivePhase={setResourcePhase} />;
-      case "pyq-analysis":
-        return <PYQAnalysisPage />;
-      case "mains-pyq":
-        return <MainsPYQAnalysisPage setActivePage={setActivePage} />;
-      case "mains-cockroach-answers":
-        return <MainsCockroachAnswersPage setActivePage={setActivePage} />;
-      case "mains-theme-analysis":
-        return <MainsThemeWiseAnalysisPage setActivePage={setActivePage} />;
-      case "constitution-explorer":
-        return <ConstitutionExplorerPage setActivePage={setActivePage} />;
-      case "governance-pioneers":
-        return <AdministrativePioneersPage setActivePage={setActivePage} />;
-      case "mythology-ethics":
-        return <MythologyEthicsPage setActivePage={setActivePage} />;
-      case "metro-map":
-        return <UPSCMetroMapPage setActivePage={setActivePage} />;
-      case "about":
-        return <AboutUs />;
-      case "contact":
-        return <Contact />;
-      case "privacy-policy":
-        return <PrivacyPolicy />;
-      case "refund-policy":
-        return <RefundPolicy />;
-      default:
-        return <Home setActivePage={setActivePage} />;
-    }
-  };
+  }, [location.pathname]);
 
   return (
     <ReactLenis root options={{ lerp: 0.08, smoothWheel: true }}>
       <div className="min-h-screen flex flex-col relative selection:bg-brand-red-light selection:text-navy-950 text-slate-800 bg-white">
       
-      {/* 0. WELCOME & LAUNCH SCREEN REMOVED */}
-
       {/* 1. EMOTIONAL BANNER AT THE TOP (Dismissible) */}
       {showTopToast && (
         <div 
@@ -119,28 +58,44 @@ export default function App() {
       )}
 
       {/* 2. THE SIGNATURE HEADER */}
-      <Header activePage={activePage} setActivePage={setActivePage} setResourcePhase={setResourcePhase} />
+      <Header setResourcePhase={setResourcePhase} />
 
       {/* 3. CORE DYNAMIC VIEWPORT (Main container) */}
       <main className="flex-1 w-full overflow-hidden" id="main-content-viewport">
         <AnimatePresence mode="wait">
           <motion.div
-            key={activePage}
+            key={location.pathname}
             initial={{ opacity: 0, scale: 0.98, filter: "blur(8px)" }}
             animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
             exit={{ opacity: 0, scale: 1.02, filter: "blur(8px)" }}
             transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
           >
-            {renderPage()}
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/resources" element={<Resources activePhase={resourcePhase} setActivePhase={setResourcePhase} />} />
+              <Route path="/pyq-analysis" element={<PYQAnalysisPage />} />
+              <Route path="/mains-pyq" element={<MainsPYQAnalysisPage />} />
+              <Route path="/mains-cockroach-answers" element={<MainsCockroachAnswersPage />} />
+              <Route path="/mains-theme-analysis" element={<MainsThemeWiseAnalysisPage />} />
+              <Route path="/constitution-explorer" element={<ConstitutionExplorerPage />} />
+              <Route path="/governance-pioneers" element={<AdministrativePioneersPage />} />
+              <Route path="/mythology-ethics" element={<MythologyEthicsPage />} />
+              <Route path="/metro-map" element={<UPSCMetroMapPage />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/refund-policy" element={<RefundPolicy />} />
+            </Routes>
           </motion.div>
         </AnimatePresence>
       </main>
 
       {/* 4. THE TRUSTED FOOTER */}
-      <Footer setActivePage={setActivePage} />
+      <Footer />
 
       {/* 5. FLOATING COMPANION CHATBOT */}
-      <Chatbot setActivePage={setActivePage} />
+      <Chatbot />
 
       </div>
     </ReactLenis>

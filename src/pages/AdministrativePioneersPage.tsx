@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from "react";
 import { ArrowLeft, MagnifyingGlass, BookOpen, Sparkle, Trophy, Tag, ShieldCheck, ListNumbers, X } from "@phosphor-icons/react";
 import { motion, AnimatePresence } from "motion/react";
 import rawPioneersData from "../data/administrativePioneers.json";
+import { useNavigate } from "react-router-dom";
 
 interface Pioneer {
   officerName: string;
@@ -10,11 +11,8 @@ interface Pioneer {
   values: string;
 }
 
-interface AdministrativePioneersPageProps {
-  setActivePage?: (page: string) => void;
-}
-
-export default function AdministrativePioneersPage({ setActivePage }: AdministrativePioneersPageProps) {
+export default function AdministrativePioneersPage() {
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedTag, setSelectedTag] = useState("All");
   const [viewMode, setViewMode] = useState<"table" | "grid">("table");
@@ -104,15 +102,13 @@ export default function AdministrativePioneersPage({ setActivePage }: Administra
       {/* Header section with Back Button */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-6">
         <div className="space-y-2">
-          {setActivePage && (
-            <button
-              onClick={() => setActivePage("resources")}
-              className="flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-brand-red uppercase tracking-wider transition-colors cursor-pointer group mb-2"
-            >
-              <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
-              <span>Back to Resources</span>
-            </button>
-          )}
+          <button
+            onClick={() => navigate("/resources")}
+            className="flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-brand-red uppercase tracking-wider transition-colors cursor-pointer group mb-2"
+          >
+            <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
+            <span>Back to Resources</span>
+          </button>
           <div className="flex items-center gap-2">
             <span className="p-1.5 bg-brand-red-light text-brand-red rounded-lg border border-brand-red/10">
               <Trophy className="w-5 h-5" />

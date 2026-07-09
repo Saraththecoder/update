@@ -1,12 +1,10 @@
 import React from "react";
 import logo from "../../assets/logo.jpg";
 import lbsnaaImage from "../../assets/LBSNAA.png";
+import { useNavigate } from "react-router-dom";
 
-interface FooterProps {
-  setActivePage: (page: string) => void;
-}
-
-export default function Footer({ setActivePage }: FooterProps) {
+export default function Footer() {
+  const navigate = useNavigate();
   return (
     <footer className="w-full bg-slate-50 mt-12 sm:mt-16 pt-8 sm:pt-12 border-t border-slate-200" id="app-footer">
       {/* 1. Centered header text & logo */}
@@ -15,7 +13,7 @@ export default function Footer({ setActivePage }: FooterProps) {
           Your journey to the ultimate training ground.
         </h3>
         <div className="flex justify-center">
-          <div className="w-[120px] sm:w-[150px] h-[40px] sm:h-[50px] flex items-center justify-center shrink-0 cursor-pointer" onClick={() => setActivePage("home")}>
+          <div className="w-[120px] sm:w-[150px] h-[40px] sm:h-[50px] flex items-center justify-center shrink-0 cursor-pointer" onClick={() => navigate("/")}>
             <img src={logo} alt="CockroachIAS Logo" className="w-full h-full object-contain" />
           </div>
         </div>
@@ -36,21 +34,21 @@ export default function Footer({ setActivePage }: FooterProps) {
           {/* Horizontal Links */}
           <div className="flex flex-wrap items-center justify-center gap-x-4 sm:gap-x-6 gap-y-2 sm:gap-y-3 text-[10px] sm:text-xs font-semibold uppercase tracking-widest text-slate-400">
             <button
-              onClick={() => setActivePage("home")}
+              onClick={() => navigate("/")}
               className="hover:text-white transition duration-200 cursor-pointer"
             >
               Home Classroom
             </button>
             <span className="text-slate-700 hidden sm:inline">|</span>
             <button
-              onClick={() => setActivePage("resources")}
+              onClick={() => navigate("/resources")}
               className="hover:text-white transition duration-200 cursor-pointer"
             >
               Survivor's Resources
             </button>
             <span className="text-slate-700 hidden sm:inline">|</span>
             <button
-              onClick={() => setActivePage("about")}
+              onClick={() => navigate("/about")}
               className="hover:text-white transition duration-200 cursor-pointer"
             >
               Our Honest Story
@@ -64,10 +62,10 @@ export default function Footer({ setActivePage }: FooterProps) {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 font-medium">
               <span className="text-slate-500">Popular Searches:</span>
-              <button onClick={() => setActivePage("resources")} className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2">Affordable UPSC Courses</button>
-              <button onClick={() => setActivePage("about")} className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2">UPSC Mentorship India</button>
-              <button onClick={() => setActivePage("contact")} className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2">UPSC Mental Support</button>
-              <button onClick={() => setActivePage("home")} className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2">IAS Preparation Guidance</button>
+              <button onClick={() => navigate("/resources")} className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2">Affordable UPSC Courses</button>
+              <button onClick={() => navigate("/about")} className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2">UPSC Mentorship India</button>
+              <button onClick={() => navigate("/contact")} className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2">UPSC Mental Support</button>
+              <button onClick={() => navigate("/")} className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2">IAS Preparation Guidance</button>
             </div>
           </div>
 
@@ -81,14 +79,14 @@ export default function Footer({ setActivePage }: FooterProps) {
             </p>
             <p className="order-3 flex gap-2">
               <button 
-                onClick={() => setActivePage("privacy-policy")}
+                onClick={() => navigate("/privacy-policy")}
                 className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2"
               >
                 Privacy Policy
               </button>
               <span className="text-slate-700">|</span>
               <button 
-                onClick={() => setActivePage("refund-policy")}
+                onClick={() => navigate("/refund-policy")}
                 className="hover:text-white transition duration-200 cursor-pointer underline underline-offset-2"
               >
                 Refund Policy

@@ -2,16 +2,20 @@ import React, { useState } from "react";
 import { Compass, BookOpen, Users, PhoneCall, List, X } from "@phosphor-icons/react";
 import { motion, AnimatePresence } from "motion/react";
 import logo from "../../assets/logo.jpg";
+import { useLocation, useNavigate } from "react-router-dom";
 
 interface HeaderProps {
-  activePage: string;
-  setActivePage: (page: string) => void;
   setResourcePhase?: (phase: "none" | "prelims" | "mains" | "integrity") => void;
 }
 
-export default function Header({ activePage, setActivePage, setResourcePhase }: HeaderProps) {
+export default function Header({ setResourcePhase }: HeaderProps) {
   const [showDropdown, setShowDropdown] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Helper to extract the active page from the pathname
+  const activePage = location.pathname.split("/")[1] || "home";
 
   const navItems = [
     { id: "home", label: "Home", icon: Compass },
@@ -28,7 +32,7 @@ export default function Header({ activePage, setActivePage, setResourcePhase }: 
           {/* Logo Brand */}
           <div 
             onClick={() => {
-              setActivePage("home");
+              navigate("/");
               setIsMobileMenuOpen(false);
             }} 
             className="flex items-center space-x-3 cursor-pointer group"
@@ -61,7 +65,7 @@ export default function Header({ activePage, setActivePage, setResourcePhase }: 
                     <button
                       id={`nav-btn-${item.id}`}
                       onClick={() => {
-                        setActivePage("resources");
+                        navigate("/resources");
                         if (setResourcePhase) setResourcePhase("none");
                       }}
                       className={`flex items-center space-x-1.5 py-1 transition-all duration-200 cursor-pointer ${
@@ -87,7 +91,7 @@ export default function Header({ activePage, setActivePage, setResourcePhase }: 
                         >
                           <button
                             onClick={() => {
-                              setActivePage("resources");
+                              navigate("/resources");
                               if (setResourcePhase) setResourcePhase("prelims");
                               setShowDropdown(false);
                             }}
@@ -98,7 +102,7 @@ export default function Header({ activePage, setActivePage, setResourcePhase }: 
                           </button>
                           <button
                             onClick={() => {
-                              setActivePage("resources");
+                              navigate("/resources");
                               if (setResourcePhase) setResourcePhase("mains");
                               setShowDropdown(false);
                             }}
@@ -109,7 +113,7 @@ export default function Header({ activePage, setActivePage, setResourcePhase }: 
                           </button>
                           <button
                             onClick={() => {
-                              setActivePage("resources");
+                              navigate("/resources");
                               if (setResourcePhase) setResourcePhase("integrity");
                               setShowDropdown(false);
                             }}
@@ -129,7 +133,7 @@ export default function Header({ activePage, setActivePage, setResourcePhase }: 
                 <button
                   key={item.id}
                   id={`nav-btn-${item.id}`}
-                  onClick={() => setActivePage(item.id)}
+                  onClick={() => navigate(`/${item.id}`)}
                   className={`flex items-center space-x-1.5 py-1 transition-all duration-200 cursor-pointer ${
                     isActive
                       ? "text-brand-red border-b-2 border-brand-red font-bold"
@@ -185,7 +189,7 @@ export default function Header({ activePage, setActivePage, setResourcePhase }: 
                   <button
                     key={item.id}
                     onClick={() => {
-                      setActivePage(item.id);
+                      navigate(`/${item.id}`);
                       setIsMobileMenuOpen(false);
                     }}
                     className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-semibold uppercase tracking-widest transition-all ${

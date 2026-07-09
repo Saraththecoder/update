@@ -1,5 +1,6 @@
 import React, { useEffect, useCallback } from 'react';
 import metroMapHtml from '../upsc-metro-map.html?raw';
+import { useNavigate } from 'react-router-dom';
 
 
 const integratedMetroMapHtml = metroMapHtml.replace(
@@ -63,15 +64,18 @@ const integratedMetroMapHtml = metroMapHtml.replace(
   </style></head>`,
 );
 
-export default function UPSCMetroMapPage({ setActivePage }) {
+export default function UPSCMetroMapPage() {
+  const navigate = useNavigate();
   // Listen for navigation messages from the iframe (PYQ link clicks)
   const handleMessage = useCallback((event) => {
     if (event.data && event.data.type === 'navigate' && event.data.page) {
-      if (setActivePage) {
-        setActivePage(event.data.page);
+      if (event.data.page === "resources") {
+        navigate("/resources");
+      } else {
+        navigate("/" + event.data.page);
       }
     }
-  }, [setActivePage]);
+  }, [navigate]);
 
   useEffect(() => {
     document.title = "UPSC Syllabus Metro Map | CockroachIAS";
